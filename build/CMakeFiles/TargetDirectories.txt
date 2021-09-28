@@ -1,0 +1,3 @@
+/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles/rebuild_cache.dir
+/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles/server.dir
+/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles/edit_cache.dir
