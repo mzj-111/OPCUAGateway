@@ -96,13 +96,3 @@ open62541.h
 dht11.h
 -
 
-/home/pi/mzj/OPC_UA_GateWay/src/server.c
-signal.h
--
-stdlib.h
--
-open62541.h
-/home/pi/mzj/OPC_UA_GateWay/src/open62541.h
-dht11.h
-/home/pi/mzj/OPC_UA_GateWay/src/dht11.h
-

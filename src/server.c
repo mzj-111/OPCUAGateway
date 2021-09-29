@@ -5,10 +5,11 @@
 
 
 // extern struct dht11InitInfo;
-extern struct dht11InitInfo initInfo = {};
+struct dht11InitInfo initInfo = {};
+
 
 UA_Boolean running = true;
-UA_NodeId dht11TypeId = {1, UA_NODEIDTYPE_NUMERIC, {1001}};
+
 
 
 static void stopHandler(int sign) {
