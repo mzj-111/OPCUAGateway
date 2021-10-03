@@ -150,6 +150,33 @@ open62541/open62541.c.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/open62541/open62541.c.s
 .PHONY : open62541/open62541.c.s
 
+src/database/readDht11Data.o: src/database/readDht11Data.c.o
+
+.PHONY : src/database/readDht11Data.o
+
+# target to build an object file
+src/database/readDht11Data.c.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/database/readDht11Data.c.o
+.PHONY : src/database/readDht11Data.c.o
+
+src/database/readDht11Data.i: src/database/readDht11Data.c.i
+
+.PHONY : src/database/readDht11Data.i
+
+# target to preprocess a source file
+src/database/readDht11Data.c.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/database/readDht11Data.c.i
+.PHONY : src/database/readDht11Data.c.i
+
+src/database/readDht11Data.s: src/database/readDht11Data.c.s
+
+.PHONY : src/database/readDht11Data.s
+
+# target to generate assembly for a file
+src/database/readDht11Data.c.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/database/readDht11Data.c.s
+.PHONY : src/database/readDht11Data.c.s
+
 src/device/dht11.o: src/device/dht11.c.o
 
 .PHONY : src/device/dht11.o
@@ -216,6 +243,9 @@ help:
 	@echo "... open62541/open62541.o"
 	@echo "... open62541/open62541.i"
 	@echo "... open62541/open62541.s"
+	@echo "... src/database/readDht11Data.o"
+	@echo "... src/database/readDht11Data.i"
+	@echo "... src/database/readDht11Data.s"
 	@echo "... src/device/dht11.o"
 	@echo "... src/device/dht11.i"
 	@echo "... src/device/dht11.s"

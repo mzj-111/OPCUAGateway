@@ -3,9 +3,9 @@ dht11传感器添加对象类型和添加对象实例的方法
 */
 
 
-#include <readDht11Data.h>
+#include "readDht11Data.h"
 #include "open62541.h"
-#include <dht11.h>
+#include "dht11.h"
 
 UA_NodeId dht11TypeId = {1, UA_NODEIDTYPE_NUMERIC, {1001}};
 
@@ -18,7 +18,12 @@ UA_StatusCode readTmp(UA_Server *server,
     UA_LOG_INFO(UA_Log_Stdout, UA_LOGCATEGORY_USERLAND, "read tmp from database");
     UA_Float tmp;
     readTmpData(&tmp);
-    UA_Variant_setScalarCopy(&dataValue->value, &tmp, &UA_TYPES[UA_TYPES_FLOAT]);
+    printf("read tmp data success");
+    printf("tmp : %f\n", tmp);
+    int res = UA_Variant_setScalarCopy(&dataValue->value, &tmp, &UA_TYPES[UA_TYPES_FLOAT]);
+    if(!res){
+        printf("faliure");
+    }
     dataValue->hasValue = true;
     return UA_STATUSCODE_GOOD;
 }
@@ -134,7 +139,7 @@ void DefineDht11Object(UA_Server *server){
     UA_QualifiedName rhName = UA_QUALIFIEDNAME(1, "rh-datasource");
     UA_NodeId rhParentNodeId = dht11TypeId;
     UA_NodeId rhParentReferenceNodeId = UA_NODEID_NUMERIC(0, UA_NS0ID_HASCOMPONENT);
-    UA_NodeId variableTypeNodeId = UA_NODEID_NUMERIC(0, UA_NS0ID_BASEDATAVARIABLETYPE);
+    // UA_NodeId variableTypeNodeId = UA_NODEID_NUMERIC(0, UA_NS0ID_BASEDATAVARIABLETYPE);
 
     UA_DataSource rhDataSource;
     rhDataSource.read = readRh;

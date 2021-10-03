@@ -21,14 +21,14 @@ int main(void)
 {
     signal(SIGINT, stopHandler);
     signal(SIGTERM, stopHandler);
-
+    
     UA_Server *server = UA_Server_new();
     UA_ServerConfig_setDefault(UA_Server_getConfig(server));
     
     DefineDht11Object(server);
     
     initInfo.tmp = 26.0;
-    initInfo.rh = 44.8;   
+    initInfo.rh = 0.0;   
     createDht11ObjectInstance(server, &initInfo);
 
     UA_StatusCode retval = UA_Server_run(server, &running);

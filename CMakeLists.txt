@@ -9,10 +9,14 @@ add_definitions(-std=c99)
 include_directories(${PROJECT_SOURCE_DIR}/open62541)
 include_directories(${PROJECT_SOURCE_DIR}/src/database)
 include_directories(${PROJECT_SOURCE_DIR}/src/device)
+include_directories(mariadb)
 
 add_executable(server ${PROJECT_SOURCE_DIR}/src/server.c 
 ${PROJECT_SOURCE_DIR}/open62541/open62541.c 
+${PROJECT_SOURCE_DIR}/src/database/readDht11Data.c
 ${PROJECT_SOURCE_DIR}/src/device/dht11.c)
+target_link_libraries(server mariadb)
+
 
 # add_executable(server ${PROJECT_SOURCE_DIR}/src/server.c ${PROJECT_SOURCE_DIR}/open62541/open62541.c)
 

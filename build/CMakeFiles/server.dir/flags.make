@@ -6,5 +6,5 @@ C_FLAGS =   -std=c99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/pi/mzj/OPC_UA_GateWay/open62541 -I/home/pi/mzj/OPC_UA_GateWay/src/database -I/home/pi/mzj/OPC_UA_GateWay/src/device 
+C_INCLUDES = -I/home/pi/mzj/OPC_UA_GateWay/open62541 -I/home/pi/mzj/OPC_UA_GateWay/src/database -I/home/pi/mzj/OPC_UA_GateWay/src/device -I/home/pi/mzj/OPC_UA_GateWay/mariadb 
 

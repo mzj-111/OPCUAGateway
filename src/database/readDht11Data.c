@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "mariadb/errmsg.h"
 #include "mariadb/mysqld_error.h"
-#include <readDht11Data.h>
+#include "readDht11Data.h"
 
 MYSQL con;
 MYSQL_RES *res_ptr;
@@ -48,7 +48,8 @@ int readTmpData(float* tmp){
         }
     }
     mysql_close(&con);
-	exit(EXIT_SUCCESS);
+	// exit(EXIT_SUCCESS);
+    return 0;
 }
 
 int readRhData(float* rh){
@@ -74,5 +75,6 @@ int readRhData(float* rh){
         }
     }
     mysql_close(&con);
-	exit(EXIT_SUCCESS);
+	// exit(EXIT_SUCCESS);
+    return 0;
 }
