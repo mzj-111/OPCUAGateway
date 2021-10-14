@@ -216,13 +216,7 @@ OPC_UA_GATEWAY_BINARY_DIR:STATIC=/home/pi/mzj/OPC_UA_GateWay/build
 OPC_UA_GATEWAY_SOURCE_DIR:STATIC=/home/pi/mzj/OPC_UA_GateWay
 
 //Path to a library.
-OPEN62541_LIB:FILEPATH=/home/pi/mzj/OPC_UA_GateWay/open62541/bin/libopen62541.a
-
-//Value Computed by CMake
-demoOpen62541_BINARY_DIR:STATIC=/home/pi/mzj/OPC_UA_GateWay/build
-
-//Value Computed by CMake
-demoOpen62541_SOURCE_DIR:STATIC=/home/pi/mzj/OPC_UA_GateWay
+OPEN62541_LIB:FILEPATH=/home/pi/mzj/OPC_UA_GateWay/open62541/libopen62541.a
 
 
 ########################

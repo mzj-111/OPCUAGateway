@@ -17,6 +17,13 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src/database"
   "../src/device"
   "../mariadb"
+  "../open62541/include"
+  "../open62541/src_generated"
+  "../open62541/plugins"
+  "../open62541/plugins/include"
+  "../open62541/arch"
+  "../open62541/deps"
+  "../open62541/src/pubsub"
   )
 
 # Targets to which this target links.
