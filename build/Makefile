@@ -123,46 +123,6 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-#=============================================================================
-# Target rules for targets named mqtt_pub
-
-# Build rule for target.
-mqtt_pub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mqtt_pub
-.PHONY : mqtt_pub
-
-# fast build rule for target.
-mqtt_pub/fast:
-	$(MAKE) -f CMakeFiles/mqtt_pub.dir/build.make CMakeFiles/mqtt_pub.dir/build
-.PHONY : mqtt_pub/fast
-
-open62541/open62541.o: open62541/open62541.c.o
-
-.PHONY : open62541/open62541.o
-
-# target to build an object file
-open62541/open62541.c.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/open62541/open62541.c.o
-.PHONY : open62541/open62541.c.o
-
-open62541/open62541.i: open62541/open62541.c.i
-
-.PHONY : open62541/open62541.i
-
-# target to preprocess a source file
-open62541/open62541.c.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/open62541/open62541.c.i
-.PHONY : open62541/open62541.c.i
-
-open62541/open62541.s: open62541/open62541.c.s
-
-.PHONY : open62541/open62541.s
-
-# target to generate assembly for a file
-open62541/open62541.c.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/open62541/open62541.c.s
-.PHONY : open62541/open62541.c.s
-
 src/database/readDht11Data.o: src/database/readDht11Data.c.o
 
 .PHONY : src/database/readDht11Data.o
@@ -217,32 +177,32 @@ src/device/dht11.c.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/device/dht11.c.s
 .PHONY : src/device/dht11.c.s
 
-src/mqtt/tutorial_pubsub_mqtt_publish.o: src/mqtt/tutorial_pubsub_mqtt_publish.c.o
+src/mqtt/mqtt_publish.o: src/mqtt/mqtt_publish.c.o
 
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.o
+.PHONY : src/mqtt/mqtt_publish.o
 
 # target to build an object file
-src/mqtt/tutorial_pubsub_mqtt_publish.c.o:
-	$(MAKE) -f CMakeFiles/mqtt_pub.dir/build.make CMakeFiles/mqtt_pub.dir/src/mqtt/tutorial_pubsub_mqtt_publish.c.o
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.c.o
+src/mqtt/mqtt_publish.c.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o
+.PHONY : src/mqtt/mqtt_publish.c.o
 
-src/mqtt/tutorial_pubsub_mqtt_publish.i: src/mqtt/tutorial_pubsub_mqtt_publish.c.i
+src/mqtt/mqtt_publish.i: src/mqtt/mqtt_publish.c.i
 
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.i
+.PHONY : src/mqtt/mqtt_publish.i
 
 # target to preprocess a source file
-src/mqtt/tutorial_pubsub_mqtt_publish.c.i:
-	$(MAKE) -f CMakeFiles/mqtt_pub.dir/build.make CMakeFiles/mqtt_pub.dir/src/mqtt/tutorial_pubsub_mqtt_publish.c.i
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.c.i
+src/mqtt/mqtt_publish.c.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.i
+.PHONY : src/mqtt/mqtt_publish.c.i
 
-src/mqtt/tutorial_pubsub_mqtt_publish.s: src/mqtt/tutorial_pubsub_mqtt_publish.c.s
+src/mqtt/mqtt_publish.s: src/mqtt/mqtt_publish.c.s
 
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.s
+.PHONY : src/mqtt/mqtt_publish.s
 
 # target to generate assembly for a file
-src/mqtt/tutorial_pubsub_mqtt_publish.c.s:
-	$(MAKE) -f CMakeFiles/mqtt_pub.dir/build.make CMakeFiles/mqtt_pub.dir/src/mqtt/tutorial_pubsub_mqtt_publish.c.s
-.PHONY : src/mqtt/tutorial_pubsub_mqtt_publish.c.s
+src/mqtt/mqtt_publish.c.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.s
+.PHONY : src/mqtt/mqtt_publish.c.s
 
 src/server.o: src/server.c.o
 
@@ -280,19 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... server"
 	@echo "... edit_cache"
-	@echo "... mqtt_pub"
-	@echo "... open62541/open62541.o"
-	@echo "... open62541/open62541.i"
-	@echo "... open62541/open62541.s"
 	@echo "... src/database/readDht11Data.o"
 	@echo "... src/database/readDht11Data.i"
 	@echo "... src/database/readDht11Data.s"
 	@echo "... src/device/dht11.o"
 	@echo "... src/device/dht11.i"
 	@echo "... src/device/dht11.s"
-	@echo "... src/mqtt/tutorial_pubsub_mqtt_publish.o"
-	@echo "... src/mqtt/tutorial_pubsub_mqtt_publish.i"
-	@echo "... src/mqtt/tutorial_pubsub_mqtt_publish.s"
+	@echo "... src/mqtt/mqtt_publish.o"
+	@echo "... src/mqtt/mqtt_publish.i"
+	@echo "... src/mqtt/mqtt_publish.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"

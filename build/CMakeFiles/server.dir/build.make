@@ -70,22 +70,9 @@ CMakeFiles/server.dir/src/server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/src/server.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/mzj/OPC_UA_GateWay/src/server.c -o CMakeFiles/server.dir/src/server.c.s
 
-CMakeFiles/server.dir/open62541/open62541.c.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/open62541/open62541.c.o: ../open62541/open62541.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/server.dir/open62541/open62541.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/server.dir/open62541/open62541.c.o   -c /home/pi/mzj/OPC_UA_GateWay/open62541/open62541.c
-
-CMakeFiles/server.dir/open62541/open62541.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/server.dir/open62541/open62541.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/mzj/OPC_UA_GateWay/open62541/open62541.c > CMakeFiles/server.dir/open62541/open62541.c.i
-
-CMakeFiles/server.dir/open62541/open62541.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/open62541/open62541.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/mzj/OPC_UA_GateWay/open62541/open62541.c -o CMakeFiles/server.dir/open62541/open62541.c.s
-
 CMakeFiles/server.dir/src/database/readDht11Data.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/database/readDht11Data.c.o: ../src/database/readDht11Data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/server.dir/src/database/readDht11Data.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/server.dir/src/database/readDht11Data.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/server.dir/src/database/readDht11Data.c.o   -c /home/pi/mzj/OPC_UA_GateWay/src/database/readDht11Data.c
 
 CMakeFiles/server.dir/src/database/readDht11Data.c.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/server.dir/src/database/readDht11Data.c.s: cmake_force
 
 CMakeFiles/server.dir/src/device/dht11.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/device/dht11.c.o: ../src/device/dht11.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/server.dir/src/device/dht11.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/server.dir/src/device/dht11.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/server.dir/src/device/dht11.c.o   -c /home/pi/mzj/OPC_UA_GateWay/src/device/dht11.c
 
 CMakeFiles/server.dir/src/device/dht11.c.i: cmake_force
@@ -109,21 +96,35 @@ CMakeFiles/server.dir/src/device/dht11.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/src/device/dht11.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/mzj/OPC_UA_GateWay/src/device/dht11.c -o CMakeFiles/server.dir/src/device/dht11.c.s
 
+CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o: ../src/mqtt/mqtt_publish.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o   -c /home/pi/mzj/OPC_UA_GateWay/src/mqtt/mqtt_publish.c
+
+CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/mzj/OPC_UA_GateWay/src/mqtt/mqtt_publish.c > CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.i
+
+CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/mzj/OPC_UA_GateWay/src/mqtt/mqtt_publish.c -o CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/src/server.c.o" \
-"CMakeFiles/server.dir/open62541/open62541.c.o" \
 "CMakeFiles/server.dir/src/database/readDht11Data.c.o" \
-"CMakeFiles/server.dir/src/device/dht11.c.o"
+"CMakeFiles/server.dir/src/device/dht11.c.o" \
+"CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
 ../bin/server: CMakeFiles/server.dir/src/server.c.o
-../bin/server: CMakeFiles/server.dir/open62541/open62541.c.o
 ../bin/server: CMakeFiles/server.dir/src/database/readDht11Data.c.o
 ../bin/server: CMakeFiles/server.dir/src/device/dht11.c.o
+../bin/server: CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o
 ../bin/server: CMakeFiles/server.dir/build.make
+../bin/server: ../open62541/libopen62541.a
 ../bin/server: CMakeFiles/server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/mzj/OPC_UA_GateWay/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ../bin/server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)

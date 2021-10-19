@@ -1,5 +1,5 @@
 /* Generated from Opc.Ua.Types.bsd with script /home/mi/Repository/open62541/tools/generate_datatypes.py
- * on host mi-ubuntu-OPCUA by user mi at 2021-10-12 10:14:58 */
+ * on host mi-ubuntu-OPCUA by user mi at 2021-10-19 04:22:13 */
 
 #ifndef TYPES_GENERATED_HANDLING_H_
 #define TYPES_GENERATED_HANDLING_H_
@@ -790,6 +790,223 @@ UA_DiagnosticInfo_delete(UA_DiagnosticInfo *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_DIAGNOSTICINFO]);
 }
 
+/* NamingRuleType */
+static UA_INLINE void
+UA_NamingRuleType_init(UA_NamingRuleType *p) {
+    memset(p, 0, sizeof(UA_NamingRuleType));
+}
+
+static UA_INLINE UA_NamingRuleType *
+UA_NamingRuleType_new(void) {
+    return (UA_NamingRuleType*)UA_new(&UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NamingRuleType_copy(const UA_NamingRuleType *src, UA_NamingRuleType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_NamingRuleType_deleteMembers(UA_NamingRuleType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_NamingRuleType_clear(UA_NamingRuleType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_NamingRuleType_delete(UA_NamingRuleType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+
+/* ImageBMP */
+static UA_INLINE void
+UA_ImageBMP_init(UA_ImageBMP *p) {
+    memset(p, 0, sizeof(UA_ImageBMP));
+}
+
+static UA_INLINE UA_ImageBMP *
+UA_ImageBMP_new(void) {
+    return (UA_ImageBMP*)UA_new(&UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ImageBMP_copy(const UA_ImageBMP *src, UA_ImageBMP *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+
+static UA_INLINE void
+UA_ImageBMP_deleteMembers(UA_ImageBMP *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+
+static UA_INLINE void
+UA_ImageBMP_clear(UA_ImageBMP *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+
+static UA_INLINE void
+UA_ImageBMP_delete(UA_ImageBMP *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+
+/* ImageGIF */
+static UA_INLINE void
+UA_ImageGIF_init(UA_ImageGIF *p) {
+    memset(p, 0, sizeof(UA_ImageGIF));
+}
+
+static UA_INLINE UA_ImageGIF *
+UA_ImageGIF_new(void) {
+    return (UA_ImageGIF*)UA_new(&UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ImageGIF_copy(const UA_ImageGIF *src, UA_ImageGIF *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+
+static UA_INLINE void
+UA_ImageGIF_deleteMembers(UA_ImageGIF *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+
+static UA_INLINE void
+UA_ImageGIF_clear(UA_ImageGIF *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+
+static UA_INLINE void
+UA_ImageGIF_delete(UA_ImageGIF *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+
+/* ImageJPG */
+static UA_INLINE void
+UA_ImageJPG_init(UA_ImageJPG *p) {
+    memset(p, 0, sizeof(UA_ImageJPG));
+}
+
+static UA_INLINE UA_ImageJPG *
+UA_ImageJPG_new(void) {
+    return (UA_ImageJPG*)UA_new(&UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ImageJPG_copy(const UA_ImageJPG *src, UA_ImageJPG *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+
+static UA_INLINE void
+UA_ImageJPG_deleteMembers(UA_ImageJPG *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+
+static UA_INLINE void
+UA_ImageJPG_clear(UA_ImageJPG *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+
+static UA_INLINE void
+UA_ImageJPG_delete(UA_ImageJPG *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+
+/* ImagePNG */
+static UA_INLINE void
+UA_ImagePNG_init(UA_ImagePNG *p) {
+    memset(p, 0, sizeof(UA_ImagePNG));
+}
+
+static UA_INLINE UA_ImagePNG *
+UA_ImagePNG_new(void) {
+    return (UA_ImagePNG*)UA_new(&UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ImagePNG_copy(const UA_ImagePNG *src, UA_ImagePNG *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+
+static UA_INLINE void
+UA_ImagePNG_deleteMembers(UA_ImagePNG *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+
+static UA_INLINE void
+UA_ImagePNG_clear(UA_ImagePNG *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+
+static UA_INLINE void
+UA_ImagePNG_delete(UA_ImagePNG *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+
+/* AudioDataType */
+static UA_INLINE void
+UA_AudioDataType_init(UA_AudioDataType *p) {
+    memset(p, 0, sizeof(UA_AudioDataType));
+}
+
+static UA_INLINE UA_AudioDataType *
+UA_AudioDataType_new(void) {
+    return (UA_AudioDataType*)UA_new(&UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AudioDataType_copy(const UA_AudioDataType *src, UA_AudioDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+
+static UA_INLINE void
+UA_AudioDataType_deleteMembers(UA_AudioDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+
+static UA_INLINE void
+UA_AudioDataType_clear(UA_AudioDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+
+static UA_INLINE void
+UA_AudioDataType_delete(UA_AudioDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+
+/* BitFieldMaskDataType */
+static UA_INLINE void
+UA_BitFieldMaskDataType_init(UA_BitFieldMaskDataType *p) {
+    memset(p, 0, sizeof(UA_BitFieldMaskDataType));
+}
+
+static UA_INLINE UA_BitFieldMaskDataType *
+UA_BitFieldMaskDataType_new(void) {
+    return (UA_BitFieldMaskDataType*)UA_new(&UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_BitFieldMaskDataType_copy(const UA_BitFieldMaskDataType *src, UA_BitFieldMaskDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+
+static UA_INLINE void
+UA_BitFieldMaskDataType_deleteMembers(UA_BitFieldMaskDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+
+static UA_INLINE void
+UA_BitFieldMaskDataType_clear(UA_BitFieldMaskDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+
+static UA_INLINE void
+UA_BitFieldMaskDataType_delete(UA_BitFieldMaskDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+
 /* KeyValuePair */
 static UA_INLINE void
 UA_KeyValuePair_init(UA_KeyValuePair *p) {
@@ -819,6 +1036,533 @@ UA_KeyValuePair_clear(UA_KeyValuePair *p) {
 static UA_INLINE void
 UA_KeyValuePair_delete(UA_KeyValuePair *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_KEYVALUEPAIR]);
+}
+
+/* RationalNumber */
+static UA_INLINE void
+UA_RationalNumber_init(UA_RationalNumber *p) {
+    memset(p, 0, sizeof(UA_RationalNumber));
+}
+
+static UA_INLINE UA_RationalNumber *
+UA_RationalNumber_new(void) {
+    return (UA_RationalNumber*)UA_new(&UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RationalNumber_copy(const UA_RationalNumber *src, UA_RationalNumber *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+
+static UA_INLINE void
+UA_RationalNumber_deleteMembers(UA_RationalNumber *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+
+static UA_INLINE void
+UA_RationalNumber_clear(UA_RationalNumber *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+
+static UA_INLINE void
+UA_RationalNumber_delete(UA_RationalNumber *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+
+/* Vector */
+static UA_INLINE void
+UA_Vector_init(UA_Vector *p) {
+    memset(p, 0, sizeof(UA_Vector));
+}
+
+static UA_INLINE UA_Vector *
+UA_Vector_new(void) {
+    return (UA_Vector*)UA_new(&UA_TYPES[UA_TYPES_VECTOR]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Vector_copy(const UA_Vector *src, UA_Vector *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_VECTOR]);
+}
+
+static UA_INLINE void
+UA_Vector_deleteMembers(UA_Vector *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_VECTOR]);
+}
+
+static UA_INLINE void
+UA_Vector_clear(UA_Vector *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_VECTOR]);
+}
+
+static UA_INLINE void
+UA_Vector_delete(UA_Vector *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_VECTOR]);
+}
+
+/* ThreeDVector */
+static UA_INLINE void
+UA_ThreeDVector_init(UA_ThreeDVector *p) {
+    memset(p, 0, sizeof(UA_ThreeDVector));
+}
+
+static UA_INLINE UA_ThreeDVector *
+UA_ThreeDVector_new(void) {
+    return (UA_ThreeDVector*)UA_new(&UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ThreeDVector_copy(const UA_ThreeDVector *src, UA_ThreeDVector *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+
+static UA_INLINE void
+UA_ThreeDVector_deleteMembers(UA_ThreeDVector *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+
+static UA_INLINE void
+UA_ThreeDVector_clear(UA_ThreeDVector *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+
+static UA_INLINE void
+UA_ThreeDVector_delete(UA_ThreeDVector *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+
+/* CartesianCoordinates */
+static UA_INLINE void
+UA_CartesianCoordinates_init(UA_CartesianCoordinates *p) {
+    memset(p, 0, sizeof(UA_CartesianCoordinates));
+}
+
+static UA_INLINE UA_CartesianCoordinates *
+UA_CartesianCoordinates_new(void) {
+    return (UA_CartesianCoordinates*)UA_new(&UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_CartesianCoordinates_copy(const UA_CartesianCoordinates *src, UA_CartesianCoordinates *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_CartesianCoordinates_deleteMembers(UA_CartesianCoordinates *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_CartesianCoordinates_clear(UA_CartesianCoordinates *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_CartesianCoordinates_delete(UA_CartesianCoordinates *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+
+/* ThreeDCartesianCoordinates */
+static UA_INLINE void
+UA_ThreeDCartesianCoordinates_init(UA_ThreeDCartesianCoordinates *p) {
+    memset(p, 0, sizeof(UA_ThreeDCartesianCoordinates));
+}
+
+static UA_INLINE UA_ThreeDCartesianCoordinates *
+UA_ThreeDCartesianCoordinates_new(void) {
+    return (UA_ThreeDCartesianCoordinates*)UA_new(&UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ThreeDCartesianCoordinates_copy(const UA_ThreeDCartesianCoordinates *src, UA_ThreeDCartesianCoordinates *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_ThreeDCartesianCoordinates_deleteMembers(UA_ThreeDCartesianCoordinates *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_ThreeDCartesianCoordinates_clear(UA_ThreeDCartesianCoordinates *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+
+static UA_INLINE void
+UA_ThreeDCartesianCoordinates_delete(UA_ThreeDCartesianCoordinates *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+
+/* Orientation */
+static UA_INLINE void
+UA_Orientation_init(UA_Orientation *p) {
+    memset(p, 0, sizeof(UA_Orientation));
+}
+
+static UA_INLINE UA_Orientation *
+UA_Orientation_new(void) {
+    return (UA_Orientation*)UA_new(&UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Orientation_copy(const UA_Orientation *src, UA_Orientation *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+
+static UA_INLINE void
+UA_Orientation_deleteMembers(UA_Orientation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+
+static UA_INLINE void
+UA_Orientation_clear(UA_Orientation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+
+static UA_INLINE void
+UA_Orientation_delete(UA_Orientation *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+
+/* ThreeDOrientation */
+static UA_INLINE void
+UA_ThreeDOrientation_init(UA_ThreeDOrientation *p) {
+    memset(p, 0, sizeof(UA_ThreeDOrientation));
+}
+
+static UA_INLINE UA_ThreeDOrientation *
+UA_ThreeDOrientation_new(void) {
+    return (UA_ThreeDOrientation*)UA_new(&UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ThreeDOrientation_copy(const UA_ThreeDOrientation *src, UA_ThreeDOrientation *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+
+static UA_INLINE void
+UA_ThreeDOrientation_deleteMembers(UA_ThreeDOrientation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+
+static UA_INLINE void
+UA_ThreeDOrientation_clear(UA_ThreeDOrientation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+
+static UA_INLINE void
+UA_ThreeDOrientation_delete(UA_ThreeDOrientation *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+
+/* Frame */
+static UA_INLINE void
+UA_Frame_init(UA_Frame *p) {
+    memset(p, 0, sizeof(UA_Frame));
+}
+
+static UA_INLINE UA_Frame *
+UA_Frame_new(void) {
+    return (UA_Frame*)UA_new(&UA_TYPES[UA_TYPES_FRAME]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Frame_copy(const UA_Frame *src, UA_Frame *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_FRAME]);
+}
+
+static UA_INLINE void
+UA_Frame_deleteMembers(UA_Frame *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FRAME]);
+}
+
+static UA_INLINE void
+UA_Frame_clear(UA_Frame *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FRAME]);
+}
+
+static UA_INLINE void
+UA_Frame_delete(UA_Frame *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_FRAME]);
+}
+
+/* ThreeDFrame */
+static UA_INLINE void
+UA_ThreeDFrame_init(UA_ThreeDFrame *p) {
+    memset(p, 0, sizeof(UA_ThreeDFrame));
+}
+
+static UA_INLINE UA_ThreeDFrame *
+UA_ThreeDFrame_new(void) {
+    return (UA_ThreeDFrame*)UA_new(&UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ThreeDFrame_copy(const UA_ThreeDFrame *src, UA_ThreeDFrame *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+
+static UA_INLINE void
+UA_ThreeDFrame_deleteMembers(UA_ThreeDFrame *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+
+static UA_INLINE void
+UA_ThreeDFrame_clear(UA_ThreeDFrame *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+
+static UA_INLINE void
+UA_ThreeDFrame_delete(UA_ThreeDFrame *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+
+/* OpenFileMode */
+static UA_INLINE void
+UA_OpenFileMode_init(UA_OpenFileMode *p) {
+    memset(p, 0, sizeof(UA_OpenFileMode));
+}
+
+static UA_INLINE UA_OpenFileMode *
+UA_OpenFileMode_new(void) {
+    return (UA_OpenFileMode*)UA_new(&UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_OpenFileMode_copy(const UA_OpenFileMode *src, UA_OpenFileMode *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+
+static UA_INLINE void
+UA_OpenFileMode_deleteMembers(UA_OpenFileMode *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+
+static UA_INLINE void
+UA_OpenFileMode_clear(UA_OpenFileMode *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+
+static UA_INLINE void
+UA_OpenFileMode_delete(UA_OpenFileMode *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+
+/* IdentityCriteriaType */
+static UA_INLINE void
+UA_IdentityCriteriaType_init(UA_IdentityCriteriaType *p) {
+    memset(p, 0, sizeof(UA_IdentityCriteriaType));
+}
+
+static UA_INLINE UA_IdentityCriteriaType *
+UA_IdentityCriteriaType_new(void) {
+    return (UA_IdentityCriteriaType*)UA_new(&UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_IdentityCriteriaType_copy(const UA_IdentityCriteriaType *src, UA_IdentityCriteriaType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityCriteriaType_deleteMembers(UA_IdentityCriteriaType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityCriteriaType_clear(UA_IdentityCriteriaType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityCriteriaType_delete(UA_IdentityCriteriaType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+
+/* IdentityMappingRuleType */
+static UA_INLINE void
+UA_IdentityMappingRuleType_init(UA_IdentityMappingRuleType *p) {
+    memset(p, 0, sizeof(UA_IdentityMappingRuleType));
+}
+
+static UA_INLINE UA_IdentityMappingRuleType *
+UA_IdentityMappingRuleType_new(void) {
+    return (UA_IdentityMappingRuleType*)UA_new(&UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_IdentityMappingRuleType_copy(const UA_IdentityMappingRuleType *src, UA_IdentityMappingRuleType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityMappingRuleType_deleteMembers(UA_IdentityMappingRuleType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityMappingRuleType_clear(UA_IdentityMappingRuleType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+
+static UA_INLINE void
+UA_IdentityMappingRuleType_delete(UA_IdentityMappingRuleType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+
+/* CurrencyUnitType */
+static UA_INLINE void
+UA_CurrencyUnitType_init(UA_CurrencyUnitType *p) {
+    memset(p, 0, sizeof(UA_CurrencyUnitType));
+}
+
+static UA_INLINE UA_CurrencyUnitType *
+UA_CurrencyUnitType_new(void) {
+    return (UA_CurrencyUnitType*)UA_new(&UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_CurrencyUnitType_copy(const UA_CurrencyUnitType *src, UA_CurrencyUnitType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+
+static UA_INLINE void
+UA_CurrencyUnitType_deleteMembers(UA_CurrencyUnitType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+
+static UA_INLINE void
+UA_CurrencyUnitType_clear(UA_CurrencyUnitType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+
+static UA_INLINE void
+UA_CurrencyUnitType_delete(UA_CurrencyUnitType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+
+/* TrustListMasks */
+static UA_INLINE void
+UA_TrustListMasks_init(UA_TrustListMasks *p) {
+    memset(p, 0, sizeof(UA_TrustListMasks));
+}
+
+static UA_INLINE UA_TrustListMasks *
+UA_TrustListMasks_new(void) {
+    return (UA_TrustListMasks*)UA_new(&UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TrustListMasks_copy(const UA_TrustListMasks *src, UA_TrustListMasks *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+
+static UA_INLINE void
+UA_TrustListMasks_deleteMembers(UA_TrustListMasks *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+
+static UA_INLINE void
+UA_TrustListMasks_clear(UA_TrustListMasks *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+
+static UA_INLINE void
+UA_TrustListMasks_delete(UA_TrustListMasks *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+
+/* TrustListDataType */
+static UA_INLINE void
+UA_TrustListDataType_init(UA_TrustListDataType *p) {
+    memset(p, 0, sizeof(UA_TrustListDataType));
+}
+
+static UA_INLINE UA_TrustListDataType *
+UA_TrustListDataType_new(void) {
+    return (UA_TrustListDataType*)UA_new(&UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TrustListDataType_copy(const UA_TrustListDataType *src, UA_TrustListDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TrustListDataType_deleteMembers(UA_TrustListDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TrustListDataType_clear(UA_TrustListDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TrustListDataType_delete(UA_TrustListDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+
+/* DecimalDataType */
+static UA_INLINE void
+UA_DecimalDataType_init(UA_DecimalDataType *p) {
+    memset(p, 0, sizeof(UA_DecimalDataType));
+}
+
+static UA_INLINE UA_DecimalDataType *
+UA_DecimalDataType_new(void) {
+    return (UA_DecimalDataType*)UA_new(&UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DecimalDataType_copy(const UA_DecimalDataType *src, UA_DecimalDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DecimalDataType_deleteMembers(UA_DecimalDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DecimalDataType_clear(UA_DecimalDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DecimalDataType_delete(UA_DecimalDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+
+/* DataTypeDescription */
+static UA_INLINE void
+UA_DataTypeDescription_init(UA_DataTypeDescription *p) {
+    memset(p, 0, sizeof(UA_DataTypeDescription));
+}
+
+static UA_INLINE UA_DataTypeDescription *
+UA_DataTypeDescription_new(void) {
+    return (UA_DataTypeDescription*)UA_new(&UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataTypeDescription_copy(const UA_DataTypeDescription *src, UA_DataTypeDescription *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_DataTypeDescription_deleteMembers(UA_DataTypeDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_DataTypeDescription_clear(UA_DataTypeDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_DataTypeDescription_delete(UA_DataTypeDescription *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
 }
 
 /* SimpleTypeDescription */
@@ -945,6 +1689,37 @@ UA_ConfigurationVersionDataType_delete(UA_ConfigurationVersionDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_CONFIGURATIONVERSIONDATATYPE]);
 }
 
+/* PublishedDataSetSourceDataType */
+static UA_INLINE void
+UA_PublishedDataSetSourceDataType_init(UA_PublishedDataSetSourceDataType *p) {
+    memset(p, 0, sizeof(UA_PublishedDataSetSourceDataType));
+}
+
+static UA_INLINE UA_PublishedDataSetSourceDataType *
+UA_PublishedDataSetSourceDataType_new(void) {
+    return (UA_PublishedDataSetSourceDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetSourceDataType_copy(const UA_PublishedDataSetSourceDataType *src, UA_PublishedDataSetSourceDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetSourceDataType_deleteMembers(UA_PublishedDataSetSourceDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetSourceDataType_clear(UA_PublishedDataSetSourceDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetSourceDataType_delete(UA_PublishedDataSetSourceDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+
 /* PublishedVariableDataType */
 static UA_INLINE void
 UA_PublishedVariableDataType_init(UA_PublishedVariableDataType *p) {
@@ -974,6 +1749,37 @@ UA_PublishedVariableDataType_clear(UA_PublishedVariableDataType *p) {
 static UA_INLINE void
 UA_PublishedVariableDataType_delete(UA_PublishedVariableDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_PUBLISHEDVARIABLEDATATYPE]);
+}
+
+/* PublishedDataItemsDataType */
+static UA_INLINE void
+UA_PublishedDataItemsDataType_init(UA_PublishedDataItemsDataType *p) {
+    memset(p, 0, sizeof(UA_PublishedDataItemsDataType));
+}
+
+static UA_INLINE UA_PublishedDataItemsDataType *
+UA_PublishedDataItemsDataType_new(void) {
+    return (UA_PublishedDataItemsDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PublishedDataItemsDataType_copy(const UA_PublishedDataItemsDataType *src, UA_PublishedDataItemsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataItemsDataType_deleteMembers(UA_PublishedDataItemsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataItemsDataType_clear(UA_PublishedDataItemsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataItemsDataType_delete(UA_PublishedDataItemsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
 }
 
 /* DataSetFieldContentMask */
@@ -1038,6 +1844,192 @@ UA_DataSetWriterDataType_delete(UA_DataSetWriterDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_DATASETWRITERDATATYPE]);
 }
 
+/* DataSetWriterTransportDataType */
+static UA_INLINE void
+UA_DataSetWriterTransportDataType_init(UA_DataSetWriterTransportDataType *p) {
+    memset(p, 0, sizeof(UA_DataSetWriterTransportDataType));
+}
+
+static UA_INLINE UA_DataSetWriterTransportDataType *
+UA_DataSetWriterTransportDataType_new(void) {
+    return (UA_DataSetWriterTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterTransportDataType_copy(const UA_DataSetWriterTransportDataType *src, UA_DataSetWriterTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterTransportDataType_deleteMembers(UA_DataSetWriterTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterTransportDataType_clear(UA_DataSetWriterTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterTransportDataType_delete(UA_DataSetWriterTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+
+/* DataSetWriterMessageDataType */
+static UA_INLINE void
+UA_DataSetWriterMessageDataType_init(UA_DataSetWriterMessageDataType *p) {
+    memset(p, 0, sizeof(UA_DataSetWriterMessageDataType));
+}
+
+static UA_INLINE UA_DataSetWriterMessageDataType *
+UA_DataSetWriterMessageDataType_new(void) {
+    return (UA_DataSetWriterMessageDataType*)UA_new(&UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterMessageDataType_copy(const UA_DataSetWriterMessageDataType *src, UA_DataSetWriterMessageDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterMessageDataType_deleteMembers(UA_DataSetWriterMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterMessageDataType_clear(UA_DataSetWriterMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetWriterMessageDataType_delete(UA_DataSetWriterMessageDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+
+/* WriterGroupTransportDataType */
+static UA_INLINE void
+UA_WriterGroupTransportDataType_init(UA_WriterGroupTransportDataType *p) {
+    memset(p, 0, sizeof(UA_WriterGroupTransportDataType));
+}
+
+static UA_INLINE UA_WriterGroupTransportDataType *
+UA_WriterGroupTransportDataType_new(void) {
+    return (UA_WriterGroupTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_WriterGroupTransportDataType_copy(const UA_WriterGroupTransportDataType *src, UA_WriterGroupTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupTransportDataType_deleteMembers(UA_WriterGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupTransportDataType_clear(UA_WriterGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupTransportDataType_delete(UA_WriterGroupTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+
+/* WriterGroupMessageDataType */
+static UA_INLINE void
+UA_WriterGroupMessageDataType_init(UA_WriterGroupMessageDataType *p) {
+    memset(p, 0, sizeof(UA_WriterGroupMessageDataType));
+}
+
+static UA_INLINE UA_WriterGroupMessageDataType *
+UA_WriterGroupMessageDataType_new(void) {
+    return (UA_WriterGroupMessageDataType*)UA_new(&UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_WriterGroupMessageDataType_copy(const UA_WriterGroupMessageDataType *src, UA_WriterGroupMessageDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupMessageDataType_deleteMembers(UA_WriterGroupMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupMessageDataType_clear(UA_WriterGroupMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_WriterGroupMessageDataType_delete(UA_WriterGroupMessageDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+
+/* ConnectionTransportDataType */
+static UA_INLINE void
+UA_ConnectionTransportDataType_init(UA_ConnectionTransportDataType *p) {
+    memset(p, 0, sizeof(UA_ConnectionTransportDataType));
+}
+
+static UA_INLINE UA_ConnectionTransportDataType *
+UA_ConnectionTransportDataType_new(void) {
+    return (UA_ConnectionTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ConnectionTransportDataType_copy(const UA_ConnectionTransportDataType *src, UA_ConnectionTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ConnectionTransportDataType_deleteMembers(UA_ConnectionTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ConnectionTransportDataType_clear(UA_ConnectionTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ConnectionTransportDataType_delete(UA_ConnectionTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+
+/* NetworkAddressDataType */
+static UA_INLINE void
+UA_NetworkAddressDataType_init(UA_NetworkAddressDataType *p) {
+    memset(p, 0, sizeof(UA_NetworkAddressDataType));
+}
+
+static UA_INLINE UA_NetworkAddressDataType *
+UA_NetworkAddressDataType_new(void) {
+    return (UA_NetworkAddressDataType*)UA_new(&UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NetworkAddressDataType_copy(const UA_NetworkAddressDataType *src, UA_NetworkAddressDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkAddressDataType_deleteMembers(UA_NetworkAddressDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkAddressDataType_clear(UA_NetworkAddressDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkAddressDataType_delete(UA_NetworkAddressDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+
 /* NetworkAddressUrlDataType */
 static UA_INLINE void
 UA_NetworkAddressUrlDataType_init(UA_NetworkAddressUrlDataType *p) {
@@ -1067,6 +2059,161 @@ UA_NetworkAddressUrlDataType_clear(UA_NetworkAddressUrlDataType *p) {
 static UA_INLINE void
 UA_NetworkAddressUrlDataType_delete(UA_NetworkAddressUrlDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_NETWORKADDRESSURLDATATYPE]);
+}
+
+/* ReaderGroupTransportDataType */
+static UA_INLINE void
+UA_ReaderGroupTransportDataType_init(UA_ReaderGroupTransportDataType *p) {
+    memset(p, 0, sizeof(UA_ReaderGroupTransportDataType));
+}
+
+static UA_INLINE UA_ReaderGroupTransportDataType *
+UA_ReaderGroupTransportDataType_new(void) {
+    return (UA_ReaderGroupTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupTransportDataType_copy(const UA_ReaderGroupTransportDataType *src, UA_ReaderGroupTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupTransportDataType_deleteMembers(UA_ReaderGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupTransportDataType_clear(UA_ReaderGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupTransportDataType_delete(UA_ReaderGroupTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+
+/* ReaderGroupMessageDataType */
+static UA_INLINE void
+UA_ReaderGroupMessageDataType_init(UA_ReaderGroupMessageDataType *p) {
+    memset(p, 0, sizeof(UA_ReaderGroupMessageDataType));
+}
+
+static UA_INLINE UA_ReaderGroupMessageDataType *
+UA_ReaderGroupMessageDataType_new(void) {
+    return (UA_ReaderGroupMessageDataType*)UA_new(&UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupMessageDataType_copy(const UA_ReaderGroupMessageDataType *src, UA_ReaderGroupMessageDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupMessageDataType_deleteMembers(UA_ReaderGroupMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupMessageDataType_clear(UA_ReaderGroupMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ReaderGroupMessageDataType_delete(UA_ReaderGroupMessageDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+
+/* DataSetReaderTransportDataType */
+static UA_INLINE void
+UA_DataSetReaderTransportDataType_init(UA_DataSetReaderTransportDataType *p) {
+    memset(p, 0, sizeof(UA_DataSetReaderTransportDataType));
+}
+
+static UA_INLINE UA_DataSetReaderTransportDataType *
+UA_DataSetReaderTransportDataType_new(void) {
+    return (UA_DataSetReaderTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderTransportDataType_copy(const UA_DataSetReaderTransportDataType *src, UA_DataSetReaderTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderTransportDataType_deleteMembers(UA_DataSetReaderTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderTransportDataType_clear(UA_DataSetReaderTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderTransportDataType_delete(UA_DataSetReaderTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+
+/* DataSetReaderMessageDataType */
+static UA_INLINE void
+UA_DataSetReaderMessageDataType_init(UA_DataSetReaderMessageDataType *p) {
+    memset(p, 0, sizeof(UA_DataSetReaderMessageDataType));
+}
+
+static UA_INLINE UA_DataSetReaderMessageDataType *
+UA_DataSetReaderMessageDataType_new(void) {
+    return (UA_DataSetReaderMessageDataType*)UA_new(&UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderMessageDataType_copy(const UA_DataSetReaderMessageDataType *src, UA_DataSetReaderMessageDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderMessageDataType_deleteMembers(UA_DataSetReaderMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderMessageDataType_clear(UA_DataSetReaderMessageDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DataSetReaderMessageDataType_delete(UA_DataSetReaderMessageDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+
+/* SubscribedDataSetDataType */
+static UA_INLINE void
+UA_SubscribedDataSetDataType_init(UA_SubscribedDataSetDataType *p) {
+    memset(p, 0, sizeof(UA_SubscribedDataSetDataType));
+}
+
+static UA_INLINE UA_SubscribedDataSetDataType *
+UA_SubscribedDataSetDataType_new(void) {
+    return (UA_SubscribedDataSetDataType*)UA_new(&UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetDataType_copy(const UA_SubscribedDataSetDataType *src, UA_SubscribedDataSetDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetDataType_deleteMembers(UA_SubscribedDataSetDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetDataType_clear(UA_SubscribedDataSetDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetDataType_delete(UA_SubscribedDataSetDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
 }
 
 /* OverrideValueHandling */
@@ -1441,6 +2588,68 @@ UA_JsonDataSetReaderMessageDataType_delete(UA_JsonDataSetReaderMessageDataType *
     UA_delete(p, &UA_TYPES[UA_TYPES_JSONDATASETREADERMESSAGEDATATYPE]);
 }
 
+/* DatagramConnectionTransportDataType */
+static UA_INLINE void
+UA_DatagramConnectionTransportDataType_init(UA_DatagramConnectionTransportDataType *p) {
+    memset(p, 0, sizeof(UA_DatagramConnectionTransportDataType));
+}
+
+static UA_INLINE UA_DatagramConnectionTransportDataType *
+UA_DatagramConnectionTransportDataType_new(void) {
+    return (UA_DatagramConnectionTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DatagramConnectionTransportDataType_copy(const UA_DatagramConnectionTransportDataType *src, UA_DatagramConnectionTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramConnectionTransportDataType_deleteMembers(UA_DatagramConnectionTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramConnectionTransportDataType_clear(UA_DatagramConnectionTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramConnectionTransportDataType_delete(UA_DatagramConnectionTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+
+/* DatagramWriterGroupTransportDataType */
+static UA_INLINE void
+UA_DatagramWriterGroupTransportDataType_init(UA_DatagramWriterGroupTransportDataType *p) {
+    memset(p, 0, sizeof(UA_DatagramWriterGroupTransportDataType));
+}
+
+static UA_INLINE UA_DatagramWriterGroupTransportDataType *
+UA_DatagramWriterGroupTransportDataType_new(void) {
+    return (UA_DatagramWriterGroupTransportDataType*)UA_new(&UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DatagramWriterGroupTransportDataType_copy(const UA_DatagramWriterGroupTransportDataType *src, UA_DatagramWriterGroupTransportDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramWriterGroupTransportDataType_deleteMembers(UA_DatagramWriterGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramWriterGroupTransportDataType_clear(UA_DatagramWriterGroupTransportDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_DatagramWriterGroupTransportDataType_delete(UA_DatagramWriterGroupTransportDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+
 /* BrokerConnectionTransportDataType */
 static UA_INLINE void
 UA_BrokerConnectionTransportDataType_init(UA_BrokerConnectionTransportDataType *p) {
@@ -1596,6 +2805,99 @@ UA_BrokerDataSetReaderTransportDataType_delete(UA_BrokerDataSetReaderTransportDa
     UA_delete(p, &UA_TYPES[UA_TYPES_BROKERDATASETREADERTRANSPORTDATATYPE]);
 }
 
+/* DiagnosticsLevel */
+static UA_INLINE void
+UA_DiagnosticsLevel_init(UA_DiagnosticsLevel *p) {
+    memset(p, 0, sizeof(UA_DiagnosticsLevel));
+}
+
+static UA_INLINE UA_DiagnosticsLevel *
+UA_DiagnosticsLevel_new(void) {
+    return (UA_DiagnosticsLevel*)UA_new(&UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DiagnosticsLevel_copy(const UA_DiagnosticsLevel *src, UA_DiagnosticsLevel *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+
+static UA_INLINE void
+UA_DiagnosticsLevel_deleteMembers(UA_DiagnosticsLevel *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+
+static UA_INLINE void
+UA_DiagnosticsLevel_clear(UA_DiagnosticsLevel *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+
+static UA_INLINE void
+UA_DiagnosticsLevel_delete(UA_DiagnosticsLevel *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+
+/* PubSubDiagnosticsCounterClassification */
+static UA_INLINE void
+UA_PubSubDiagnosticsCounterClassification_init(UA_PubSubDiagnosticsCounterClassification *p) {
+    memset(p, 0, sizeof(UA_PubSubDiagnosticsCounterClassification));
+}
+
+static UA_INLINE UA_PubSubDiagnosticsCounterClassification *
+UA_PubSubDiagnosticsCounterClassification_new(void) {
+    return (UA_PubSubDiagnosticsCounterClassification*)UA_new(&UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PubSubDiagnosticsCounterClassification_copy(const UA_PubSubDiagnosticsCounterClassification *src, UA_PubSubDiagnosticsCounterClassification *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+
+static UA_INLINE void
+UA_PubSubDiagnosticsCounterClassification_deleteMembers(UA_PubSubDiagnosticsCounterClassification *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+
+static UA_INLINE void
+UA_PubSubDiagnosticsCounterClassification_clear(UA_PubSubDiagnosticsCounterClassification *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+
+static UA_INLINE void
+UA_PubSubDiagnosticsCounterClassification_delete(UA_PubSubDiagnosticsCounterClassification *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+
+/* IdType */
+static UA_INLINE void
+UA_IdType_init(UA_IdType *p) {
+    memset(p, 0, sizeof(UA_IdType));
+}
+
+static UA_INLINE UA_IdType *
+UA_IdType_new(void) {
+    return (UA_IdType*)UA_new(&UA_TYPES[UA_TYPES_IDTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_IdType_copy(const UA_IdType *src, UA_IdType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_IDTYPE]);
+}
+
+static UA_INLINE void
+UA_IdType_deleteMembers(UA_IdType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDTYPE]);
+}
+
+static UA_INLINE void
+UA_IdType_clear(UA_IdType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_IDTYPE]);
+}
+
+static UA_INLINE void
+UA_IdType_delete(UA_IdType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_IDTYPE]);
+}
+
 /* NodeClass */
 static UA_INLINE void
 UA_NodeClass_init(UA_NodeClass *p) {
@@ -1625,6 +2927,192 @@ UA_NodeClass_clear(UA_NodeClass *p) {
 static UA_INLINE void
 UA_NodeClass_delete(UA_NodeClass *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_NODECLASS]);
+}
+
+/* PermissionType */
+static UA_INLINE void
+UA_PermissionType_init(UA_PermissionType *p) {
+    memset(p, 0, sizeof(UA_PermissionType));
+}
+
+static UA_INLINE UA_PermissionType *
+UA_PermissionType_new(void) {
+    return (UA_PermissionType*)UA_new(&UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PermissionType_copy(const UA_PermissionType *src, UA_PermissionType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_PermissionType_deleteMembers(UA_PermissionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_PermissionType_clear(UA_PermissionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_PermissionType_delete(UA_PermissionType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+
+/* AccessLevelType */
+static UA_INLINE void
+UA_AccessLevelType_init(UA_AccessLevelType *p) {
+    memset(p, 0, sizeof(UA_AccessLevelType));
+}
+
+static UA_INLINE UA_AccessLevelType *
+UA_AccessLevelType_new(void) {
+    return (UA_AccessLevelType*)UA_new(&UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AccessLevelType_copy(const UA_AccessLevelType *src, UA_AccessLevelType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelType_deleteMembers(UA_AccessLevelType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelType_clear(UA_AccessLevelType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelType_delete(UA_AccessLevelType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+
+/* AccessLevelExType */
+static UA_INLINE void
+UA_AccessLevelExType_init(UA_AccessLevelExType *p) {
+    memset(p, 0, sizeof(UA_AccessLevelExType));
+}
+
+static UA_INLINE UA_AccessLevelExType *
+UA_AccessLevelExType_new(void) {
+    return (UA_AccessLevelExType*)UA_new(&UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AccessLevelExType_copy(const UA_AccessLevelExType *src, UA_AccessLevelExType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelExType_deleteMembers(UA_AccessLevelExType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelExType_clear(UA_AccessLevelExType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessLevelExType_delete(UA_AccessLevelExType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+
+/* EventNotifierType */
+static UA_INLINE void
+UA_EventNotifierType_init(UA_EventNotifierType *p) {
+    memset(p, 0, sizeof(UA_EventNotifierType));
+}
+
+static UA_INLINE UA_EventNotifierType *
+UA_EventNotifierType_new(void) {
+    return (UA_EventNotifierType*)UA_new(&UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_EventNotifierType_copy(const UA_EventNotifierType *src, UA_EventNotifierType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+
+static UA_INLINE void
+UA_EventNotifierType_deleteMembers(UA_EventNotifierType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+
+static UA_INLINE void
+UA_EventNotifierType_clear(UA_EventNotifierType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+
+static UA_INLINE void
+UA_EventNotifierType_delete(UA_EventNotifierType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+
+/* AccessRestrictionType */
+static UA_INLINE void
+UA_AccessRestrictionType_init(UA_AccessRestrictionType *p) {
+    memset(p, 0, sizeof(UA_AccessRestrictionType));
+}
+
+static UA_INLINE UA_AccessRestrictionType *
+UA_AccessRestrictionType_new(void) {
+    return (UA_AccessRestrictionType*)UA_new(&UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AccessRestrictionType_copy(const UA_AccessRestrictionType *src, UA_AccessRestrictionType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessRestrictionType_deleteMembers(UA_AccessRestrictionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessRestrictionType_clear(UA_AccessRestrictionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+
+static UA_INLINE void
+UA_AccessRestrictionType_delete(UA_AccessRestrictionType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+
+/* RolePermissionType */
+static UA_INLINE void
+UA_RolePermissionType_init(UA_RolePermissionType *p) {
+    memset(p, 0, sizeof(UA_RolePermissionType));
+}
+
+static UA_INLINE UA_RolePermissionType *
+UA_RolePermissionType_new(void) {
+    return (UA_RolePermissionType*)UA_new(&UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RolePermissionType_copy(const UA_RolePermissionType *src, UA_RolePermissionType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_RolePermissionType_deleteMembers(UA_RolePermissionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_RolePermissionType_clear(UA_RolePermissionType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
+}
+
+static UA_INLINE void
+UA_RolePermissionType_delete(UA_RolePermissionType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
 }
 
 /* StructureType */
@@ -1720,6 +3208,37 @@ UA_StructureDefinition_delete(UA_StructureDefinition *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_STRUCTUREDEFINITION]);
 }
 
+/* ReferenceNode */
+static UA_INLINE void
+UA_ReferenceNode_init(UA_ReferenceNode *p) {
+    memset(p, 0, sizeof(UA_ReferenceNode));
+}
+
+static UA_INLINE UA_ReferenceNode *
+UA_ReferenceNode_new(void) {
+    return (UA_ReferenceNode*)UA_new(&UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReferenceNode_copy(const UA_ReferenceNode *src, UA_ReferenceNode *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+
+static UA_INLINE void
+UA_ReferenceNode_deleteMembers(UA_ReferenceNode *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+
+static UA_INLINE void
+UA_ReferenceNode_clear(UA_ReferenceNode *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+
+static UA_INLINE void
+UA_ReferenceNode_delete(UA_ReferenceNode *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+
 /* Argument */
 static UA_INLINE void
 UA_Argument_init(UA_Argument *p) {
@@ -1813,6 +3332,223 @@ UA_EnumField_delete(UA_EnumField *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_ENUMFIELD]);
 }
 
+/* OptionSet */
+static UA_INLINE void
+UA_OptionSet_init(UA_OptionSet *p) {
+    memset(p, 0, sizeof(UA_OptionSet));
+}
+
+static UA_INLINE UA_OptionSet *
+UA_OptionSet_new(void) {
+    return (UA_OptionSet*)UA_new(&UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_OptionSet_copy(const UA_OptionSet *src, UA_OptionSet *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+
+static UA_INLINE void
+UA_OptionSet_deleteMembers(UA_OptionSet *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+
+static UA_INLINE void
+UA_OptionSet_clear(UA_OptionSet *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+
+static UA_INLINE void
+UA_OptionSet_delete(UA_OptionSet *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+
+/* Union */
+static UA_INLINE void
+UA_Union_init(UA_Union *p) {
+    memset(p, 0, sizeof(UA_Union));
+}
+
+static UA_INLINE UA_Union *
+UA_Union_new(void) {
+    return (UA_Union*)UA_new(&UA_TYPES[UA_TYPES_UNION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Union_copy(const UA_Union *src, UA_Union *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_UNION]);
+}
+
+static UA_INLINE void
+UA_Union_deleteMembers(UA_Union *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UNION]);
+}
+
+static UA_INLINE void
+UA_Union_clear(UA_Union *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UNION]);
+}
+
+static UA_INLINE void
+UA_Union_delete(UA_Union *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_UNION]);
+}
+
+/* NormalizedString */
+static UA_INLINE void
+UA_NormalizedString_init(UA_NormalizedString *p) {
+    memset(p, 0, sizeof(UA_NormalizedString));
+}
+
+static UA_INLINE UA_NormalizedString *
+UA_NormalizedString_new(void) {
+    return (UA_NormalizedString*)UA_new(&UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NormalizedString_copy(const UA_NormalizedString *src, UA_NormalizedString *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+
+static UA_INLINE void
+UA_NormalizedString_deleteMembers(UA_NormalizedString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+
+static UA_INLINE void
+UA_NormalizedString_clear(UA_NormalizedString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+
+static UA_INLINE void
+UA_NormalizedString_delete(UA_NormalizedString *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+
+/* DecimalString */
+static UA_INLINE void
+UA_DecimalString_init(UA_DecimalString *p) {
+    memset(p, 0, sizeof(UA_DecimalString));
+}
+
+static UA_INLINE UA_DecimalString *
+UA_DecimalString_new(void) {
+    return (UA_DecimalString*)UA_new(&UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DecimalString_copy(const UA_DecimalString *src, UA_DecimalString *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+
+static UA_INLINE void
+UA_DecimalString_deleteMembers(UA_DecimalString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+
+static UA_INLINE void
+UA_DecimalString_clear(UA_DecimalString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+
+static UA_INLINE void
+UA_DecimalString_delete(UA_DecimalString *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+
+/* DurationString */
+static UA_INLINE void
+UA_DurationString_init(UA_DurationString *p) {
+    memset(p, 0, sizeof(UA_DurationString));
+}
+
+static UA_INLINE UA_DurationString *
+UA_DurationString_new(void) {
+    return (UA_DurationString*)UA_new(&UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DurationString_copy(const UA_DurationString *src, UA_DurationString *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+
+static UA_INLINE void
+UA_DurationString_deleteMembers(UA_DurationString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+
+static UA_INLINE void
+UA_DurationString_clear(UA_DurationString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+
+static UA_INLINE void
+UA_DurationString_delete(UA_DurationString *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+
+/* TimeString */
+static UA_INLINE void
+UA_TimeString_init(UA_TimeString *p) {
+    memset(p, 0, sizeof(UA_TimeString));
+}
+
+static UA_INLINE UA_TimeString *
+UA_TimeString_new(void) {
+    return (UA_TimeString*)UA_new(&UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TimeString_copy(const UA_TimeString *src, UA_TimeString *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+
+static UA_INLINE void
+UA_TimeString_deleteMembers(UA_TimeString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+
+static UA_INLINE void
+UA_TimeString_clear(UA_TimeString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+
+static UA_INLINE void
+UA_TimeString_delete(UA_TimeString *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+
+/* DateString */
+static UA_INLINE void
+UA_DateString_init(UA_DateString *p) {
+    memset(p, 0, sizeof(UA_DateString));
+}
+
+static UA_INLINE UA_DateString *
+UA_DateString_new(void) {
+    return (UA_DateString*)UA_new(&UA_TYPES[UA_TYPES_DATESTRING]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DateString_copy(const UA_DateString *src, UA_DateString *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATESTRING]);
+}
+
+static UA_INLINE void
+UA_DateString_deleteMembers(UA_DateString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATESTRING]);
+}
+
+static UA_INLINE void
+UA_DateString_clear(UA_DateString *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATESTRING]);
+}
+
+static UA_INLINE void
+UA_DateString_delete(UA_DateString *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATESTRING]);
+}
+
 /* Duration */
 static UA_INLINE void
 UA_Duration_init(UA_Duration *p) {
@@ -1904,6 +3640,99 @@ UA_LocaleId_clear(UA_LocaleId *p) {
 static UA_INLINE void
 UA_LocaleId_delete(UA_LocaleId *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_LOCALEID]);
+}
+
+/* TimeZoneDataType */
+static UA_INLINE void
+UA_TimeZoneDataType_init(UA_TimeZoneDataType *p) {
+    memset(p, 0, sizeof(UA_TimeZoneDataType));
+}
+
+static UA_INLINE UA_TimeZoneDataType *
+UA_TimeZoneDataType_new(void) {
+    return (UA_TimeZoneDataType*)UA_new(&UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TimeZoneDataType_copy(const UA_TimeZoneDataType *src, UA_TimeZoneDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TimeZoneDataType_deleteMembers(UA_TimeZoneDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TimeZoneDataType_clear(UA_TimeZoneDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_TimeZoneDataType_delete(UA_TimeZoneDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+
+/* Index */
+static UA_INLINE void
+UA_Index_init(UA_Index *p) {
+    memset(p, 0, sizeof(UA_Index));
+}
+
+static UA_INLINE UA_Index *
+UA_Index_new(void) {
+    return (UA_Index*)UA_new(&UA_TYPES[UA_TYPES_INDEX]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Index_copy(const UA_Index *src, UA_Index *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_INDEX]);
+}
+
+static UA_INLINE void
+UA_Index_deleteMembers(UA_Index *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_INDEX]);
+}
+
+static UA_INLINE void
+UA_Index_clear(UA_Index *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_INDEX]);
+}
+
+static UA_INLINE void
+UA_Index_delete(UA_Index *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_INDEX]);
+}
+
+/* IntegerId */
+static UA_INLINE void
+UA_IntegerId_init(UA_IntegerId *p) {
+    memset(p, 0, sizeof(UA_IntegerId));
+}
+
+static UA_INLINE UA_IntegerId *
+UA_IntegerId_new(void) {
+    return (UA_IntegerId*)UA_new(&UA_TYPES[UA_TYPES_INTEGERID]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_IntegerId_copy(const UA_IntegerId *src, UA_IntegerId *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_INTEGERID]);
+}
+
+static UA_INLINE void
+UA_IntegerId_deleteMembers(UA_IntegerId *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_INTEGERID]);
+}
+
+static UA_INLINE void
+UA_IntegerId_clear(UA_IntegerId *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_INTEGERID]);
+}
+
+static UA_INLINE void
+UA_IntegerId_delete(UA_IntegerId *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_INTEGERID]);
 }
 
 /* ApplicationType */
@@ -2030,6 +3859,37 @@ UA_ResponseHeader_delete(UA_ResponseHeader *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_RESPONSEHEADER]);
 }
 
+/* VersionTime */
+static UA_INLINE void
+UA_VersionTime_init(UA_VersionTime *p) {
+    memset(p, 0, sizeof(UA_VersionTime));
+}
+
+static UA_INLINE UA_VersionTime *
+UA_VersionTime_new(void) {
+    return (UA_VersionTime*)UA_new(&UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_VersionTime_copy(const UA_VersionTime *src, UA_VersionTime *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+
+static UA_INLINE void
+UA_VersionTime_deleteMembers(UA_VersionTime *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+
+static UA_INLINE void
+UA_VersionTime_clear(UA_VersionTime *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+
+static UA_INLINE void
+UA_VersionTime_delete(UA_VersionTime *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+
 /* ServiceFault */
 static UA_INLINE void
 UA_ServiceFault_init(UA_ServiceFault *p) {
@@ -2059,6 +3919,68 @@ UA_ServiceFault_clear(UA_ServiceFault *p) {
 static UA_INLINE void
 UA_ServiceFault_delete(UA_ServiceFault *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_SERVICEFAULT]);
+}
+
+/* SessionlessInvokeRequestType */
+static UA_INLINE void
+UA_SessionlessInvokeRequestType_init(UA_SessionlessInvokeRequestType *p) {
+    memset(p, 0, sizeof(UA_SessionlessInvokeRequestType));
+}
+
+static UA_INLINE UA_SessionlessInvokeRequestType *
+UA_SessionlessInvokeRequestType_new(void) {
+    return (UA_SessionlessInvokeRequestType*)UA_new(&UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeRequestType_copy(const UA_SessionlessInvokeRequestType *src, UA_SessionlessInvokeRequestType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeRequestType_deleteMembers(UA_SessionlessInvokeRequestType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeRequestType_clear(UA_SessionlessInvokeRequestType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeRequestType_delete(UA_SessionlessInvokeRequestType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+
+/* SessionlessInvokeResponseType */
+static UA_INLINE void
+UA_SessionlessInvokeResponseType_init(UA_SessionlessInvokeResponseType *p) {
+    memset(p, 0, sizeof(UA_SessionlessInvokeResponseType));
+}
+
+static UA_INLINE UA_SessionlessInvokeResponseType *
+UA_SessionlessInvokeResponseType_new(void) {
+    return (UA_SessionlessInvokeResponseType*)UA_new(&UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeResponseType_copy(const UA_SessionlessInvokeResponseType *src, UA_SessionlessInvokeResponseType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeResponseType_deleteMembers(UA_SessionlessInvokeResponseType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeResponseType_clear(UA_SessionlessInvokeResponseType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
+}
+
+static UA_INLINE void
+UA_SessionlessInvokeResponseType_delete(UA_SessionlessInvokeResponseType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
 }
 
 /* FindServersRequest */
@@ -2121,6 +4043,130 @@ UA_FindServersResponse_clear(UA_FindServersResponse *p) {
 static UA_INLINE void
 UA_FindServersResponse_delete(UA_FindServersResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_FINDSERVERSRESPONSE]);
+}
+
+/* ServerOnNetwork */
+static UA_INLINE void
+UA_ServerOnNetwork_init(UA_ServerOnNetwork *p) {
+    memset(p, 0, sizeof(UA_ServerOnNetwork));
+}
+
+static UA_INLINE UA_ServerOnNetwork *
+UA_ServerOnNetwork_new(void) {
+    return (UA_ServerOnNetwork*)UA_new(&UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ServerOnNetwork_copy(const UA_ServerOnNetwork *src, UA_ServerOnNetwork *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+
+static UA_INLINE void
+UA_ServerOnNetwork_deleteMembers(UA_ServerOnNetwork *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+
+static UA_INLINE void
+UA_ServerOnNetwork_clear(UA_ServerOnNetwork *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+
+static UA_INLINE void
+UA_ServerOnNetwork_delete(UA_ServerOnNetwork *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+
+/* FindServersOnNetworkRequest */
+static UA_INLINE void
+UA_FindServersOnNetworkRequest_init(UA_FindServersOnNetworkRequest *p) {
+    memset(p, 0, sizeof(UA_FindServersOnNetworkRequest));
+}
+
+static UA_INLINE UA_FindServersOnNetworkRequest *
+UA_FindServersOnNetworkRequest_new(void) {
+    return (UA_FindServersOnNetworkRequest*)UA_new(&UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkRequest_copy(const UA_FindServersOnNetworkRequest *src, UA_FindServersOnNetworkRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkRequest_deleteMembers(UA_FindServersOnNetworkRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkRequest_clear(UA_FindServersOnNetworkRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkRequest_delete(UA_FindServersOnNetworkRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+
+/* FindServersOnNetworkResponse */
+static UA_INLINE void
+UA_FindServersOnNetworkResponse_init(UA_FindServersOnNetworkResponse *p) {
+    memset(p, 0, sizeof(UA_FindServersOnNetworkResponse));
+}
+
+static UA_INLINE UA_FindServersOnNetworkResponse *
+UA_FindServersOnNetworkResponse_new(void) {
+    return (UA_FindServersOnNetworkResponse*)UA_new(&UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkResponse_copy(const UA_FindServersOnNetworkResponse *src, UA_FindServersOnNetworkResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkResponse_deleteMembers(UA_FindServersOnNetworkResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkResponse_clear(UA_FindServersOnNetworkResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+
+static UA_INLINE void
+UA_FindServersOnNetworkResponse_delete(UA_FindServersOnNetworkResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+
+/* ApplicationInstanceCertificate */
+static UA_INLINE void
+UA_ApplicationInstanceCertificate_init(UA_ApplicationInstanceCertificate *p) {
+    memset(p, 0, sizeof(UA_ApplicationInstanceCertificate));
+}
+
+static UA_INLINE UA_ApplicationInstanceCertificate *
+UA_ApplicationInstanceCertificate_new(void) {
+    return (UA_ApplicationInstanceCertificate*)UA_new(&UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ApplicationInstanceCertificate_copy(const UA_ApplicationInstanceCertificate *src, UA_ApplicationInstanceCertificate *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
+}
+
+static UA_INLINE void
+UA_ApplicationInstanceCertificate_deleteMembers(UA_ApplicationInstanceCertificate *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
+}
+
+static UA_INLINE void
+UA_ApplicationInstanceCertificate_clear(UA_ApplicationInstanceCertificate *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
+}
+
+static UA_INLINE void
+UA_ApplicationInstanceCertificate_delete(UA_ApplicationInstanceCertificate *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
 }
 
 /* MessageSecurityMode */
@@ -2307,6 +4353,223 @@ UA_GetEndpointsResponse_clear(UA_GetEndpointsResponse *p) {
 static UA_INLINE void
 UA_GetEndpointsResponse_delete(UA_GetEndpointsResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_GETENDPOINTSRESPONSE]);
+}
+
+/* RegisteredServer */
+static UA_INLINE void
+UA_RegisteredServer_init(UA_RegisteredServer *p) {
+    memset(p, 0, sizeof(UA_RegisteredServer));
+}
+
+static UA_INLINE UA_RegisteredServer *
+UA_RegisteredServer_new(void) {
+    return (UA_RegisteredServer*)UA_new(&UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RegisteredServer_copy(const UA_RegisteredServer *src, UA_RegisteredServer *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+
+static UA_INLINE void
+UA_RegisteredServer_deleteMembers(UA_RegisteredServer *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+
+static UA_INLINE void
+UA_RegisteredServer_clear(UA_RegisteredServer *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+
+static UA_INLINE void
+UA_RegisteredServer_delete(UA_RegisteredServer *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+
+/* RegisterServerRequest */
+static UA_INLINE void
+UA_RegisterServerRequest_init(UA_RegisterServerRequest *p) {
+    memset(p, 0, sizeof(UA_RegisterServerRequest));
+}
+
+static UA_INLINE UA_RegisterServerRequest *
+UA_RegisterServerRequest_new(void) {
+    return (UA_RegisterServerRequest*)UA_new(&UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RegisterServerRequest_copy(const UA_RegisterServerRequest *src, UA_RegisterServerRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServerRequest_deleteMembers(UA_RegisterServerRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServerRequest_clear(UA_RegisterServerRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServerRequest_delete(UA_RegisterServerRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+
+/* RegisterServerResponse */
+static UA_INLINE void
+UA_RegisterServerResponse_init(UA_RegisterServerResponse *p) {
+    memset(p, 0, sizeof(UA_RegisterServerResponse));
+}
+
+static UA_INLINE UA_RegisterServerResponse *
+UA_RegisterServerResponse_new(void) {
+    return (UA_RegisterServerResponse*)UA_new(&UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RegisterServerResponse_copy(const UA_RegisterServerResponse *src, UA_RegisterServerResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServerResponse_deleteMembers(UA_RegisterServerResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServerResponse_clear(UA_RegisterServerResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServerResponse_delete(UA_RegisterServerResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+
+/* DiscoveryConfiguration */
+static UA_INLINE void
+UA_DiscoveryConfiguration_init(UA_DiscoveryConfiguration *p) {
+    memset(p, 0, sizeof(UA_DiscoveryConfiguration));
+}
+
+static UA_INLINE UA_DiscoveryConfiguration *
+UA_DiscoveryConfiguration_new(void) {
+    return (UA_DiscoveryConfiguration*)UA_new(&UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DiscoveryConfiguration_copy(const UA_DiscoveryConfiguration *src, UA_DiscoveryConfiguration *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_DiscoveryConfiguration_deleteMembers(UA_DiscoveryConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_DiscoveryConfiguration_clear(UA_DiscoveryConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_DiscoveryConfiguration_delete(UA_DiscoveryConfiguration *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+
+/* MdnsDiscoveryConfiguration */
+static UA_INLINE void
+UA_MdnsDiscoveryConfiguration_init(UA_MdnsDiscoveryConfiguration *p) {
+    memset(p, 0, sizeof(UA_MdnsDiscoveryConfiguration));
+}
+
+static UA_INLINE UA_MdnsDiscoveryConfiguration *
+UA_MdnsDiscoveryConfiguration_new(void) {
+    return (UA_MdnsDiscoveryConfiguration*)UA_new(&UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_MdnsDiscoveryConfiguration_copy(const UA_MdnsDiscoveryConfiguration *src, UA_MdnsDiscoveryConfiguration *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_MdnsDiscoveryConfiguration_deleteMembers(UA_MdnsDiscoveryConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_MdnsDiscoveryConfiguration_clear(UA_MdnsDiscoveryConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_MdnsDiscoveryConfiguration_delete(UA_MdnsDiscoveryConfiguration *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+
+/* RegisterServer2Request */
+static UA_INLINE void
+UA_RegisterServer2Request_init(UA_RegisterServer2Request *p) {
+    memset(p, 0, sizeof(UA_RegisterServer2Request));
+}
+
+static UA_INLINE UA_RegisterServer2Request *
+UA_RegisterServer2Request_new(void) {
+    return (UA_RegisterServer2Request*)UA_new(&UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Request_copy(const UA_RegisterServer2Request *src, UA_RegisterServer2Request *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Request_deleteMembers(UA_RegisterServer2Request *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Request_clear(UA_RegisterServer2Request *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Request_delete(UA_RegisterServer2Request *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+
+/* RegisterServer2Response */
+static UA_INLINE void
+UA_RegisterServer2Response_init(UA_RegisterServer2Response *p) {
+    memset(p, 0, sizeof(UA_RegisterServer2Response));
+}
+
+static UA_INLINE UA_RegisterServer2Response *
+UA_RegisterServer2Response_new(void) {
+    return (UA_RegisterServer2Response*)UA_new(&UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Response_copy(const UA_RegisterServer2Response *src, UA_RegisterServer2Response *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Response_deleteMembers(UA_RegisterServer2Response *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Response_clear(UA_RegisterServer2Response *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
+}
+
+static UA_INLINE void
+UA_RegisterServer2Response_delete(UA_RegisterServer2Response *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
 }
 
 /* SecurityTokenRequestType */
@@ -2524,6 +4787,37 @@ UA_SignedSoftwareCertificate_clear(UA_SignedSoftwareCertificate *p) {
 static UA_INLINE void
 UA_SignedSoftwareCertificate_delete(UA_SignedSoftwareCertificate *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_SIGNEDSOFTWARECERTIFICATE]);
+}
+
+/* SessionAuthenticationToken */
+static UA_INLINE void
+UA_SessionAuthenticationToken_init(UA_SessionAuthenticationToken *p) {
+    memset(p, 0, sizeof(UA_SessionAuthenticationToken));
+}
+
+static UA_INLINE UA_SessionAuthenticationToken *
+UA_SessionAuthenticationToken_new(void) {
+    return (UA_SessionAuthenticationToken*)UA_new(&UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SessionAuthenticationToken_copy(const UA_SessionAuthenticationToken *src, UA_SessionAuthenticationToken *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
+}
+
+static UA_INLINE void
+UA_SessionAuthenticationToken_deleteMembers(UA_SessionAuthenticationToken *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
+}
+
+static UA_INLINE void
+UA_SessionAuthenticationToken_clear(UA_SessionAuthenticationToken *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
+}
+
+static UA_INLINE void
+UA_SessionAuthenticationToken_delete(UA_SessionAuthenticationToken *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
 }
 
 /* SignatureData */
@@ -2774,6 +5068,37 @@ UA_IssuedIdentityToken_delete(UA_IssuedIdentityToken *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_ISSUEDIDENTITYTOKEN]);
 }
 
+/* RsaEncryptedSecret */
+static UA_INLINE void
+UA_RsaEncryptedSecret_init(UA_RsaEncryptedSecret *p) {
+    memset(p, 0, sizeof(UA_RsaEncryptedSecret));
+}
+
+static UA_INLINE UA_RsaEncryptedSecret *
+UA_RsaEncryptedSecret_new(void) {
+    return (UA_RsaEncryptedSecret*)UA_new(&UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RsaEncryptedSecret_copy(const UA_RsaEncryptedSecret *src, UA_RsaEncryptedSecret *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+
+static UA_INLINE void
+UA_RsaEncryptedSecret_deleteMembers(UA_RsaEncryptedSecret *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+
+static UA_INLINE void
+UA_RsaEncryptedSecret_clear(UA_RsaEncryptedSecret *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+
+static UA_INLINE void
+UA_RsaEncryptedSecret_delete(UA_RsaEncryptedSecret *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+
 /* ActivateSessionRequest */
 static UA_INLINE void
 UA_ActivateSessionRequest_init(UA_ActivateSessionRequest *p) {
@@ -2896,6 +5221,68 @@ UA_CloseSessionResponse_clear(UA_CloseSessionResponse *p) {
 static UA_INLINE void
 UA_CloseSessionResponse_delete(UA_CloseSessionResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_CLOSESESSIONRESPONSE]);
+}
+
+/* CancelRequest */
+static UA_INLINE void
+UA_CancelRequest_init(UA_CancelRequest *p) {
+    memset(p, 0, sizeof(UA_CancelRequest));
+}
+
+static UA_INLINE UA_CancelRequest *
+UA_CancelRequest_new(void) {
+    return (UA_CancelRequest*)UA_new(&UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_CancelRequest_copy(const UA_CancelRequest *src, UA_CancelRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+
+static UA_INLINE void
+UA_CancelRequest_deleteMembers(UA_CancelRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+
+static UA_INLINE void
+UA_CancelRequest_clear(UA_CancelRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+
+static UA_INLINE void
+UA_CancelRequest_delete(UA_CancelRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+
+/* CancelResponse */
+static UA_INLINE void
+UA_CancelResponse_init(UA_CancelResponse *p) {
+    memset(p, 0, sizeof(UA_CancelResponse));
+}
+
+static UA_INLINE UA_CancelResponse *
+UA_CancelResponse_new(void) {
+    return (UA_CancelResponse*)UA_new(&UA_TYPES[UA_TYPES_CANCELRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_CancelResponse_copy(const UA_CancelResponse *src, UA_CancelResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CANCELRESPONSE]);
+}
+
+static UA_INLINE void
+UA_CancelResponse_deleteMembers(UA_CancelResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CANCELRESPONSE]);
+}
+
+static UA_INLINE void
+UA_CancelResponse_clear(UA_CancelResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CANCELRESPONSE]);
+}
+
+static UA_INLINE void
+UA_CancelResponse_delete(UA_CancelResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CANCELRESPONSE]);
 }
 
 /* NodeAttributesMask */
@@ -3206,6 +5593,68 @@ UA_ViewAttributes_clear(UA_ViewAttributes *p) {
 static UA_INLINE void
 UA_ViewAttributes_delete(UA_ViewAttributes *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_VIEWATTRIBUTES]);
+}
+
+/* GenericAttributeValue */
+static UA_INLINE void
+UA_GenericAttributeValue_init(UA_GenericAttributeValue *p) {
+    memset(p, 0, sizeof(UA_GenericAttributeValue));
+}
+
+static UA_INLINE UA_GenericAttributeValue *
+UA_GenericAttributeValue_new(void) {
+    return (UA_GenericAttributeValue*)UA_new(&UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_GenericAttributeValue_copy(const UA_GenericAttributeValue *src, UA_GenericAttributeValue *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+
+static UA_INLINE void
+UA_GenericAttributeValue_deleteMembers(UA_GenericAttributeValue *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+
+static UA_INLINE void
+UA_GenericAttributeValue_clear(UA_GenericAttributeValue *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+
+static UA_INLINE void
+UA_GenericAttributeValue_delete(UA_GenericAttributeValue *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+
+/* GenericAttributes */
+static UA_INLINE void
+UA_GenericAttributes_init(UA_GenericAttributes *p) {
+    memset(p, 0, sizeof(UA_GenericAttributes));
+}
+
+static UA_INLINE UA_GenericAttributes *
+UA_GenericAttributes_new(void) {
+    return (UA_GenericAttributes*)UA_new(&UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_GenericAttributes_copy(const UA_GenericAttributes *src, UA_GenericAttributes *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
+}
+
+static UA_INLINE void
+UA_GenericAttributes_deleteMembers(UA_GenericAttributes *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
+}
+
+static UA_INLINE void
+UA_GenericAttributes_clear(UA_GenericAttributes *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
+}
+
+static UA_INLINE void
+UA_GenericAttributes_delete(UA_GenericAttributes *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
 }
 
 /* AddNodesItem */
@@ -3611,6 +6060,37 @@ UA_DeleteReferencesResponse_delete(UA_DeleteReferencesResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_DELETEREFERENCESRESPONSE]);
 }
 
+/* AttributeWriteMask */
+static UA_INLINE void
+UA_AttributeWriteMask_init(UA_AttributeWriteMask *p) {
+    memset(p, 0, sizeof(UA_AttributeWriteMask));
+}
+
+static UA_INLINE UA_AttributeWriteMask *
+UA_AttributeWriteMask_new(void) {
+    return (UA_AttributeWriteMask*)UA_new(&UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AttributeWriteMask_copy(const UA_AttributeWriteMask *src, UA_AttributeWriteMask *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+
+static UA_INLINE void
+UA_AttributeWriteMask_deleteMembers(UA_AttributeWriteMask *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+
+static UA_INLINE void
+UA_AttributeWriteMask_clear(UA_AttributeWriteMask *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+
+static UA_INLINE void
+UA_AttributeWriteMask_delete(UA_AttributeWriteMask *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+
 /* BrowseDirection */
 static UA_INLINE void
 UA_BrowseDirection_init(UA_BrowseDirection *p) {
@@ -3764,6 +6244,37 @@ UA_ReferenceDescription_clear(UA_ReferenceDescription *p) {
 static UA_INLINE void
 UA_ReferenceDescription_delete(UA_ReferenceDescription *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_REFERENCEDESCRIPTION]);
+}
+
+/* ContinuationPoint */
+static UA_INLINE void
+UA_ContinuationPoint_init(UA_ContinuationPoint *p) {
+    memset(p, 0, sizeof(UA_ContinuationPoint));
+}
+
+static UA_INLINE UA_ContinuationPoint *
+UA_ContinuationPoint_new(void) {
+    return (UA_ContinuationPoint*)UA_new(&UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ContinuationPoint_copy(const UA_ContinuationPoint *src, UA_ContinuationPoint *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
+}
+
+static UA_INLINE void
+UA_ContinuationPoint_deleteMembers(UA_ContinuationPoint *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
+}
+
+static UA_INLINE void
+UA_ContinuationPoint_clear(UA_ContinuationPoint *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
+}
+
+static UA_INLINE void
+UA_ContinuationPoint_delete(UA_ContinuationPoint *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
 }
 
 /* BrowseResult */
@@ -4262,6 +6773,192 @@ UA_UnregisterNodesResponse_delete(UA_UnregisterNodesResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_UNREGISTERNODESRESPONSE]);
 }
 
+/* Counter */
+static UA_INLINE void
+UA_Counter_init(UA_Counter *p) {
+    memset(p, 0, sizeof(UA_Counter));
+}
+
+static UA_INLINE UA_Counter *
+UA_Counter_new(void) {
+    return (UA_Counter*)UA_new(&UA_TYPES[UA_TYPES_COUNTER]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Counter_copy(const UA_Counter *src, UA_Counter *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_COUNTER]);
+}
+
+static UA_INLINE void
+UA_Counter_deleteMembers(UA_Counter *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_COUNTER]);
+}
+
+static UA_INLINE void
+UA_Counter_clear(UA_Counter *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_COUNTER]);
+}
+
+static UA_INLINE void
+UA_Counter_delete(UA_Counter *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_COUNTER]);
+}
+
+/* Time */
+static UA_INLINE void
+UA_Time_init(UA_Time *p) {
+    memset(p, 0, sizeof(UA_Time));
+}
+
+static UA_INLINE UA_Time *
+UA_Time_new(void) {
+    return (UA_Time*)UA_new(&UA_TYPES[UA_TYPES_TIME]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Time_copy(const UA_Time *src, UA_Time *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TIME]);
+}
+
+static UA_INLINE void
+UA_Time_deleteMembers(UA_Time *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIME]);
+}
+
+static UA_INLINE void
+UA_Time_clear(UA_Time *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TIME]);
+}
+
+static UA_INLINE void
+UA_Time_delete(UA_Time *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TIME]);
+}
+
+/* Date */
+static UA_INLINE void
+UA_Date_init(UA_Date *p) {
+    memset(p, 0, sizeof(UA_Date));
+}
+
+static UA_INLINE UA_Date *
+UA_Date_new(void) {
+    return (UA_Date*)UA_new(&UA_TYPES[UA_TYPES_DATE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Date_copy(const UA_Date *src, UA_Date *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATE]);
+}
+
+static UA_INLINE void
+UA_Date_deleteMembers(UA_Date *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATE]);
+}
+
+static UA_INLINE void
+UA_Date_clear(UA_Date *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATE]);
+}
+
+static UA_INLINE void
+UA_Date_delete(UA_Date *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATE]);
+}
+
+/* EndpointConfiguration */
+static UA_INLINE void
+UA_EndpointConfiguration_init(UA_EndpointConfiguration *p) {
+    memset(p, 0, sizeof(UA_EndpointConfiguration));
+}
+
+static UA_INLINE UA_EndpointConfiguration *
+UA_EndpointConfiguration_new(void) {
+    return (UA_EndpointConfiguration*)UA_new(&UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_EndpointConfiguration_copy(const UA_EndpointConfiguration *src, UA_EndpointConfiguration *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_EndpointConfiguration_deleteMembers(UA_EndpointConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_EndpointConfiguration_clear(UA_EndpointConfiguration *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+
+static UA_INLINE void
+UA_EndpointConfiguration_delete(UA_EndpointConfiguration *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+
+/* QueryDataDescription */
+static UA_INLINE void
+UA_QueryDataDescription_init(UA_QueryDataDescription *p) {
+    memset(p, 0, sizeof(UA_QueryDataDescription));
+}
+
+static UA_INLINE UA_QueryDataDescription *
+UA_QueryDataDescription_new(void) {
+    return (UA_QueryDataDescription*)UA_new(&UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryDataDescription_copy(const UA_QueryDataDescription *src, UA_QueryDataDescription *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_QueryDataDescription_deleteMembers(UA_QueryDataDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_QueryDataDescription_clear(UA_QueryDataDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_QueryDataDescription_delete(UA_QueryDataDescription *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+
+/* NodeTypeDescription */
+static UA_INLINE void
+UA_NodeTypeDescription_init(UA_NodeTypeDescription *p) {
+    memset(p, 0, sizeof(UA_NodeTypeDescription));
+}
+
+static UA_INLINE UA_NodeTypeDescription *
+UA_NodeTypeDescription_new(void) {
+    return (UA_NodeTypeDescription*)UA_new(&UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NodeTypeDescription_copy(const UA_NodeTypeDescription *src, UA_NodeTypeDescription *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_NodeTypeDescription_deleteMembers(UA_NodeTypeDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_NodeTypeDescription_clear(UA_NodeTypeDescription *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+
+static UA_INLINE void
+UA_NodeTypeDescription_delete(UA_NodeTypeDescription *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+
 /* FilterOperator */
 static UA_INLINE void
 UA_FilterOperator_init(UA_FilterOperator *p) {
@@ -4291,6 +6988,68 @@ UA_FilterOperator_clear(UA_FilterOperator *p) {
 static UA_INLINE void
 UA_FilterOperator_delete(UA_FilterOperator *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_FILTEROPERATOR]);
+}
+
+/* QueryDataSet */
+static UA_INLINE void
+UA_QueryDataSet_init(UA_QueryDataSet *p) {
+    memset(p, 0, sizeof(UA_QueryDataSet));
+}
+
+static UA_INLINE UA_QueryDataSet *
+UA_QueryDataSet_new(void) {
+    return (UA_QueryDataSet*)UA_new(&UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryDataSet_copy(const UA_QueryDataSet *src, UA_QueryDataSet *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+
+static UA_INLINE void
+UA_QueryDataSet_deleteMembers(UA_QueryDataSet *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+
+static UA_INLINE void
+UA_QueryDataSet_clear(UA_QueryDataSet *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+
+static UA_INLINE void
+UA_QueryDataSet_delete(UA_QueryDataSet *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+
+/* NodeReference */
+static UA_INLINE void
+UA_NodeReference_init(UA_NodeReference *p) {
+    memset(p, 0, sizeof(UA_NodeReference));
+}
+
+static UA_INLINE UA_NodeReference *
+UA_NodeReference_new(void) {
+    return (UA_NodeReference*)UA_new(&UA_TYPES[UA_TYPES_NODEREFERENCE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NodeReference_copy(const UA_NodeReference *src, UA_NodeReference *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NODEREFERENCE]);
+}
+
+static UA_INLINE void
+UA_NodeReference_deleteMembers(UA_NodeReference *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NODEREFERENCE]);
+}
+
+static UA_INLINE void
+UA_NodeReference_clear(UA_NodeReference *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NODEREFERENCE]);
+}
+
+static UA_INLINE void
+UA_NodeReference_delete(UA_NodeReference *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NODEREFERENCE]);
 }
 
 /* ContentFilterElement */
@@ -4572,6 +7331,161 @@ UA_ContentFilterResult_delete(UA_ContentFilterResult *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_CONTENTFILTERRESULT]);
 }
 
+/* ParsingResult */
+static UA_INLINE void
+UA_ParsingResult_init(UA_ParsingResult *p) {
+    memset(p, 0, sizeof(UA_ParsingResult));
+}
+
+static UA_INLINE UA_ParsingResult *
+UA_ParsingResult_new(void) {
+    return (UA_ParsingResult*)UA_new(&UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ParsingResult_copy(const UA_ParsingResult *src, UA_ParsingResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+
+static UA_INLINE void
+UA_ParsingResult_deleteMembers(UA_ParsingResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+
+static UA_INLINE void
+UA_ParsingResult_clear(UA_ParsingResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+
+static UA_INLINE void
+UA_ParsingResult_delete(UA_ParsingResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+
+/* QueryFirstRequest */
+static UA_INLINE void
+UA_QueryFirstRequest_init(UA_QueryFirstRequest *p) {
+    memset(p, 0, sizeof(UA_QueryFirstRequest));
+}
+
+static UA_INLINE UA_QueryFirstRequest *
+UA_QueryFirstRequest_new(void) {
+    return (UA_QueryFirstRequest*)UA_new(&UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryFirstRequest_copy(const UA_QueryFirstRequest *src, UA_QueryFirstRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryFirstRequest_deleteMembers(UA_QueryFirstRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryFirstRequest_clear(UA_QueryFirstRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryFirstRequest_delete(UA_QueryFirstRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+
+/* QueryFirstResponse */
+static UA_INLINE void
+UA_QueryFirstResponse_init(UA_QueryFirstResponse *p) {
+    memset(p, 0, sizeof(UA_QueryFirstResponse));
+}
+
+static UA_INLINE UA_QueryFirstResponse *
+UA_QueryFirstResponse_new(void) {
+    return (UA_QueryFirstResponse*)UA_new(&UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryFirstResponse_copy(const UA_QueryFirstResponse *src, UA_QueryFirstResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryFirstResponse_deleteMembers(UA_QueryFirstResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryFirstResponse_clear(UA_QueryFirstResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryFirstResponse_delete(UA_QueryFirstResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+
+/* QueryNextRequest */
+static UA_INLINE void
+UA_QueryNextRequest_init(UA_QueryNextRequest *p) {
+    memset(p, 0, sizeof(UA_QueryNextRequest));
+}
+
+static UA_INLINE UA_QueryNextRequest *
+UA_QueryNextRequest_new(void) {
+    return (UA_QueryNextRequest*)UA_new(&UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryNextRequest_copy(const UA_QueryNextRequest *src, UA_QueryNextRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryNextRequest_deleteMembers(UA_QueryNextRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryNextRequest_clear(UA_QueryNextRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+
+static UA_INLINE void
+UA_QueryNextRequest_delete(UA_QueryNextRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+
+/* QueryNextResponse */
+static UA_INLINE void
+UA_QueryNextResponse_init(UA_QueryNextResponse *p) {
+    memset(p, 0, sizeof(UA_QueryNextResponse));
+}
+
+static UA_INLINE UA_QueryNextResponse *
+UA_QueryNextResponse_new(void) {
+    return (UA_QueryNextResponse*)UA_new(&UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_QueryNextResponse_copy(const UA_QueryNextResponse *src, UA_QueryNextResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryNextResponse_deleteMembers(UA_QueryNextResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryNextResponse_clear(UA_QueryNextResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+
+static UA_INLINE void
+UA_QueryNextResponse_delete(UA_QueryNextResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+
 /* TimestampsToReturn */
 static UA_INLINE void
 UA_TimestampsToReturn_init(UA_TimestampsToReturn *p) {
@@ -4696,6 +7610,285 @@ UA_ReadResponse_delete(UA_ReadResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_READRESPONSE]);
 }
 
+/* HistoryReadValueId */
+static UA_INLINE void
+UA_HistoryReadValueId_init(UA_HistoryReadValueId *p) {
+    memset(p, 0, sizeof(UA_HistoryReadValueId));
+}
+
+static UA_INLINE UA_HistoryReadValueId *
+UA_HistoryReadValueId_new(void) {
+    return (UA_HistoryReadValueId*)UA_new(&UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryReadValueId_copy(const UA_HistoryReadValueId *src, UA_HistoryReadValueId *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+
+static UA_INLINE void
+UA_HistoryReadValueId_deleteMembers(UA_HistoryReadValueId *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+
+static UA_INLINE void
+UA_HistoryReadValueId_clear(UA_HistoryReadValueId *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+
+static UA_INLINE void
+UA_HistoryReadValueId_delete(UA_HistoryReadValueId *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+
+/* HistoryReadResult */
+static UA_INLINE void
+UA_HistoryReadResult_init(UA_HistoryReadResult *p) {
+    memset(p, 0, sizeof(UA_HistoryReadResult));
+}
+
+static UA_INLINE UA_HistoryReadResult *
+UA_HistoryReadResult_new(void) {
+    return (UA_HistoryReadResult*)UA_new(&UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResult_copy(const UA_HistoryReadResult *src, UA_HistoryReadResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResult_deleteMembers(UA_HistoryReadResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResult_clear(UA_HistoryReadResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResult_delete(UA_HistoryReadResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+
+/* HistoryReadDetails */
+static UA_INLINE void
+UA_HistoryReadDetails_init(UA_HistoryReadDetails *p) {
+    memset(p, 0, sizeof(UA_HistoryReadDetails));
+}
+
+static UA_INLINE UA_HistoryReadDetails *
+UA_HistoryReadDetails_new(void) {
+    return (UA_HistoryReadDetails*)UA_new(&UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryReadDetails_copy(const UA_HistoryReadDetails *src, UA_HistoryReadDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryReadDetails_deleteMembers(UA_HistoryReadDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryReadDetails_clear(UA_HistoryReadDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryReadDetails_delete(UA_HistoryReadDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+
+/* ReadRawModifiedDetails */
+static UA_INLINE void
+UA_ReadRawModifiedDetails_init(UA_ReadRawModifiedDetails *p) {
+    memset(p, 0, sizeof(UA_ReadRawModifiedDetails));
+}
+
+static UA_INLINE UA_ReadRawModifiedDetails *
+UA_ReadRawModifiedDetails_new(void) {
+    return (UA_ReadRawModifiedDetails*)UA_new(&UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReadRawModifiedDetails_copy(const UA_ReadRawModifiedDetails *src, UA_ReadRawModifiedDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadRawModifiedDetails_deleteMembers(UA_ReadRawModifiedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadRawModifiedDetails_clear(UA_ReadRawModifiedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadRawModifiedDetails_delete(UA_ReadRawModifiedDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+
+/* ReadAtTimeDetails */
+static UA_INLINE void
+UA_ReadAtTimeDetails_init(UA_ReadAtTimeDetails *p) {
+    memset(p, 0, sizeof(UA_ReadAtTimeDetails));
+}
+
+static UA_INLINE UA_ReadAtTimeDetails *
+UA_ReadAtTimeDetails_new(void) {
+    return (UA_ReadAtTimeDetails*)UA_new(&UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReadAtTimeDetails_copy(const UA_ReadAtTimeDetails *src, UA_ReadAtTimeDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAtTimeDetails_deleteMembers(UA_ReadAtTimeDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAtTimeDetails_clear(UA_ReadAtTimeDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAtTimeDetails_delete(UA_ReadAtTimeDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+
+/* ReadAnnotationDataDetails */
+static UA_INLINE void
+UA_ReadAnnotationDataDetails_init(UA_ReadAnnotationDataDetails *p) {
+    memset(p, 0, sizeof(UA_ReadAnnotationDataDetails));
+}
+
+static UA_INLINE UA_ReadAnnotationDataDetails *
+UA_ReadAnnotationDataDetails_new(void) {
+    return (UA_ReadAnnotationDataDetails*)UA_new(&UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReadAnnotationDataDetails_copy(const UA_ReadAnnotationDataDetails *src, UA_ReadAnnotationDataDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAnnotationDataDetails_deleteMembers(UA_ReadAnnotationDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAnnotationDataDetails_clear(UA_ReadAnnotationDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadAnnotationDataDetails_delete(UA_ReadAnnotationDataDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+
+/* HistoryData */
+static UA_INLINE void
+UA_HistoryData_init(UA_HistoryData *p) {
+    memset(p, 0, sizeof(UA_HistoryData));
+}
+
+static UA_INLINE UA_HistoryData *
+UA_HistoryData_new(void) {
+    return (UA_HistoryData*)UA_new(&UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryData_copy(const UA_HistoryData *src, UA_HistoryData *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryData_deleteMembers(UA_HistoryData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryData_clear(UA_HistoryData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryData_delete(UA_HistoryData *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+
+/* HistoryReadRequest */
+static UA_INLINE void
+UA_HistoryReadRequest_init(UA_HistoryReadRequest *p) {
+    memset(p, 0, sizeof(UA_HistoryReadRequest));
+}
+
+static UA_INLINE UA_HistoryReadRequest *
+UA_HistoryReadRequest_new(void) {
+    return (UA_HistoryReadRequest*)UA_new(&UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryReadRequest_copy(const UA_HistoryReadRequest *src, UA_HistoryReadRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryReadRequest_deleteMembers(UA_HistoryReadRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryReadRequest_clear(UA_HistoryReadRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryReadRequest_delete(UA_HistoryReadRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+
+/* HistoryReadResponse */
+static UA_INLINE void
+UA_HistoryReadResponse_init(UA_HistoryReadResponse *p) {
+    memset(p, 0, sizeof(UA_HistoryReadResponse));
+}
+
+static UA_INLINE UA_HistoryReadResponse *
+UA_HistoryReadResponse_new(void) {
+    return (UA_HistoryReadResponse*)UA_new(&UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResponse_copy(const UA_HistoryReadResponse *src, UA_HistoryReadResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResponse_deleteMembers(UA_HistoryReadResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResponse_clear(UA_HistoryReadResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryReadResponse_delete(UA_HistoryReadResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+
 /* WriteValue */
 static UA_INLINE void
 UA_WriteValue_init(UA_WriteValue *p) {
@@ -4787,6 +7980,347 @@ UA_WriteResponse_clear(UA_WriteResponse *p) {
 static UA_INLINE void
 UA_WriteResponse_delete(UA_WriteResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_WRITERESPONSE]);
+}
+
+/* HistoryUpdateDetails */
+static UA_INLINE void
+UA_HistoryUpdateDetails_init(UA_HistoryUpdateDetails *p) {
+    memset(p, 0, sizeof(UA_HistoryUpdateDetails));
+}
+
+static UA_INLINE UA_HistoryUpdateDetails *
+UA_HistoryUpdateDetails_new(void) {
+    return (UA_HistoryUpdateDetails*)UA_new(&UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateDetails_copy(const UA_HistoryUpdateDetails *src, UA_HistoryUpdateDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateDetails_deleteMembers(UA_HistoryUpdateDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateDetails_clear(UA_HistoryUpdateDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateDetails_delete(UA_HistoryUpdateDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+
+/* HistoryUpdateType */
+static UA_INLINE void
+UA_HistoryUpdateType_init(UA_HistoryUpdateType *p) {
+    memset(p, 0, sizeof(UA_HistoryUpdateType));
+}
+
+static UA_INLINE UA_HistoryUpdateType *
+UA_HistoryUpdateType_new(void) {
+    return (UA_HistoryUpdateType*)UA_new(&UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateType_copy(const UA_HistoryUpdateType *src, UA_HistoryUpdateType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateType_deleteMembers(UA_HistoryUpdateType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateType_clear(UA_HistoryUpdateType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateType_delete(UA_HistoryUpdateType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+
+/* PerformUpdateType */
+static UA_INLINE void
+UA_PerformUpdateType_init(UA_PerformUpdateType *p) {
+    memset(p, 0, sizeof(UA_PerformUpdateType));
+}
+
+static UA_INLINE UA_PerformUpdateType *
+UA_PerformUpdateType_new(void) {
+    return (UA_PerformUpdateType*)UA_new(&UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PerformUpdateType_copy(const UA_PerformUpdateType *src, UA_PerformUpdateType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_PerformUpdateType_deleteMembers(UA_PerformUpdateType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_PerformUpdateType_clear(UA_PerformUpdateType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+
+static UA_INLINE void
+UA_PerformUpdateType_delete(UA_PerformUpdateType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+
+/* UpdateDataDetails */
+static UA_INLINE void
+UA_UpdateDataDetails_init(UA_UpdateDataDetails *p) {
+    memset(p, 0, sizeof(UA_UpdateDataDetails));
+}
+
+static UA_INLINE UA_UpdateDataDetails *
+UA_UpdateDataDetails_new(void) {
+    return (UA_UpdateDataDetails*)UA_new(&UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_UpdateDataDetails_copy(const UA_UpdateDataDetails *src, UA_UpdateDataDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateDataDetails_deleteMembers(UA_UpdateDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateDataDetails_clear(UA_UpdateDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateDataDetails_delete(UA_UpdateDataDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+
+/* UpdateStructureDataDetails */
+static UA_INLINE void
+UA_UpdateStructureDataDetails_init(UA_UpdateStructureDataDetails *p) {
+    memset(p, 0, sizeof(UA_UpdateStructureDataDetails));
+}
+
+static UA_INLINE UA_UpdateStructureDataDetails *
+UA_UpdateStructureDataDetails_new(void) {
+    return (UA_UpdateStructureDataDetails*)UA_new(&UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_UpdateStructureDataDetails_copy(const UA_UpdateStructureDataDetails *src, UA_UpdateStructureDataDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateStructureDataDetails_deleteMembers(UA_UpdateStructureDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateStructureDataDetails_clear(UA_UpdateStructureDataDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateStructureDataDetails_delete(UA_UpdateStructureDataDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+
+/* DeleteRawModifiedDetails */
+static UA_INLINE void
+UA_DeleteRawModifiedDetails_init(UA_DeleteRawModifiedDetails *p) {
+    memset(p, 0, sizeof(UA_DeleteRawModifiedDetails));
+}
+
+static UA_INLINE UA_DeleteRawModifiedDetails *
+UA_DeleteRawModifiedDetails_new(void) {
+    return (UA_DeleteRawModifiedDetails*)UA_new(&UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DeleteRawModifiedDetails_copy(const UA_DeleteRawModifiedDetails *src, UA_DeleteRawModifiedDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteRawModifiedDetails_deleteMembers(UA_DeleteRawModifiedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteRawModifiedDetails_clear(UA_DeleteRawModifiedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteRawModifiedDetails_delete(UA_DeleteRawModifiedDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+
+/* DeleteAtTimeDetails */
+static UA_INLINE void
+UA_DeleteAtTimeDetails_init(UA_DeleteAtTimeDetails *p) {
+    memset(p, 0, sizeof(UA_DeleteAtTimeDetails));
+}
+
+static UA_INLINE UA_DeleteAtTimeDetails *
+UA_DeleteAtTimeDetails_new(void) {
+    return (UA_DeleteAtTimeDetails*)UA_new(&UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DeleteAtTimeDetails_copy(const UA_DeleteAtTimeDetails *src, UA_DeleteAtTimeDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteAtTimeDetails_deleteMembers(UA_DeleteAtTimeDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteAtTimeDetails_clear(UA_DeleteAtTimeDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteAtTimeDetails_delete(UA_DeleteAtTimeDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+
+/* DeleteEventDetails */
+static UA_INLINE void
+UA_DeleteEventDetails_init(UA_DeleteEventDetails *p) {
+    memset(p, 0, sizeof(UA_DeleteEventDetails));
+}
+
+static UA_INLINE UA_DeleteEventDetails *
+UA_DeleteEventDetails_new(void) {
+    return (UA_DeleteEventDetails*)UA_new(&UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DeleteEventDetails_copy(const UA_DeleteEventDetails *src, UA_DeleteEventDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteEventDetails_deleteMembers(UA_DeleteEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteEventDetails_clear(UA_DeleteEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_DeleteEventDetails_delete(UA_DeleteEventDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+
+/* HistoryUpdateResult */
+static UA_INLINE void
+UA_HistoryUpdateResult_init(UA_HistoryUpdateResult *p) {
+    memset(p, 0, sizeof(UA_HistoryUpdateResult));
+}
+
+static UA_INLINE UA_HistoryUpdateResult *
+UA_HistoryUpdateResult_new(void) {
+    return (UA_HistoryUpdateResult*)UA_new(&UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResult_copy(const UA_HistoryUpdateResult *src, UA_HistoryUpdateResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResult_deleteMembers(UA_HistoryUpdateResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResult_clear(UA_HistoryUpdateResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResult_delete(UA_HistoryUpdateResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+
+/* HistoryUpdateRequest */
+static UA_INLINE void
+UA_HistoryUpdateRequest_init(UA_HistoryUpdateRequest *p) {
+    memset(p, 0, sizeof(UA_HistoryUpdateRequest));
+}
+
+static UA_INLINE UA_HistoryUpdateRequest *
+UA_HistoryUpdateRequest_new(void) {
+    return (UA_HistoryUpdateRequest*)UA_new(&UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateRequest_copy(const UA_HistoryUpdateRequest *src, UA_HistoryUpdateRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateRequest_deleteMembers(UA_HistoryUpdateRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateRequest_clear(UA_HistoryUpdateRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateRequest_delete(UA_HistoryUpdateRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+
+/* HistoryUpdateResponse */
+static UA_INLINE void
+UA_HistoryUpdateResponse_init(UA_HistoryUpdateResponse *p) {
+    memset(p, 0, sizeof(UA_HistoryUpdateResponse));
+}
+
+static UA_INLINE UA_HistoryUpdateResponse *
+UA_HistoryUpdateResponse_new(void) {
+    return (UA_HistoryUpdateResponse*)UA_new(&UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResponse_copy(const UA_HistoryUpdateResponse *src, UA_HistoryUpdateResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResponse_deleteMembers(UA_HistoryUpdateResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResponse_clear(UA_HistoryUpdateResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
+}
+
+static UA_INLINE void
+UA_HistoryUpdateResponse_delete(UA_HistoryUpdateResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
 }
 
 /* CallMethodRequest */
@@ -5006,6 +8540,37 @@ UA_DeadbandType_delete(UA_DeadbandType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_DEADBANDTYPE]);
 }
 
+/* MonitoringFilter */
+static UA_INLINE void
+UA_MonitoringFilter_init(UA_MonitoringFilter *p) {
+    memset(p, 0, sizeof(UA_MonitoringFilter));
+}
+
+static UA_INLINE UA_MonitoringFilter *
+UA_MonitoringFilter_new(void) {
+    return (UA_MonitoringFilter*)UA_new(&UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilter_copy(const UA_MonitoringFilter *src, UA_MonitoringFilter *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilter_deleteMembers(UA_MonitoringFilter *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilter_clear(UA_MonitoringFilter *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilter_delete(UA_MonitoringFilter *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+
 /* DataChangeFilter */
 static UA_INLINE void
 UA_DataChangeFilter_init(UA_DataChangeFilter *p) {
@@ -5130,6 +8695,37 @@ UA_AggregateFilter_delete(UA_AggregateFilter *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_AGGREGATEFILTER]);
 }
 
+/* MonitoringFilterResult */
+static UA_INLINE void
+UA_MonitoringFilterResult_init(UA_MonitoringFilterResult *p) {
+    memset(p, 0, sizeof(UA_MonitoringFilterResult));
+}
+
+static UA_INLINE UA_MonitoringFilterResult *
+UA_MonitoringFilterResult_new(void) {
+    return (UA_MonitoringFilterResult*)UA_new(&UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilterResult_copy(const UA_MonitoringFilterResult *src, UA_MonitoringFilterResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilterResult_deleteMembers(UA_MonitoringFilterResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilterResult_clear(UA_MonitoringFilterResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_MonitoringFilterResult_delete(UA_MonitoringFilterResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+
 /* EventFilterResult */
 static UA_INLINE void
 UA_EventFilterResult_init(UA_EventFilterResult *p) {
@@ -5159,6 +8755,37 @@ UA_EventFilterResult_clear(UA_EventFilterResult *p) {
 static UA_INLINE void
 UA_EventFilterResult_delete(UA_EventFilterResult *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_EVENTFILTERRESULT]);
+}
+
+/* AggregateFilterResult */
+static UA_INLINE void
+UA_AggregateFilterResult_init(UA_AggregateFilterResult *p) {
+    memset(p, 0, sizeof(UA_AggregateFilterResult));
+}
+
+static UA_INLINE UA_AggregateFilterResult *
+UA_AggregateFilterResult_new(void) {
+    return (UA_AggregateFilterResult*)UA_new(&UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_AggregateFilterResult_copy(const UA_AggregateFilterResult *src, UA_AggregateFilterResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_AggregateFilterResult_deleteMembers(UA_AggregateFilterResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_AggregateFilterResult_clear(UA_AggregateFilterResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
+}
+
+static UA_INLINE void
+UA_AggregateFilterResult_delete(UA_AggregateFilterResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
 }
 
 /* MonitoringParameters */
@@ -5843,6 +9470,37 @@ UA_NotificationMessage_delete(UA_NotificationMessage *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_NOTIFICATIONMESSAGE]);
 }
 
+/* NotificationData */
+static UA_INLINE void
+UA_NotificationData_init(UA_NotificationData *p) {
+    memset(p, 0, sizeof(UA_NotificationData));
+}
+
+static UA_INLINE UA_NotificationData *
+UA_NotificationData_new(void) {
+    return (UA_NotificationData*)UA_new(&UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NotificationData_copy(const UA_NotificationData *src, UA_NotificationData *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+
+static UA_INLINE void
+UA_NotificationData_deleteMembers(UA_NotificationData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+
+static UA_INLINE void
+UA_NotificationData_clear(UA_NotificationData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+
+static UA_INLINE void
+UA_NotificationData_delete(UA_NotificationData *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+
 /* MonitoredItemNotification */
 static UA_INLINE void
 UA_MonitoredItemNotification_init(UA_MonitoredItemNotification *p) {
@@ -5903,6 +9561,37 @@ UA_EventFieldList_clear(UA_EventFieldList *p) {
 static UA_INLINE void
 UA_EventFieldList_delete(UA_EventFieldList *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_EVENTFIELDLIST]);
+}
+
+/* HistoryEventFieldList */
+static UA_INLINE void
+UA_HistoryEventFieldList_init(UA_HistoryEventFieldList *p) {
+    memset(p, 0, sizeof(UA_HistoryEventFieldList));
+}
+
+static UA_INLINE UA_HistoryEventFieldList *
+UA_HistoryEventFieldList_new(void) {
+    return (UA_HistoryEventFieldList*)UA_new(&UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryEventFieldList_copy(const UA_HistoryEventFieldList *src, UA_HistoryEventFieldList *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
+}
+
+static UA_INLINE void
+UA_HistoryEventFieldList_deleteMembers(UA_HistoryEventFieldList *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
+}
+
+static UA_INLINE void
+UA_HistoryEventFieldList_clear(UA_HistoryEventFieldList *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
+}
+
+static UA_INLINE void
+UA_HistoryEventFieldList_delete(UA_HistoryEventFieldList *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
 }
 
 /* StatusChangeNotification */
@@ -6091,6 +9780,99 @@ UA_RepublishResponse_delete(UA_RepublishResponse *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_REPUBLISHRESPONSE]);
 }
 
+/* TransferResult */
+static UA_INLINE void
+UA_TransferResult_init(UA_TransferResult *p) {
+    memset(p, 0, sizeof(UA_TransferResult));
+}
+
+static UA_INLINE UA_TransferResult *
+UA_TransferResult_new(void) {
+    return (UA_TransferResult*)UA_new(&UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TransferResult_copy(const UA_TransferResult *src, UA_TransferResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+
+static UA_INLINE void
+UA_TransferResult_deleteMembers(UA_TransferResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+
+static UA_INLINE void
+UA_TransferResult_clear(UA_TransferResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+
+static UA_INLINE void
+UA_TransferResult_delete(UA_TransferResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+
+/* TransferSubscriptionsRequest */
+static UA_INLINE void
+UA_TransferSubscriptionsRequest_init(UA_TransferSubscriptionsRequest *p) {
+    memset(p, 0, sizeof(UA_TransferSubscriptionsRequest));
+}
+
+static UA_INLINE UA_TransferSubscriptionsRequest *
+UA_TransferSubscriptionsRequest_new(void) {
+    return (UA_TransferSubscriptionsRequest*)UA_new(&UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsRequest_copy(const UA_TransferSubscriptionsRequest *src, UA_TransferSubscriptionsRequest *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsRequest_deleteMembers(UA_TransferSubscriptionsRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsRequest_clear(UA_TransferSubscriptionsRequest *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsRequest_delete(UA_TransferSubscriptionsRequest *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+
+/* TransferSubscriptionsResponse */
+static UA_INLINE void
+UA_TransferSubscriptionsResponse_init(UA_TransferSubscriptionsResponse *p) {
+    memset(p, 0, sizeof(UA_TransferSubscriptionsResponse));
+}
+
+static UA_INLINE UA_TransferSubscriptionsResponse *
+UA_TransferSubscriptionsResponse_new(void) {
+    return (UA_TransferSubscriptionsResponse*)UA_new(&UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsResponse_copy(const UA_TransferSubscriptionsResponse *src, UA_TransferSubscriptionsResponse *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsResponse_deleteMembers(UA_TransferSubscriptionsResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsResponse_clear(UA_TransferSubscriptionsResponse *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+
+static UA_INLINE void
+UA_TransferSubscriptionsResponse_delete(UA_TransferSubscriptionsResponse *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+
 /* DeleteSubscriptionsRequest */
 static UA_INLINE void
 UA_DeleteSubscriptionsRequest_init(UA_DeleteSubscriptionsRequest *p) {
@@ -6246,6 +10028,130 @@ UA_ServerState_delete(UA_ServerState *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_SERVERSTATE]);
 }
 
+/* RedundantServerDataType */
+static UA_INLINE void
+UA_RedundantServerDataType_init(UA_RedundantServerDataType *p) {
+    memset(p, 0, sizeof(UA_RedundantServerDataType));
+}
+
+static UA_INLINE UA_RedundantServerDataType *
+UA_RedundantServerDataType_new(void) {
+    return (UA_RedundantServerDataType*)UA_new(&UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_RedundantServerDataType_copy(const UA_RedundantServerDataType *src, UA_RedundantServerDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_RedundantServerDataType_deleteMembers(UA_RedundantServerDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_RedundantServerDataType_clear(UA_RedundantServerDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_RedundantServerDataType_delete(UA_RedundantServerDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+
+/* EndpointUrlListDataType */
+static UA_INLINE void
+UA_EndpointUrlListDataType_init(UA_EndpointUrlListDataType *p) {
+    memset(p, 0, sizeof(UA_EndpointUrlListDataType));
+}
+
+static UA_INLINE UA_EndpointUrlListDataType *
+UA_EndpointUrlListDataType_new(void) {
+    return (UA_EndpointUrlListDataType*)UA_new(&UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_EndpointUrlListDataType_copy(const UA_EndpointUrlListDataType *src, UA_EndpointUrlListDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointUrlListDataType_deleteMembers(UA_EndpointUrlListDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointUrlListDataType_clear(UA_EndpointUrlListDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointUrlListDataType_delete(UA_EndpointUrlListDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+
+/* NetworkGroupDataType */
+static UA_INLINE void
+UA_NetworkGroupDataType_init(UA_NetworkGroupDataType *p) {
+    memset(p, 0, sizeof(UA_NetworkGroupDataType));
+}
+
+static UA_INLINE UA_NetworkGroupDataType *
+UA_NetworkGroupDataType_new(void) {
+    return (UA_NetworkGroupDataType*)UA_new(&UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_NetworkGroupDataType_copy(const UA_NetworkGroupDataType *src, UA_NetworkGroupDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkGroupDataType_deleteMembers(UA_NetworkGroupDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkGroupDataType_clear(UA_NetworkGroupDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_NetworkGroupDataType_delete(UA_NetworkGroupDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+
+/* SamplingIntervalDiagnosticsDataType */
+static UA_INLINE void
+UA_SamplingIntervalDiagnosticsDataType_init(UA_SamplingIntervalDiagnosticsDataType *p) {
+    memset(p, 0, sizeof(UA_SamplingIntervalDiagnosticsDataType));
+}
+
+static UA_INLINE UA_SamplingIntervalDiagnosticsDataType *
+UA_SamplingIntervalDiagnosticsDataType_new(void) {
+    return (UA_SamplingIntervalDiagnosticsDataType*)UA_new(&UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SamplingIntervalDiagnosticsDataType_copy(const UA_SamplingIntervalDiagnosticsDataType *src, UA_SamplingIntervalDiagnosticsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SamplingIntervalDiagnosticsDataType_deleteMembers(UA_SamplingIntervalDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SamplingIntervalDiagnosticsDataType_clear(UA_SamplingIntervalDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SamplingIntervalDiagnosticsDataType_delete(UA_SamplingIntervalDiagnosticsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+
 /* ServerDiagnosticsSummaryDataType */
 static UA_INLINE void
 UA_ServerDiagnosticsSummaryDataType_init(UA_ServerDiagnosticsSummaryDataType *p) {
@@ -6306,6 +10212,223 @@ UA_ServerStatusDataType_clear(UA_ServerStatusDataType *p) {
 static UA_INLINE void
 UA_ServerStatusDataType_delete(UA_ServerStatusDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_SERVERSTATUSDATATYPE]);
+}
+
+/* SessionSecurityDiagnosticsDataType */
+static UA_INLINE void
+UA_SessionSecurityDiagnosticsDataType_init(UA_SessionSecurityDiagnosticsDataType *p) {
+    memset(p, 0, sizeof(UA_SessionSecurityDiagnosticsDataType));
+}
+
+static UA_INLINE UA_SessionSecurityDiagnosticsDataType *
+UA_SessionSecurityDiagnosticsDataType_new(void) {
+    return (UA_SessionSecurityDiagnosticsDataType*)UA_new(&UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SessionSecurityDiagnosticsDataType_copy(const UA_SessionSecurityDiagnosticsDataType *src, UA_SessionSecurityDiagnosticsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionSecurityDiagnosticsDataType_deleteMembers(UA_SessionSecurityDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionSecurityDiagnosticsDataType_clear(UA_SessionSecurityDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionSecurityDiagnosticsDataType_delete(UA_SessionSecurityDiagnosticsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+
+/* ServiceCounterDataType */
+static UA_INLINE void
+UA_ServiceCounterDataType_init(UA_ServiceCounterDataType *p) {
+    memset(p, 0, sizeof(UA_ServiceCounterDataType));
+}
+
+static UA_INLINE UA_ServiceCounterDataType *
+UA_ServiceCounterDataType_new(void) {
+    return (UA_ServiceCounterDataType*)UA_new(&UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ServiceCounterDataType_copy(const UA_ServiceCounterDataType *src, UA_ServiceCounterDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ServiceCounterDataType_deleteMembers(UA_ServiceCounterDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ServiceCounterDataType_clear(UA_ServiceCounterDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ServiceCounterDataType_delete(UA_ServiceCounterDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+
+/* StatusResult */
+static UA_INLINE void
+UA_StatusResult_init(UA_StatusResult *p) {
+    memset(p, 0, sizeof(UA_StatusResult));
+}
+
+static UA_INLINE UA_StatusResult *
+UA_StatusResult_new(void) {
+    return (UA_StatusResult*)UA_new(&UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_StatusResult_copy(const UA_StatusResult *src, UA_StatusResult *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+
+static UA_INLINE void
+UA_StatusResult_deleteMembers(UA_StatusResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+
+static UA_INLINE void
+UA_StatusResult_clear(UA_StatusResult *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+
+static UA_INLINE void
+UA_StatusResult_delete(UA_StatusResult *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+
+/* SubscriptionDiagnosticsDataType */
+static UA_INLINE void
+UA_SubscriptionDiagnosticsDataType_init(UA_SubscriptionDiagnosticsDataType *p) {
+    memset(p, 0, sizeof(UA_SubscriptionDiagnosticsDataType));
+}
+
+static UA_INLINE UA_SubscriptionDiagnosticsDataType *
+UA_SubscriptionDiagnosticsDataType_new(void) {
+    return (UA_SubscriptionDiagnosticsDataType*)UA_new(&UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SubscriptionDiagnosticsDataType_copy(const UA_SubscriptionDiagnosticsDataType *src, UA_SubscriptionDiagnosticsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscriptionDiagnosticsDataType_deleteMembers(UA_SubscriptionDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscriptionDiagnosticsDataType_clear(UA_SubscriptionDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscriptionDiagnosticsDataType_delete(UA_SubscriptionDiagnosticsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+
+/* ModelChangeStructureVerbMask */
+static UA_INLINE void
+UA_ModelChangeStructureVerbMask_init(UA_ModelChangeStructureVerbMask *p) {
+    memset(p, 0, sizeof(UA_ModelChangeStructureVerbMask));
+}
+
+static UA_INLINE UA_ModelChangeStructureVerbMask *
+UA_ModelChangeStructureVerbMask_new(void) {
+    return (UA_ModelChangeStructureVerbMask*)UA_new(&UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureVerbMask_copy(const UA_ModelChangeStructureVerbMask *src, UA_ModelChangeStructureVerbMask *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureVerbMask_deleteMembers(UA_ModelChangeStructureVerbMask *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureVerbMask_clear(UA_ModelChangeStructureVerbMask *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureVerbMask_delete(UA_ModelChangeStructureVerbMask *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+
+/* ModelChangeStructureDataType */
+static UA_INLINE void
+UA_ModelChangeStructureDataType_init(UA_ModelChangeStructureDataType *p) {
+    memset(p, 0, sizeof(UA_ModelChangeStructureDataType));
+}
+
+static UA_INLINE UA_ModelChangeStructureDataType *
+UA_ModelChangeStructureDataType_new(void) {
+    return (UA_ModelChangeStructureDataType*)UA_new(&UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureDataType_copy(const UA_ModelChangeStructureDataType *src, UA_ModelChangeStructureDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureDataType_deleteMembers(UA_ModelChangeStructureDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureDataType_clear(UA_ModelChangeStructureDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ModelChangeStructureDataType_delete(UA_ModelChangeStructureDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+
+/* SemanticChangeStructureDataType */
+static UA_INLINE void
+UA_SemanticChangeStructureDataType_init(UA_SemanticChangeStructureDataType *p) {
+    memset(p, 0, sizeof(UA_SemanticChangeStructureDataType));
+}
+
+static UA_INLINE UA_SemanticChangeStructureDataType *
+UA_SemanticChangeStructureDataType_new(void) {
+    return (UA_SemanticChangeStructureDataType*)UA_new(&UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SemanticChangeStructureDataType_copy(const UA_SemanticChangeStructureDataType *src, UA_SemanticChangeStructureDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SemanticChangeStructureDataType_deleteMembers(UA_SemanticChangeStructureDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SemanticChangeStructureDataType_clear(UA_SemanticChangeStructureDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SemanticChangeStructureDataType_delete(UA_SemanticChangeStructureDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
 }
 
 /* Range */
@@ -6525,6 +10648,161 @@ UA_XVType_delete(UA_XVType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_XVTYPE]);
 }
 
+/* ProgramDiagnosticDataType */
+static UA_INLINE void
+UA_ProgramDiagnosticDataType_init(UA_ProgramDiagnosticDataType *p) {
+    memset(p, 0, sizeof(UA_ProgramDiagnosticDataType));
+}
+
+static UA_INLINE UA_ProgramDiagnosticDataType *
+UA_ProgramDiagnosticDataType_new(void) {
+    return (UA_ProgramDiagnosticDataType*)UA_new(&UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnosticDataType_copy(const UA_ProgramDiagnosticDataType *src, UA_ProgramDiagnosticDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnosticDataType_deleteMembers(UA_ProgramDiagnosticDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnosticDataType_clear(UA_ProgramDiagnosticDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnosticDataType_delete(UA_ProgramDiagnosticDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+
+/* ProgramDiagnostic2DataType */
+static UA_INLINE void
+UA_ProgramDiagnostic2DataType_init(UA_ProgramDiagnostic2DataType *p) {
+    memset(p, 0, sizeof(UA_ProgramDiagnostic2DataType));
+}
+
+static UA_INLINE UA_ProgramDiagnostic2DataType *
+UA_ProgramDiagnostic2DataType_new(void) {
+    return (UA_ProgramDiagnostic2DataType*)UA_new(&UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnostic2DataType_copy(const UA_ProgramDiagnostic2DataType *src, UA_ProgramDiagnostic2DataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnostic2DataType_deleteMembers(UA_ProgramDiagnostic2DataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnostic2DataType_clear(UA_ProgramDiagnostic2DataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+
+static UA_INLINE void
+UA_ProgramDiagnostic2DataType_delete(UA_ProgramDiagnostic2DataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+
+/* Annotation */
+static UA_INLINE void
+UA_Annotation_init(UA_Annotation *p) {
+    memset(p, 0, sizeof(UA_Annotation));
+}
+
+static UA_INLINE UA_Annotation *
+UA_Annotation_new(void) {
+    return (UA_Annotation*)UA_new(&UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_Annotation_copy(const UA_Annotation *src, UA_Annotation *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+
+static UA_INLINE void
+UA_Annotation_deleteMembers(UA_Annotation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+
+static UA_INLINE void
+UA_Annotation_clear(UA_Annotation *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+
+static UA_INLINE void
+UA_Annotation_delete(UA_Annotation *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+
+/* ExceptionDeviationFormat */
+static UA_INLINE void
+UA_ExceptionDeviationFormat_init(UA_ExceptionDeviationFormat *p) {
+    memset(p, 0, sizeof(UA_ExceptionDeviationFormat));
+}
+
+static UA_INLINE UA_ExceptionDeviationFormat *
+UA_ExceptionDeviationFormat_new(void) {
+    return (UA_ExceptionDeviationFormat*)UA_new(&UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ExceptionDeviationFormat_copy(const UA_ExceptionDeviationFormat *src, UA_ExceptionDeviationFormat *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+
+static UA_INLINE void
+UA_ExceptionDeviationFormat_deleteMembers(UA_ExceptionDeviationFormat *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+
+static UA_INLINE void
+UA_ExceptionDeviationFormat_clear(UA_ExceptionDeviationFormat *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+
+static UA_INLINE void
+UA_ExceptionDeviationFormat_delete(UA_ExceptionDeviationFormat *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+
+/* EndpointType */
+static UA_INLINE void
+UA_EndpointType_init(UA_EndpointType *p) {
+    memset(p, 0, sizeof(UA_EndpointType));
+}
+
+static UA_INLINE UA_EndpointType *
+UA_EndpointType_new(void) {
+    return (UA_EndpointType*)UA_new(&UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_EndpointType_copy(const UA_EndpointType *src, UA_EndpointType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointType_deleteMembers(UA_EndpointType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointType_clear(UA_EndpointType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+
+static UA_INLINE void
+UA_EndpointType_delete(UA_EndpointType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+
 /* StructureDescription */
 static UA_INLINE void
 UA_StructureDescription_init(UA_StructureDescription *p) {
@@ -6585,6 +10863,68 @@ UA_FieldMetaData_clear(UA_FieldMetaData *p) {
 static UA_INLINE void
 UA_FieldMetaData_delete(UA_FieldMetaData *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_FIELDMETADATA]);
+}
+
+/* PublishedEventsDataType */
+static UA_INLINE void
+UA_PublishedEventsDataType_init(UA_PublishedEventsDataType *p) {
+    memset(p, 0, sizeof(UA_PublishedEventsDataType));
+}
+
+static UA_INLINE UA_PublishedEventsDataType *
+UA_PublishedEventsDataType_new(void) {
+    return (UA_PublishedEventsDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PublishedEventsDataType_copy(const UA_PublishedEventsDataType *src, UA_PublishedEventsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedEventsDataType_deleteMembers(UA_PublishedEventsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedEventsDataType_clear(UA_PublishedEventsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedEventsDataType_delete(UA_PublishedEventsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+
+/* PubSubGroupDataType */
+static UA_INLINE void
+UA_PubSubGroupDataType_init(UA_PubSubGroupDataType *p) {
+    memset(p, 0, sizeof(UA_PubSubGroupDataType));
+}
+
+static UA_INLINE UA_PubSubGroupDataType *
+UA_PubSubGroupDataType_new(void) {
+    return (UA_PubSubGroupDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PubSubGroupDataType_copy(const UA_PubSubGroupDataType *src, UA_PubSubGroupDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubGroupDataType_deleteMembers(UA_PubSubGroupDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubGroupDataType_clear(UA_PubSubGroupDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubGroupDataType_delete(UA_PubSubGroupDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
 }
 
 /* WriterGroupDataType */
@@ -6649,6 +10989,37 @@ UA_FieldTargetDataType_delete(UA_FieldTargetDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_FIELDTARGETDATATYPE]);
 }
 
+/* SubscribedDataSetMirrorDataType */
+static UA_INLINE void
+UA_SubscribedDataSetMirrorDataType_init(UA_SubscribedDataSetMirrorDataType *p) {
+    memset(p, 0, sizeof(UA_SubscribedDataSetMirrorDataType));
+}
+
+static UA_INLINE UA_SubscribedDataSetMirrorDataType *
+UA_SubscribedDataSetMirrorDataType_new(void) {
+    return (UA_SubscribedDataSetMirrorDataType*)UA_new(&UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetMirrorDataType_copy(const UA_SubscribedDataSetMirrorDataType *src, UA_SubscribedDataSetMirrorDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetMirrorDataType_deleteMembers(UA_SubscribedDataSetMirrorDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetMirrorDataType_clear(UA_SubscribedDataSetMirrorDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SubscribedDataSetMirrorDataType_delete(UA_SubscribedDataSetMirrorDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+
 /* EnumDefinition */
 static UA_INLINE void
 UA_EnumDefinition_init(UA_EnumDefinition *p) {
@@ -6678,6 +11049,192 @@ UA_EnumDefinition_clear(UA_EnumDefinition *p) {
 static UA_INLINE void
 UA_EnumDefinition_delete(UA_EnumDefinition *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_ENUMDEFINITION]);
+}
+
+/* ReadEventDetails */
+static UA_INLINE void
+UA_ReadEventDetails_init(UA_ReadEventDetails *p) {
+    memset(p, 0, sizeof(UA_ReadEventDetails));
+}
+
+static UA_INLINE UA_ReadEventDetails *
+UA_ReadEventDetails_new(void) {
+    return (UA_ReadEventDetails*)UA_new(&UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReadEventDetails_copy(const UA_ReadEventDetails *src, UA_ReadEventDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadEventDetails_deleteMembers(UA_ReadEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadEventDetails_clear(UA_ReadEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadEventDetails_delete(UA_ReadEventDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+
+/* ReadProcessedDetails */
+static UA_INLINE void
+UA_ReadProcessedDetails_init(UA_ReadProcessedDetails *p) {
+    memset(p, 0, sizeof(UA_ReadProcessedDetails));
+}
+
+static UA_INLINE UA_ReadProcessedDetails *
+UA_ReadProcessedDetails_new(void) {
+    return (UA_ReadProcessedDetails*)UA_new(&UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ReadProcessedDetails_copy(const UA_ReadProcessedDetails *src, UA_ReadProcessedDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadProcessedDetails_deleteMembers(UA_ReadProcessedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadProcessedDetails_clear(UA_ReadProcessedDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+
+static UA_INLINE void
+UA_ReadProcessedDetails_delete(UA_ReadProcessedDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+
+/* ModificationInfo */
+static UA_INLINE void
+UA_ModificationInfo_init(UA_ModificationInfo *p) {
+    memset(p, 0, sizeof(UA_ModificationInfo));
+}
+
+static UA_INLINE UA_ModificationInfo *
+UA_ModificationInfo_new(void) {
+    return (UA_ModificationInfo*)UA_new(&UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_ModificationInfo_copy(const UA_ModificationInfo *src, UA_ModificationInfo *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+
+static UA_INLINE void
+UA_ModificationInfo_deleteMembers(UA_ModificationInfo *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+
+static UA_INLINE void
+UA_ModificationInfo_clear(UA_ModificationInfo *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+
+static UA_INLINE void
+UA_ModificationInfo_delete(UA_ModificationInfo *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+
+/* HistoryModifiedData */
+static UA_INLINE void
+UA_HistoryModifiedData_init(UA_HistoryModifiedData *p) {
+    memset(p, 0, sizeof(UA_HistoryModifiedData));
+}
+
+static UA_INLINE UA_HistoryModifiedData *
+UA_HistoryModifiedData_new(void) {
+    return (UA_HistoryModifiedData*)UA_new(&UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryModifiedData_copy(const UA_HistoryModifiedData *src, UA_HistoryModifiedData *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryModifiedData_deleteMembers(UA_HistoryModifiedData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryModifiedData_clear(UA_HistoryModifiedData *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+
+static UA_INLINE void
+UA_HistoryModifiedData_delete(UA_HistoryModifiedData *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+
+/* HistoryEvent */
+static UA_INLINE void
+UA_HistoryEvent_init(UA_HistoryEvent *p) {
+    memset(p, 0, sizeof(UA_HistoryEvent));
+}
+
+static UA_INLINE UA_HistoryEvent *
+UA_HistoryEvent_new(void) {
+    return (UA_HistoryEvent*)UA_new(&UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_HistoryEvent_copy(const UA_HistoryEvent *src, UA_HistoryEvent *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+
+static UA_INLINE void
+UA_HistoryEvent_deleteMembers(UA_HistoryEvent *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+
+static UA_INLINE void
+UA_HistoryEvent_clear(UA_HistoryEvent *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+
+static UA_INLINE void
+UA_HistoryEvent_delete(UA_HistoryEvent *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+
+/* UpdateEventDetails */
+static UA_INLINE void
+UA_UpdateEventDetails_init(UA_UpdateEventDetails *p) {
+    memset(p, 0, sizeof(UA_UpdateEventDetails));
+}
+
+static UA_INLINE UA_UpdateEventDetails *
+UA_UpdateEventDetails_new(void) {
+    return (UA_UpdateEventDetails*)UA_new(&UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_UpdateEventDetails_copy(const UA_UpdateEventDetails *src, UA_UpdateEventDetails *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateEventDetails_deleteMembers(UA_UpdateEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateEventDetails_clear(UA_UpdateEventDetails *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
+}
+
+static UA_INLINE void
+UA_UpdateEventDetails_delete(UA_UpdateEventDetails *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
 }
 
 /* DataChangeNotification */
@@ -6742,6 +11299,37 @@ UA_EventNotificationList_delete(UA_EventNotificationList *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_EVENTNOTIFICATIONLIST]);
 }
 
+/* SessionDiagnosticsDataType */
+static UA_INLINE void
+UA_SessionDiagnosticsDataType_init(UA_SessionDiagnosticsDataType *p) {
+    memset(p, 0, sizeof(UA_SessionDiagnosticsDataType));
+}
+
+static UA_INLINE UA_SessionDiagnosticsDataType *
+UA_SessionDiagnosticsDataType_new(void) {
+    return (UA_SessionDiagnosticsDataType*)UA_new(&UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_SessionDiagnosticsDataType_copy(const UA_SessionDiagnosticsDataType *src, UA_SessionDiagnosticsDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionDiagnosticsDataType_deleteMembers(UA_SessionDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionDiagnosticsDataType_clear(UA_SessionDiagnosticsDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+
+static UA_INLINE void
+UA_SessionDiagnosticsDataType_delete(UA_SessionDiagnosticsDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+
 /* EnumDescription */
 static UA_INLINE void
 UA_EnumDescription_init(UA_EnumDescription *p) {
@@ -6773,6 +11361,37 @@ UA_EnumDescription_delete(UA_EnumDescription *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_ENUMDESCRIPTION]);
 }
 
+/* UABinaryFileDataType */
+static UA_INLINE void
+UA_UABinaryFileDataType_init(UA_UABinaryFileDataType *p) {
+    memset(p, 0, sizeof(UA_UABinaryFileDataType));
+}
+
+static UA_INLINE UA_UABinaryFileDataType *
+UA_UABinaryFileDataType_new(void) {
+    return (UA_UABinaryFileDataType*)UA_new(&UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_UABinaryFileDataType_copy(const UA_UABinaryFileDataType *src, UA_UABinaryFileDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_UABinaryFileDataType_deleteMembers(UA_UABinaryFileDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_UABinaryFileDataType_clear(UA_UABinaryFileDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+
+static UA_INLINE void
+UA_UABinaryFileDataType_delete(UA_UABinaryFileDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+
 /* DataSetMetaDataType */
 static UA_INLINE void
 UA_DataSetMetaDataType_init(UA_DataSetMetaDataType *p) {
@@ -6802,6 +11421,37 @@ UA_DataSetMetaDataType_clear(UA_DataSetMetaDataType *p) {
 static UA_INLINE void
 UA_DataSetMetaDataType_delete(UA_DataSetMetaDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_DATASETMETADATATYPE]);
+}
+
+/* PublishedDataSetDataType */
+static UA_INLINE void
+UA_PublishedDataSetDataType_init(UA_PublishedDataSetDataType *p) {
+    memset(p, 0, sizeof(UA_PublishedDataSetDataType));
+}
+
+static UA_INLINE UA_PublishedDataSetDataType *
+UA_PublishedDataSetDataType_new(void) {
+    return (UA_PublishedDataSetDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetDataType_copy(const UA_PublishedDataSetDataType *src, UA_PublishedDataSetDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetDataType_deleteMembers(UA_PublishedDataSetDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetDataType_clear(UA_PublishedDataSetDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PublishedDataSetDataType_delete(UA_PublishedDataSetDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
 }
 
 /* DataSetReaderDataType */
@@ -6866,6 +11516,37 @@ UA_TargetVariablesDataType_delete(UA_TargetVariablesDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_TARGETVARIABLESDATATYPE]);
 }
 
+/* DataTypeSchemaHeader */
+static UA_INLINE void
+UA_DataTypeSchemaHeader_init(UA_DataTypeSchemaHeader *p) {
+    memset(p, 0, sizeof(UA_DataTypeSchemaHeader));
+}
+
+static UA_INLINE UA_DataTypeSchemaHeader *
+UA_DataTypeSchemaHeader_new(void) {
+    return (UA_DataTypeSchemaHeader*)UA_new(&UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_DataTypeSchemaHeader_copy(const UA_DataTypeSchemaHeader *src, UA_DataTypeSchemaHeader *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+
+static UA_INLINE void
+UA_DataTypeSchemaHeader_deleteMembers(UA_DataTypeSchemaHeader *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+
+static UA_INLINE void
+UA_DataTypeSchemaHeader_clear(UA_DataTypeSchemaHeader *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+
+static UA_INLINE void
+UA_DataTypeSchemaHeader_delete(UA_DataTypeSchemaHeader *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+
 /* ReaderGroupDataType */
 static UA_INLINE void
 UA_ReaderGroupDataType_init(UA_ReaderGroupDataType *p) {
@@ -6926,6 +11607,37 @@ UA_PubSubConnectionDataType_clear(UA_PubSubConnectionDataType *p) {
 static UA_INLINE void
 UA_PubSubConnectionDataType_delete(UA_PubSubConnectionDataType *p) {
     UA_delete(p, &UA_TYPES[UA_TYPES_PUBSUBCONNECTIONDATATYPE]);
+}
+
+/* PubSubConfigurationDataType */
+static UA_INLINE void
+UA_PubSubConfigurationDataType_init(UA_PubSubConfigurationDataType *p) {
+    memset(p, 0, sizeof(UA_PubSubConfigurationDataType));
+}
+
+static UA_INLINE UA_PubSubConfigurationDataType *
+UA_PubSubConfigurationDataType_new(void) {
+    return (UA_PubSubConfigurationDataType*)UA_new(&UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
+}
+
+static UA_INLINE UA_StatusCode
+UA_PubSubConfigurationDataType_copy(const UA_PubSubConfigurationDataType *src, UA_PubSubConfigurationDataType *dst) {
+    return UA_copy(src, dst, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubConfigurationDataType_deleteMembers(UA_PubSubConfigurationDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubConfigurationDataType_clear(UA_PubSubConfigurationDataType *p) {
+    UA_clear(p, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
+}
+
+static UA_INLINE void
+UA_PubSubConfigurationDataType_delete(UA_PubSubConfigurationDataType *p) {
+    UA_delete(p, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
 }
 
 #if defined(__GNUC__) && __GNUC__ >= 4 && __GNUC_MINOR__ >= 6

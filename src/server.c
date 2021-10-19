@@ -1,7 +1,10 @@
 #include <signal.h>
 #include <stdlib.h>
-#include "open62541.h"
+#include <open62541/plugin/log_stdout.h>
+#include <open62541/server.h>
+#include <open62541/server_config_default.h>
 #include "dht11.h"
+#include "mqtt/mqtt_publish.h"
 
 
 // extern struct dht11InitInfo;
@@ -17,7 +20,7 @@ static void stopHandler(int sign) {
     running = false;
 }
 
-int main(void) 
+int main(int argc, char **argv) 
 {
     signal(SIGINT, stopHandler);
     signal(SIGTERM, stopHandler);
@@ -29,7 +32,14 @@ int main(void)
     
     initInfo.tmp = 26.0;
     initInfo.rh = 0.0;   
-    createDht11ObjectInstance(server, &initInfo);
+    UA_NodeId nodeId = createDht11ObjectInstance(server, &initInfo);
+
+    int res = publishTempSensorData(argc, argv, server, "TempAndHumiditySensor", &nodeId);
+        if(res == -1){
+            UA_LOG_WARNING(UA_Log_Stdout, UA_LOGCATEGORY_USERLAND,
+                    "Could not create a PubSubConnection");
+            UA_Server_delete(server);
+        } 
 
     UA_StatusCode retval = UA_Server_run(server, &running);
     

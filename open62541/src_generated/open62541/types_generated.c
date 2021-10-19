@@ -1,5 +1,5 @@
 /* Generated from Opc.Ua.Types.bsd with script /home/mi/Repository/open62541/tools/generate_datatypes.py
- * on host mi-ubuntu-OPCUA by user mi at 2021-10-12 10:14:58 */
+ * on host mi-ubuntu-OPCUA by user mi at 2021-10-19 04:22:13 */
 
 #include "types_generated.h"
 
@@ -78,6 +78,27 @@
 /* DiagnosticInfo */
 #define DiagnosticInfo_members NULL
 
+/* NamingRuleType */
+#define NamingRuleType_members NULL
+
+/* ImageBMP */
+#define ImageBMP_members NULL
+
+/* ImageGIF */
+#define ImageGIF_members NULL
+
+/* ImageJPG */
+#define ImageJPG_members NULL
+
+/* ImagePNG */
+#define ImagePNG_members NULL
+
+/* AudioDataType */
+#define AudioDataType_members NULL
+
+/* BitFieldMaskDataType */
+#define BitFieldMaskDataType_members NULL
+
 /* KeyValuePair */
 static UA_DataTypeMember KeyValuePair_members[2] = {
 {
@@ -92,6 +113,281 @@ static UA_DataTypeMember KeyValuePair_members[2] = {
     UA_TYPENAME("Value") /* .memberName */
     UA_TYPES_VARIANT, /* .memberTypeIndex */
     offsetof(UA_KeyValuePair, value) - offsetof(UA_KeyValuePair, key) - sizeof(UA_QualifiedName), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* RationalNumber */
+static UA_DataTypeMember RationalNumber_members[2] = {
+{
+    UA_TYPENAME("Numerator") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Denominator") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_RationalNumber, denominator) - offsetof(UA_RationalNumber, numerator) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Vector */
+#define Vector_members NULL
+
+/* ThreeDVector */
+static UA_DataTypeMember ThreeDVector_members[3] = {
+{
+    UA_TYPENAME("X") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Y") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDVector, y) - offsetof(UA_ThreeDVector, x) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Z") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDVector, z) - offsetof(UA_ThreeDVector, y) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* CartesianCoordinates */
+#define CartesianCoordinates_members NULL
+
+/* ThreeDCartesianCoordinates */
+static UA_DataTypeMember ThreeDCartesianCoordinates_members[3] = {
+{
+    UA_TYPENAME("X") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Y") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDCartesianCoordinates, y) - offsetof(UA_ThreeDCartesianCoordinates, x) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Z") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDCartesianCoordinates, z) - offsetof(UA_ThreeDCartesianCoordinates, y) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Orientation */
+#define Orientation_members NULL
+
+/* ThreeDOrientation */
+static UA_DataTypeMember ThreeDOrientation_members[3] = {
+{
+    UA_TYPENAME("A") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("B") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDOrientation, b) - offsetof(UA_ThreeDOrientation, a) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("C") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ThreeDOrientation, c) - offsetof(UA_ThreeDOrientation, b) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Frame */
+#define Frame_members NULL
+
+/* ThreeDFrame */
+static UA_DataTypeMember ThreeDFrame_members[2] = {
+{
+    UA_TYPENAME("CartesianCoordinates") /* .memberName */
+    UA_TYPES_THREEDCARTESIANCOORDINATES, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Orientation") /* .memberName */
+    UA_TYPES_THREEDORIENTATION, /* .memberTypeIndex */
+    offsetof(UA_ThreeDFrame, orientation) - offsetof(UA_ThreeDFrame, cartesianCoordinates) - sizeof(UA_ThreeDCartesianCoordinates), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* OpenFileMode */
+#define OpenFileMode_members NULL
+
+/* IdentityCriteriaType */
+#define IdentityCriteriaType_members NULL
+
+/* IdentityMappingRuleType */
+static UA_DataTypeMember IdentityMappingRuleType_members[2] = {
+{
+    UA_TYPENAME("CriteriaType") /* .memberName */
+    UA_TYPES_IDENTITYCRITERIATYPE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Criteria") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_IdentityMappingRuleType, criteria) - offsetof(UA_IdentityMappingRuleType, criteriaType) - sizeof(UA_IdentityCriteriaType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* CurrencyUnitType */
+static UA_DataTypeMember CurrencyUnitType_members[4] = {
+{
+    UA_TYPENAME("NumericCode") /* .memberName */
+    UA_TYPES_INT16, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Exponent") /* .memberName */
+    UA_TYPES_SBYTE, /* .memberTypeIndex */
+    offsetof(UA_CurrencyUnitType, exponent) - offsetof(UA_CurrencyUnitType, numericCode) - sizeof(UA_Int16), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AlphabeticCode") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_CurrencyUnitType, alphabeticCode) - offsetof(UA_CurrencyUnitType, exponent) - sizeof(UA_SByte), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Currency") /* .memberName */
+    UA_TYPES_LOCALIZEDTEXT, /* .memberTypeIndex */
+    offsetof(UA_CurrencyUnitType, currency) - offsetof(UA_CurrencyUnitType, alphabeticCode) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* TrustListMasks */
+#define TrustListMasks_members NULL
+
+/* TrustListDataType */
+static UA_DataTypeMember TrustListDataType_members[5] = {
+{
+    UA_TYPENAME("SpecifiedLists") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TrustedCertificates") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_TrustListDataType, trustedCertificatesSize) - offsetof(UA_TrustListDataType, specifiedLists) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TrustedCrls") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_TrustListDataType, trustedCrlsSize) - offsetof(UA_TrustListDataType, trustedCertificates) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IssuerCertificates") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_TrustListDataType, issuerCertificatesSize) - offsetof(UA_TrustListDataType, trustedCrls) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IssuerCrls") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_TrustListDataType, issuerCrlsSize) - offsetof(UA_TrustListDataType, issuerCertificates) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DecimalDataType */
+static UA_DataTypeMember DecimalDataType_members[2] = {
+{
+    UA_TYPENAME("Scale") /* .memberName */
+    UA_TYPES_INT16, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Value") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_DecimalDataType, value) - offsetof(UA_DecimalDataType, scale) - sizeof(UA_Int16), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DataTypeDescription */
+static UA_DataTypeMember DataTypeDescription_members[2] = {
+{
+    UA_TYPENAME("DataTypeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Name") /* .memberName */
+    UA_TYPES_QUALIFIEDNAME, /* .memberTypeIndex */
+    offsetof(UA_DataTypeDescription, name) - offsetof(UA_DataTypeDescription, dataTypeId) - sizeof(UA_NodeId), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -157,6 +453,9 @@ static UA_DataTypeMember ConfigurationVersionDataType_members[2] = {
     false /* .isOptional */
 },};
 
+/* PublishedDataSetSourceDataType */
+#define PublishedDataSetSourceDataType_members NULL
+
 /* PublishedVariableDataType */
 static UA_DataTypeMember PublishedVariableDataType_members[8] = {
 {
@@ -219,6 +518,17 @@ static UA_DataTypeMember PublishedVariableDataType_members[8] = {
     UA_TYPENAME("MetaDataProperties") /* .memberName */
     UA_TYPES_QUALIFIEDNAME, /* .memberTypeIndex */
     offsetof(UA_PublishedVariableDataType, metaDataPropertiesSize) - offsetof(UA_PublishedVariableDataType, substituteValue) - sizeof(UA_Variant), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* PublishedDataItemsDataType */
+static UA_DataTypeMember PublishedDataItemsDataType_members[1] = {
+{
+    UA_TYPENAME("PublishedData") /* .memberName */
+    UA_TYPES_PUBLISHEDVARIABLEDATATYPE, /* .memberTypeIndex */
+    0, /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -302,6 +612,32 @@ static UA_DataTypeMember DataSetWriterDataType_members[9] = {
     false /* .isOptional */
 },};
 
+/* DataSetWriterTransportDataType */
+#define DataSetWriterTransportDataType_members NULL
+
+/* DataSetWriterMessageDataType */
+#define DataSetWriterMessageDataType_members NULL
+
+/* WriterGroupTransportDataType */
+#define WriterGroupTransportDataType_members NULL
+
+/* WriterGroupMessageDataType */
+#define WriterGroupMessageDataType_members NULL
+
+/* ConnectionTransportDataType */
+#define ConnectionTransportDataType_members NULL
+
+/* NetworkAddressDataType */
+static UA_DataTypeMember NetworkAddressDataType_members[1] = {
+{
+    UA_TYPENAME("NetworkInterface") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* NetworkAddressUrlDataType */
 static UA_DataTypeMember NetworkAddressUrlDataType_members[2] = {
 {
@@ -320,6 +656,21 @@ static UA_DataTypeMember NetworkAddressUrlDataType_members[2] = {
     false, /* .isArray */
     false /* .isOptional */
 },};
+
+/* ReaderGroupTransportDataType */
+#define ReaderGroupTransportDataType_members NULL
+
+/* ReaderGroupMessageDataType */
+#define ReaderGroupMessageDataType_members NULL
+
+/* DataSetReaderTransportDataType */
+#define DataSetReaderTransportDataType_members NULL
+
+/* DataSetReaderMessageDataType */
+#define DataSetReaderMessageDataType_members NULL
+
+/* SubscribedDataSetDataType */
+#define SubscribedDataSetDataType_members NULL
 
 /* OverrideValueHandling */
 #define OverrideValueHandling_members NULL
@@ -533,6 +884,36 @@ static UA_DataTypeMember JsonDataSetReaderMessageDataType_members[2] = {
     false /* .isOptional */
 },};
 
+/* DatagramConnectionTransportDataType */
+static UA_DataTypeMember DatagramConnectionTransportDataType_members[1] = {
+{
+    UA_TYPENAME("DiscoveryAddress") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DatagramWriterGroupTransportDataType */
+static UA_DataTypeMember DatagramWriterGroupTransportDataType_members[2] = {
+{
+    UA_TYPENAME("MessageRepeatCount") /* .memberName */
+    UA_TYPES_BYTE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MessageRepeatDelay") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_DatagramWriterGroupTransportDataType, messageRepeatDelay) - offsetof(UA_DatagramWriterGroupTransportDataType, messageRepeatCount) - sizeof(UA_Byte), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* BrokerConnectionTransportDataType */
 static UA_DataTypeMember BrokerConnectionTransportDataType_members[2] = {
 {
@@ -684,8 +1065,51 @@ static UA_DataTypeMember BrokerDataSetReaderTransportDataType_members[5] = {
     false /* .isOptional */
 },};
 
+/* DiagnosticsLevel */
+#define DiagnosticsLevel_members NULL
+
+/* PubSubDiagnosticsCounterClassification */
+#define PubSubDiagnosticsCounterClassification_members NULL
+
+/* IdType */
+#define IdType_members NULL
+
 /* NodeClass */
 #define NodeClass_members NULL
+
+/* PermissionType */
+#define PermissionType_members NULL
+
+/* AccessLevelType */
+#define AccessLevelType_members NULL
+
+/* AccessLevelExType */
+#define AccessLevelExType_members NULL
+
+/* EventNotifierType */
+#define EventNotifierType_members NULL
+
+/* AccessRestrictionType */
+#define AccessRestrictionType_members NULL
+
+/* RolePermissionType */
+static UA_DataTypeMember RolePermissionType_members[2] = {
+{
+    UA_TYPENAME("RoleId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Permissions") /* .memberName */
+    UA_TYPES_PERMISSIONTYPE, /* .memberTypeIndex */
+    offsetof(UA_RolePermissionType, permissions) - offsetof(UA_RolePermissionType, roleId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
 
 /* StructureType */
 #define StructureType_members NULL
@@ -781,6 +1205,33 @@ static UA_DataTypeMember StructureDefinition_members[4] = {
     offsetof(UA_StructureDefinition, fieldsSize) - offsetof(UA_StructureDefinition, structureType) - sizeof(UA_StructureType), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ReferenceNode */
+static UA_DataTypeMember ReferenceNode_members[3] = {
+{
+    UA_TYPENAME("ReferenceTypeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IsInverse") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_ReferenceNode, isInverse) - offsetof(UA_ReferenceNode, referenceTypeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TargetId") /* .memberName */
+    UA_TYPES_EXPANDEDNODEID, /* .memberTypeIndex */
+    offsetof(UA_ReferenceNode, targetId) - offsetof(UA_ReferenceNode, isInverse) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
     false /* .isOptional */
 },};
 
@@ -889,6 +1340,43 @@ static UA_DataTypeMember EnumField_members[4] = {
     false /* .isOptional */
 },};
 
+/* OptionSet */
+static UA_DataTypeMember OptionSet_members[2] = {
+{
+    UA_TYPENAME("Value") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ValidBits") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_OptionSet, validBits) - offsetof(UA_OptionSet, value) - sizeof(UA_ByteString), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Union */
+#define Union_members NULL
+
+/* NormalizedString */
+#define NormalizedString_members NULL
+
+/* DecimalString */
+#define DecimalString_members NULL
+
+/* DurationString */
+#define DurationString_members NULL
+
+/* TimeString */
+#define TimeString_members NULL
+
+/* DateString */
+#define DateString_members NULL
+
 /* Duration */
 #define Duration_members NULL
 
@@ -897,6 +1385,31 @@ static UA_DataTypeMember EnumField_members[4] = {
 
 /* LocaleId */
 #define LocaleId_members NULL
+
+/* TimeZoneDataType */
+static UA_DataTypeMember TimeZoneDataType_members[2] = {
+{
+    UA_TYPENAME("Offset") /* .memberName */
+    UA_TYPES_INT16, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DaylightSavingInOffset") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_TimeZoneDataType, daylightSavingInOffset) - offsetof(UA_TimeZoneDataType, offset) - sizeof(UA_Int16), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Index */
+#define Index_members NULL
+
+/* IntegerId */
+#define IntegerId_members NULL
 
 /* ApplicationType */
 #define ApplicationType_members NULL
@@ -1070,12 +1583,85 @@ static UA_DataTypeMember ResponseHeader_members[6] = {
     false /* .isOptional */
 },};
 
+/* VersionTime */
+#define VersionTime_members NULL
+
 /* ServiceFault */
 static UA_DataTypeMember ServiceFault_members[1] = {
 {
     UA_TYPENAME("ResponseHeader") /* .memberName */
     UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
     0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SessionlessInvokeRequestType */
+static UA_DataTypeMember SessionlessInvokeRequestType_members[5] = {
+{
+    UA_TYPENAME("UrisVersion") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NamespaceUris") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeRequestType, namespaceUrisSize) - offsetof(UA_SessionlessInvokeRequestType, urisVersion) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerUris") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeRequestType, serverUrisSize) - offsetof(UA_SessionlessInvokeRequestType, namespaceUris) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LocaleIds") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeRequestType, localeIdsSize) - offsetof(UA_SessionlessInvokeRequestType, serverUris) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServiceId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeRequestType, serviceId) - offsetof(UA_SessionlessInvokeRequestType, localeIds) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SessionlessInvokeResponseType */
+static UA_DataTypeMember SessionlessInvokeResponseType_members[3] = {
+{
+    UA_TYPENAME("NamespaceUris") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerUris") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeResponseType, serverUrisSize) - offsetof(UA_SessionlessInvokeResponseType, namespaceUris) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServiceId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionlessInvokeResponseType, serviceId) - offsetof(UA_SessionlessInvokeResponseType, serverUris) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -1134,6 +1720,106 @@ static UA_DataTypeMember FindServersResponse_members[2] = {
     true, /* .isArray */
     false /* .isOptional */
 },};
+
+/* ServerOnNetwork */
+static UA_DataTypeMember ServerOnNetwork_members[4] = {
+{
+    UA_TYPENAME("RecordId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ServerOnNetwork, serverName) - offsetof(UA_ServerOnNetwork, recordId) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiscoveryUrl") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ServerOnNetwork, discoveryUrl) - offsetof(UA_ServerOnNetwork, serverName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerCapabilities") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ServerOnNetwork, serverCapabilitiesSize) - offsetof(UA_ServerOnNetwork, discoveryUrl) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* FindServersOnNetworkRequest */
+static UA_DataTypeMember FindServersOnNetworkRequest_members[4] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StartingRecordId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_FindServersOnNetworkRequest, startingRecordId) - offsetof(UA_FindServersOnNetworkRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxRecordsToReturn") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_FindServersOnNetworkRequest, maxRecordsToReturn) - offsetof(UA_FindServersOnNetworkRequest, startingRecordId) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerCapabilityFilter") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_FindServersOnNetworkRequest, serverCapabilityFilterSize) - offsetof(UA_FindServersOnNetworkRequest, maxRecordsToReturn) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* FindServersOnNetworkResponse */
+static UA_DataTypeMember FindServersOnNetworkResponse_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastCounterResetTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_FindServersOnNetworkResponse, lastCounterResetTime) - offsetof(UA_FindServersOnNetworkResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Servers") /* .memberName */
+    UA_TYPES_SERVERONNETWORK, /* .memberTypeIndex */
+    offsetof(UA_FindServersOnNetworkResponse, serversSize) - offsetof(UA_FindServersOnNetworkResponse, lastCounterResetTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ApplicationInstanceCertificate */
+#define ApplicationInstanceCertificate_members NULL
 
 /* MessageSecurityMode */
 #define MessageSecurityMode_members NULL
@@ -1305,6 +1991,179 @@ static UA_DataTypeMember GetEndpointsResponse_members[2] = {
     false /* .isOptional */
 },};
 
+/* RegisteredServer */
+static UA_DataTypeMember RegisteredServer_members[8] = {
+{
+    UA_TYPENAME("ServerUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ProductUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, productUri) - offsetof(UA_RegisteredServer, serverUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerNames") /* .memberName */
+    UA_TYPES_LOCALIZEDTEXT, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, serverNamesSize) - offsetof(UA_RegisteredServer, productUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerType") /* .memberName */
+    UA_TYPES_APPLICATIONTYPE, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, serverType) - offsetof(UA_RegisteredServer, serverNames) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("GatewayServerUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, gatewayServerUri) - offsetof(UA_RegisteredServer, serverType) - sizeof(UA_ApplicationType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiscoveryUrls") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, discoveryUrlsSize) - offsetof(UA_RegisteredServer, gatewayServerUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SemaphoreFilePath") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, semaphoreFilePath) - offsetof(UA_RegisteredServer, discoveryUrls) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IsOnline") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_RegisteredServer, isOnline) - offsetof(UA_RegisteredServer, semaphoreFilePath) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* RegisterServerRequest */
+static UA_DataTypeMember RegisterServerRequest_members[2] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Server") /* .memberName */
+    UA_TYPES_REGISTEREDSERVER, /* .memberTypeIndex */
+    offsetof(UA_RegisterServerRequest, server) - offsetof(UA_RegisterServerRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* RegisterServerResponse */
+static UA_DataTypeMember RegisterServerResponse_members[1] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DiscoveryConfiguration */
+#define DiscoveryConfiguration_members NULL
+
+/* MdnsDiscoveryConfiguration */
+static UA_DataTypeMember MdnsDiscoveryConfiguration_members[2] = {
+{
+    UA_TYPENAME("MdnsServerName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerCapabilities") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_MdnsDiscoveryConfiguration, serverCapabilitiesSize) - offsetof(UA_MdnsDiscoveryConfiguration, mdnsServerName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* RegisterServer2Request */
+static UA_DataTypeMember RegisterServer2Request_members[3] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Server") /* .memberName */
+    UA_TYPES_REGISTEREDSERVER, /* .memberTypeIndex */
+    offsetof(UA_RegisterServer2Request, server) - offsetof(UA_RegisterServer2Request, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiscoveryConfiguration") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    offsetof(UA_RegisterServer2Request, discoveryConfigurationSize) - offsetof(UA_RegisterServer2Request, server) - sizeof(UA_RegisteredServer), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* RegisterServer2Response */
+static UA_DataTypeMember RegisterServer2Response_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ConfigurationResults") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    offsetof(UA_RegisterServer2Response, configurationResultsSize) - offsetof(UA_RegisterServer2Response, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_RegisterServer2Response, diagnosticInfosSize) - offsetof(UA_RegisterServer2Response, configurationResults) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* SecurityTokenRequestType */
 #define SecurityTokenRequestType_members NULL
 
@@ -1469,6 +2328,9 @@ static UA_DataTypeMember SignedSoftwareCertificate_members[2] = {
     false, /* .isArray */
     false /* .isOptional */
 },};
+
+/* SessionAuthenticationToken */
+#define SessionAuthenticationToken_members NULL
 
 /* SignatureData */
 static UA_DataTypeMember SignatureData_members[2] = {
@@ -1750,6 +2612,9 @@ static UA_DataTypeMember IssuedIdentityToken_members[3] = {
     false /* .isOptional */
 },};
 
+/* RsaEncryptedSecret */
+#define RsaEncryptedSecret_members NULL
+
 /* ActivateSessionRequest */
 static UA_DataTypeMember ActivateSessionRequest_members[6] = {
 {
@@ -1861,6 +2726,44 @@ static UA_DataTypeMember CloseSessionResponse_members[1] = {
     UA_TYPENAME("ResponseHeader") /* .memberName */
     UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
     0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* CancelRequest */
+static UA_DataTypeMember CancelRequest_members[2] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RequestHandle") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_CancelRequest, requestHandle) - offsetof(UA_CancelRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* CancelResponse */
+static UA_DataTypeMember CancelResponse_members[2] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CancelCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_CancelResponse, cancelCount) - offsetof(UA_CancelResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -2440,6 +3343,76 @@ static UA_DataTypeMember ViewAttributes_members[7] = {
     false /* .isOptional */
 },};
 
+/* GenericAttributeValue */
+static UA_DataTypeMember GenericAttributeValue_members[2] = {
+{
+    UA_TYPENAME("AttributeId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Value") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributeValue, value) - offsetof(UA_GenericAttributeValue, attributeId) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* GenericAttributes */
+static UA_DataTypeMember GenericAttributes_members[6] = {
+{
+    UA_TYPENAME("SpecifiedAttributes") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DisplayName") /* .memberName */
+    UA_TYPES_LOCALIZEDTEXT, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributes, displayName) - offsetof(UA_GenericAttributes, specifiedAttributes) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Description") /* .memberName */
+    UA_TYPES_LOCALIZEDTEXT, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributes, description) - offsetof(UA_GenericAttributes, displayName) - sizeof(UA_LocalizedText), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("WriteMask") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributes, writeMask) - offsetof(UA_GenericAttributes, description) - sizeof(UA_LocalizedText), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UserWriteMask") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributes, userWriteMask) - offsetof(UA_GenericAttributes, writeMask) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AttributeValues") /* .memberName */
+    UA_TYPES_GENERICATTRIBUTEVALUE, /* .memberTypeIndex */
+    offsetof(UA_GenericAttributes, attributeValuesSize) - offsetof(UA_GenericAttributes, userWriteMask) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* AddNodesItem */
 static UA_DataTypeMember AddNodesItem_members[7] = {
 {
@@ -2815,6 +3788,9 @@ static UA_DataTypeMember DeleteReferencesResponse_members[3] = {
     false /* .isOptional */
 },};
 
+/* AttributeWriteMask */
+#define AttributeWriteMask_members NULL
+
 /* BrowseDirection */
 #define BrowseDirection_members NULL
 
@@ -2957,6 +3933,9 @@ static UA_DataTypeMember ReferenceDescription_members[7] = {
     false, /* .isArray */
     false /* .isOptional */
 },};
+
+/* ContinuationPoint */
+#define ContinuationPoint_members NULL
 
 /* BrowseResult */
 static UA_DataTypeMember BrowseResult_members[3] = {
@@ -3318,8 +4297,208 @@ static UA_DataTypeMember UnregisterNodesResponse_members[1] = {
     false /* .isOptional */
 },};
 
+/* Counter */
+#define Counter_members NULL
+
+/* Time */
+#define Time_members NULL
+
+/* Date */
+#define Date_members NULL
+
+/* EndpointConfiguration */
+static UA_DataTypeMember EndpointConfiguration_members[9] = {
+{
+    UA_TYPENAME("OperationTimeout") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UseBinaryEncoding") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, useBinaryEncoding) - offsetof(UA_EndpointConfiguration, operationTimeout) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxStringLength") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, maxStringLength) - offsetof(UA_EndpointConfiguration, useBinaryEncoding) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxByteStringLength") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, maxByteStringLength) - offsetof(UA_EndpointConfiguration, maxStringLength) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxArrayLength") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, maxArrayLength) - offsetof(UA_EndpointConfiguration, maxByteStringLength) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxMessageSize") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, maxMessageSize) - offsetof(UA_EndpointConfiguration, maxArrayLength) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxBufferSize") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, maxBufferSize) - offsetof(UA_EndpointConfiguration, maxMessageSize) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ChannelLifetime") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, channelLifetime) - offsetof(UA_EndpointConfiguration, maxBufferSize) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityTokenLifetime") /* .memberName */
+    UA_TYPES_INT32, /* .memberTypeIndex */
+    offsetof(UA_EndpointConfiguration, securityTokenLifetime) - offsetof(UA_EndpointConfiguration, channelLifetime) - sizeof(UA_Int32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* QueryDataDescription */
+static UA_DataTypeMember QueryDataDescription_members[3] = {
+{
+    UA_TYPENAME("RelativePath") /* .memberName */
+    UA_TYPES_RELATIVEPATH, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AttributeId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_QueryDataDescription, attributeId) - offsetof(UA_QueryDataDescription, relativePath) - sizeof(UA_RelativePath), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IndexRange") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_QueryDataDescription, indexRange) - offsetof(UA_QueryDataDescription, attributeId) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* NodeTypeDescription */
+static UA_DataTypeMember NodeTypeDescription_members[3] = {
+{
+    UA_TYPENAME("TypeDefinitionNode") /* .memberName */
+    UA_TYPES_EXPANDEDNODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IncludeSubTypes") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_NodeTypeDescription, includeSubTypes) - offsetof(UA_NodeTypeDescription, typeDefinitionNode) - sizeof(UA_ExpandedNodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataToReturn") /* .memberName */
+    UA_TYPES_QUERYDATADESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_NodeTypeDescription, dataToReturnSize) - offsetof(UA_NodeTypeDescription, includeSubTypes) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* FilterOperator */
 #define FilterOperator_members NULL
+
+/* QueryDataSet */
+static UA_DataTypeMember QueryDataSet_members[3] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_EXPANDEDNODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TypeDefinitionNode") /* .memberName */
+    UA_TYPES_EXPANDEDNODEID, /* .memberTypeIndex */
+    offsetof(UA_QueryDataSet, typeDefinitionNode) - offsetof(UA_QueryDataSet, nodeId) - sizeof(UA_ExpandedNodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Values") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    offsetof(UA_QueryDataSet, valuesSize) - offsetof(UA_QueryDataSet, typeDefinitionNode) - sizeof(UA_ExpandedNodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* NodeReference */
+static UA_DataTypeMember NodeReference_members[4] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReferenceTypeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_NodeReference, referenceTypeId) - offsetof(UA_NodeReference, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IsForward") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_NodeReference, isForward) - offsetof(UA_NodeReference, referenceTypeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReferencedNodeIds") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_NodeReference, referencedNodeIdsSize) - offsetof(UA_NodeReference, isForward) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
 
 /* ContentFilterElement */
 static UA_DataTypeMember ContentFilterElement_members[2] = {
@@ -3500,6 +4679,189 @@ static UA_DataTypeMember ContentFilterResult_members[2] = {
     false /* .isOptional */
 },};
 
+/* ParsingResult */
+static UA_DataTypeMember ParsingResult_members[3] = {
+{
+    UA_TYPENAME("StatusCode") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataStatusCodes") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    offsetof(UA_ParsingResult, dataStatusCodesSize) - offsetof(UA_ParsingResult, statusCode) - sizeof(UA_StatusCode), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataDiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_ParsingResult, dataDiagnosticInfosSize) - offsetof(UA_ParsingResult, dataStatusCodes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* QueryFirstRequest */
+static UA_DataTypeMember QueryFirstRequest_members[6] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("View") /* .memberName */
+    UA_TYPES_VIEWDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstRequest, view) - offsetof(UA_QueryFirstRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NodeTypes") /* .memberName */
+    UA_TYPES_NODETYPEDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstRequest, nodeTypesSize) - offsetof(UA_QueryFirstRequest, view) - sizeof(UA_ViewDescription), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Filter") /* .memberName */
+    UA_TYPES_CONTENTFILTER, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstRequest, filter) - offsetof(UA_QueryFirstRequest, nodeTypes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxDataSetsToReturn") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstRequest, maxDataSetsToReturn) - offsetof(UA_QueryFirstRequest, filter) - sizeof(UA_ContentFilter), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxReferencesToReturn") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstRequest, maxReferencesToReturn) - offsetof(UA_QueryFirstRequest, maxDataSetsToReturn) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* QueryFirstResponse */
+static UA_DataTypeMember QueryFirstResponse_members[6] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("QueryDataSets") /* .memberName */
+    UA_TYPES_QUERYDATASET, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstResponse, queryDataSetsSize) - offsetof(UA_QueryFirstResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ContinuationPoint") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstResponse, continuationPoint) - offsetof(UA_QueryFirstResponse, queryDataSets) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ParsingResults") /* .memberName */
+    UA_TYPES_PARSINGRESULT, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstResponse, parsingResultsSize) - offsetof(UA_QueryFirstResponse, continuationPoint) - sizeof(UA_ByteString), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstResponse, diagnosticInfosSize) - offsetof(UA_QueryFirstResponse, parsingResults) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("FilterResult") /* .memberName */
+    UA_TYPES_CONTENTFILTERRESULT, /* .memberTypeIndex */
+    offsetof(UA_QueryFirstResponse, filterResult) - offsetof(UA_QueryFirstResponse, diagnosticInfos) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* QueryNextRequest */
+static UA_DataTypeMember QueryNextRequest_members[3] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReleaseContinuationPoint") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_QueryNextRequest, releaseContinuationPoint) - offsetof(UA_QueryNextRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ContinuationPoint") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_QueryNextRequest, continuationPoint) - offsetof(UA_QueryNextRequest, releaseContinuationPoint) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* QueryNextResponse */
+static UA_DataTypeMember QueryNextResponse_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("QueryDataSets") /* .memberName */
+    UA_TYPES_QUERYDATASET, /* .memberTypeIndex */
+    offsetof(UA_QueryNextResponse, queryDataSetsSize) - offsetof(UA_QueryNextResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RevisedContinuationPoint") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_QueryNextResponse, revisedContinuationPoint) - offsetof(UA_QueryNextResponse, queryDataSets) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* TimestampsToReturn */
 #define TimestampsToReturn_members NULL
 
@@ -3600,6 +4962,225 @@ static UA_DataTypeMember ReadResponse_members[3] = {
     false /* .isOptional */
 },};
 
+/* HistoryReadValueId */
+static UA_DataTypeMember HistoryReadValueId_members[4] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IndexRange") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadValueId, indexRange) - offsetof(UA_HistoryReadValueId, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataEncoding") /* .memberName */
+    UA_TYPES_QUALIFIEDNAME, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadValueId, dataEncoding) - offsetof(UA_HistoryReadValueId, indexRange) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ContinuationPoint") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadValueId, continuationPoint) - offsetof(UA_HistoryReadValueId, dataEncoding) - sizeof(UA_QualifiedName), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryReadResult */
+static UA_DataTypeMember HistoryReadResult_members[3] = {
+{
+    UA_TYPENAME("StatusCode") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ContinuationPoint") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadResult, continuationPoint) - offsetof(UA_HistoryReadResult, statusCode) - sizeof(UA_StatusCode), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("HistoryData") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadResult, historyData) - offsetof(UA_HistoryReadResult, continuationPoint) - sizeof(UA_ByteString), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryReadDetails */
+#define HistoryReadDetails_members NULL
+
+/* ReadRawModifiedDetails */
+static UA_DataTypeMember ReadRawModifiedDetails_members[5] = {
+{
+    UA_TYPENAME("IsReadModified") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StartTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ReadRawModifiedDetails, startTime) - offsetof(UA_ReadRawModifiedDetails, isReadModified) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EndTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ReadRawModifiedDetails, endTime) - offsetof(UA_ReadRawModifiedDetails, startTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NumValuesPerNode") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_ReadRawModifiedDetails, numValuesPerNode) - offsetof(UA_ReadRawModifiedDetails, endTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReturnBounds") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_ReadRawModifiedDetails, returnBounds) - offsetof(UA_ReadRawModifiedDetails, numValuesPerNode) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ReadAtTimeDetails */
+static UA_DataTypeMember ReadAtTimeDetails_members[2] = {
+{
+    UA_TYPENAME("ReqTimes") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UseSimpleBounds") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_ReadAtTimeDetails, useSimpleBounds) - offsetof(UA_ReadAtTimeDetails, reqTimes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ReadAnnotationDataDetails */
+static UA_DataTypeMember ReadAnnotationDataDetails_members[1] = {
+{
+    UA_TYPENAME("ReqTimes") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryData */
+static UA_DataTypeMember HistoryData_members[1] = {
+{
+    UA_TYPENAME("DataValues") /* .memberName */
+    UA_TYPES_DATAVALUE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryReadRequest */
+static UA_DataTypeMember HistoryReadRequest_members[5] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("HistoryReadDetails") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadRequest, historyReadDetails) - offsetof(UA_HistoryReadRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TimestampsToReturn") /* .memberName */
+    UA_TYPES_TIMESTAMPSTORETURN, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadRequest, timestampsToReturn) - offsetof(UA_HistoryReadRequest, historyReadDetails) - sizeof(UA_ExtensionObject), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReleaseContinuationPoints") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadRequest, releaseContinuationPoints) - offsetof(UA_HistoryReadRequest, timestampsToReturn) - sizeof(UA_TimestampsToReturn), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NodesToRead") /* .memberName */
+    UA_TYPES_HISTORYREADVALUEID, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadRequest, nodesToReadSize) - offsetof(UA_HistoryReadRequest, releaseContinuationPoints) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryReadResponse */
+static UA_DataTypeMember HistoryReadResponse_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Results") /* .memberName */
+    UA_TYPES_HISTORYREADRESULT, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadResponse, resultsSize) - offsetof(UA_HistoryReadResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_HistoryReadResponse, diagnosticInfosSize) - offsetof(UA_HistoryReadResponse, results) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* WriteValue */
 static UA_DataTypeMember WriteValue_members[4] = {
 {
@@ -3676,6 +5257,223 @@ static UA_DataTypeMember WriteResponse_members[3] = {
     UA_TYPENAME("DiagnosticInfos") /* .memberName */
     UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
     offsetof(UA_WriteResponse, diagnosticInfosSize) - offsetof(UA_WriteResponse, results) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryUpdateDetails */
+static UA_DataTypeMember HistoryUpdateDetails_members[1] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryUpdateType */
+#define HistoryUpdateType_members NULL
+
+/* PerformUpdateType */
+#define PerformUpdateType_members NULL
+
+/* UpdateDataDetails */
+static UA_DataTypeMember UpdateDataDetails_members[3] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PerformInsertReplace") /* .memberName */
+    UA_TYPES_PERFORMUPDATETYPE, /* .memberTypeIndex */
+    offsetof(UA_UpdateDataDetails, performInsertReplace) - offsetof(UA_UpdateDataDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UpdateValues") /* .memberName */
+    UA_TYPES_DATAVALUE, /* .memberTypeIndex */
+    offsetof(UA_UpdateDataDetails, updateValuesSize) - offsetof(UA_UpdateDataDetails, performInsertReplace) - sizeof(UA_PerformUpdateType), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* UpdateStructureDataDetails */
+static UA_DataTypeMember UpdateStructureDataDetails_members[3] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PerformInsertReplace") /* .memberName */
+    UA_TYPES_PERFORMUPDATETYPE, /* .memberTypeIndex */
+    offsetof(UA_UpdateStructureDataDetails, performInsertReplace) - offsetof(UA_UpdateStructureDataDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UpdateValues") /* .memberName */
+    UA_TYPES_DATAVALUE, /* .memberTypeIndex */
+    offsetof(UA_UpdateStructureDataDetails, updateValuesSize) - offsetof(UA_UpdateStructureDataDetails, performInsertReplace) - sizeof(UA_PerformUpdateType), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DeleteRawModifiedDetails */
+static UA_DataTypeMember DeleteRawModifiedDetails_members[4] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("IsDeleteModified") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_DeleteRawModifiedDetails, isDeleteModified) - offsetof(UA_DeleteRawModifiedDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StartTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_DeleteRawModifiedDetails, startTime) - offsetof(UA_DeleteRawModifiedDetails, isDeleteModified) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EndTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_DeleteRawModifiedDetails, endTime) - offsetof(UA_DeleteRawModifiedDetails, startTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DeleteAtTimeDetails */
+static UA_DataTypeMember DeleteAtTimeDetails_members[2] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReqTimes") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_DeleteAtTimeDetails, reqTimesSize) - offsetof(UA_DeleteAtTimeDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DeleteEventDetails */
+static UA_DataTypeMember DeleteEventDetails_members[2] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EventIds") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_DeleteEventDetails, eventIdsSize) - offsetof(UA_DeleteEventDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryUpdateResult */
+static UA_DataTypeMember HistoryUpdateResult_members[3] = {
+{
+    UA_TYPENAME("StatusCode") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("OperationResults") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    offsetof(UA_HistoryUpdateResult, operationResultsSize) - offsetof(UA_HistoryUpdateResult, statusCode) - sizeof(UA_StatusCode), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_HistoryUpdateResult, diagnosticInfosSize) - offsetof(UA_HistoryUpdateResult, operationResults) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryUpdateRequest */
+static UA_DataTypeMember HistoryUpdateRequest_members[2] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("HistoryUpdateDetails") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    offsetof(UA_HistoryUpdateRequest, historyUpdateDetailsSize) - offsetof(UA_HistoryUpdateRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryUpdateResponse */
+static UA_DataTypeMember HistoryUpdateResponse_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Results") /* .memberName */
+    UA_TYPES_HISTORYUPDATERESULT, /* .memberTypeIndex */
+    offsetof(UA_HistoryUpdateResponse, resultsSize) - offsetof(UA_HistoryUpdateResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_HistoryUpdateResponse, diagnosticInfosSize) - offsetof(UA_HistoryUpdateResponse, results) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -3797,6 +5595,9 @@ static UA_DataTypeMember CallResponse_members[3] = {
 
 /* DeadbandType */
 #define DeadbandType_members NULL
+
+/* MonitoringFilter */
+#define MonitoringFilter_members NULL
 
 /* DataChangeFilter */
 static UA_DataTypeMember DataChangeFilter_members[3] = {
@@ -3922,6 +5723,9 @@ static UA_DataTypeMember AggregateFilter_members[4] = {
     false /* .isOptional */
 },};
 
+/* MonitoringFilterResult */
+#define MonitoringFilterResult_members NULL
+
 /* EventFilterResult */
 static UA_DataTypeMember EventFilterResult_members[3] = {
 {
@@ -3944,6 +5748,33 @@ static UA_DataTypeMember EventFilterResult_members[3] = {
     UA_TYPENAME("WhereClauseResult") /* .memberName */
     UA_TYPES_CONTENTFILTERRESULT, /* .memberTypeIndex */
     offsetof(UA_EventFilterResult, whereClauseResult) - offsetof(UA_EventFilterResult, selectClauseDiagnosticInfos) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* AggregateFilterResult */
+static UA_DataTypeMember AggregateFilterResult_members[3] = {
+{
+    UA_TYPENAME("RevisedStartTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RevisedProcessingInterval") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_AggregateFilterResult, revisedProcessingInterval) - offsetof(UA_AggregateFilterResult, revisedStartTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RevisedAggregateConfiguration") /* .memberName */
+    UA_TYPES_AGGREGATECONFIGURATION, /* .memberTypeIndex */
+    offsetof(UA_AggregateFilterResult, revisedAggregateConfiguration) - offsetof(UA_AggregateFilterResult, revisedProcessingInterval) - sizeof(UA_Double), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -4719,6 +6550,9 @@ static UA_DataTypeMember NotificationMessage_members[3] = {
     false /* .isOptional */
 },};
 
+/* NotificationData */
+#define NotificationData_members NULL
+
 /* MonitoredItemNotification */
 static UA_DataTypeMember MonitoredItemNotification_members[2] = {
 {
@@ -4752,6 +6586,17 @@ static UA_DataTypeMember EventFieldList_members[2] = {
     UA_TYPENAME("EventFields") /* .memberName */
     UA_TYPES_VARIANT, /* .memberTypeIndex */
     offsetof(UA_EventFieldList, eventFieldsSize) - offsetof(UA_EventFieldList, clientHandle) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryEventFieldList */
+static UA_DataTypeMember HistoryEventFieldList_members[1] = {
+{
+    UA_TYPENAME("EventFields") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    0, /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -4919,6 +6764,79 @@ static UA_DataTypeMember RepublishResponse_members[2] = {
     false /* .isOptional */
 },};
 
+/* TransferResult */
+static UA_DataTypeMember TransferResult_members[2] = {
+{
+    UA_TYPENAME("StatusCode") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AvailableSequenceNumbers") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_TransferResult, availableSequenceNumbersSize) - offsetof(UA_TransferResult, statusCode) - sizeof(UA_StatusCode), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* TransferSubscriptionsRequest */
+static UA_DataTypeMember TransferSubscriptionsRequest_members[3] = {
+{
+    UA_TYPENAME("RequestHeader") /* .memberName */
+    UA_TYPES_REQUESTHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SubscriptionIds") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_TransferSubscriptionsRequest, subscriptionIdsSize) - offsetof(UA_TransferSubscriptionsRequest, requestHeader) - sizeof(UA_RequestHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SendInitialValues") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_TransferSubscriptionsRequest, sendInitialValues) - offsetof(UA_TransferSubscriptionsRequest, subscriptionIds) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* TransferSubscriptionsResponse */
+static UA_DataTypeMember TransferSubscriptionsResponse_members[3] = {
+{
+    UA_TYPENAME("ResponseHeader") /* .memberName */
+    UA_TYPES_RESPONSEHEADER, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Results") /* .memberName */
+    UA_TYPES_TRANSFERRESULT, /* .memberTypeIndex */
+    offsetof(UA_TransferSubscriptionsResponse, resultsSize) - offsetof(UA_TransferSubscriptionsResponse, responseHeader) - sizeof(UA_ResponseHeader), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfos") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_TransferSubscriptionsResponse, diagnosticInfosSize) - offsetof(UA_TransferSubscriptionsResponse, results) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* DeleteSubscriptionsRequest */
 static UA_DataTypeMember DeleteSubscriptionsRequest_members[2] = {
 {
@@ -5021,6 +6939,98 @@ static UA_DataTypeMember BuildInfo_members[6] = {
 
 /* ServerState */
 #define ServerState_members NULL
+
+/* RedundantServerDataType */
+static UA_DataTypeMember RedundantServerDataType_members[3] = {
+{
+    UA_TYPENAME("ServerId") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServiceLevel") /* .memberName */
+    UA_TYPES_BYTE, /* .memberTypeIndex */
+    offsetof(UA_RedundantServerDataType, serviceLevel) - offsetof(UA_RedundantServerDataType, serverId) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerState") /* .memberName */
+    UA_TYPES_SERVERSTATE, /* .memberTypeIndex */
+    offsetof(UA_RedundantServerDataType, serverState) - offsetof(UA_RedundantServerDataType, serviceLevel) - sizeof(UA_Byte), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* EndpointUrlListDataType */
+static UA_DataTypeMember EndpointUrlListDataType_members[1] = {
+{
+    UA_TYPENAME("EndpointUrlList") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* NetworkGroupDataType */
+static UA_DataTypeMember NetworkGroupDataType_members[2] = {
+{
+    UA_TYPENAME("ServerUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NetworkPaths") /* .memberName */
+    UA_TYPES_ENDPOINTURLLISTDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_NetworkGroupDataType, networkPathsSize) - offsetof(UA_NetworkGroupDataType, serverUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SamplingIntervalDiagnosticsDataType */
+static UA_DataTypeMember SamplingIntervalDiagnosticsDataType_members[4] = {
+{
+    UA_TYPENAME("SamplingInterval") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MonitoredItemCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SamplingIntervalDiagnosticsDataType, monitoredItemCount) - offsetof(UA_SamplingIntervalDiagnosticsDataType, samplingInterval) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxMonitoredItemCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SamplingIntervalDiagnosticsDataType, maxMonitoredItemCount) - offsetof(UA_SamplingIntervalDiagnosticsDataType, monitoredItemCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DisabledMonitoredItemCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SamplingIntervalDiagnosticsDataType, disabledMonitoredItemCount) - offsetof(UA_SamplingIntervalDiagnosticsDataType, maxMonitoredItemCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
 
 /* ServerDiagnosticsSummaryDataType */
 static UA_DataTypeMember ServerDiagnosticsSummaryDataType_members[12] = {
@@ -5167,6 +7177,419 @@ static UA_DataTypeMember ServerStatusDataType_members[6] = {
     UA_TYPENAME("ShutdownReason") /* .memberName */
     UA_TYPES_LOCALIZEDTEXT, /* .memberTypeIndex */
     offsetof(UA_ServerStatusDataType, shutdownReason) - offsetof(UA_ServerStatusDataType, secondsTillShutdown) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SessionSecurityDiagnosticsDataType */
+static UA_DataTypeMember SessionSecurityDiagnosticsDataType_members[9] = {
+{
+    UA_TYPENAME("SessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientUserIdOfSession") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, clientUserIdOfSession) - offsetof(UA_SessionSecurityDiagnosticsDataType, sessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientUserIdHistory") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, clientUserIdHistorySize) - offsetof(UA_SessionSecurityDiagnosticsDataType, clientUserIdOfSession) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AuthenticationMechanism") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, authenticationMechanism) - offsetof(UA_SessionSecurityDiagnosticsDataType, clientUserIdHistory) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Encoding") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, encoding) - offsetof(UA_SessionSecurityDiagnosticsDataType, authenticationMechanism) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransportProtocol") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, transportProtocol) - offsetof(UA_SessionSecurityDiagnosticsDataType, encoding) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityMode") /* .memberName */
+    UA_TYPES_MESSAGESECURITYMODE, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, securityMode) - offsetof(UA_SessionSecurityDiagnosticsDataType, transportProtocol) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityPolicyUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, securityPolicyUri) - offsetof(UA_SessionSecurityDiagnosticsDataType, securityMode) - sizeof(UA_MessageSecurityMode), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientCertificate") /* .memberName */
+    UA_TYPES_BYTESTRING, /* .memberTypeIndex */
+    offsetof(UA_SessionSecurityDiagnosticsDataType, clientCertificate) - offsetof(UA_SessionSecurityDiagnosticsDataType, securityPolicyUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ServiceCounterDataType */
+static UA_DataTypeMember ServiceCounterDataType_members[2] = {
+{
+    UA_TYPENAME("TotalCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ErrorCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_ServiceCounterDataType, errorCount) - offsetof(UA_ServiceCounterDataType, totalCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* StatusResult */
+static UA_DataTypeMember StatusResult_members[2] = {
+{
+    UA_TYPENAME("StatusCode") /* .memberName */
+    UA_TYPES_STATUSCODE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiagnosticInfo") /* .memberName */
+    UA_TYPES_DIAGNOSTICINFO, /* .memberTypeIndex */
+    offsetof(UA_StatusResult, diagnosticInfo) - offsetof(UA_StatusResult, statusCode) - sizeof(UA_StatusCode), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SubscriptionDiagnosticsDataType */
+static UA_DataTypeMember SubscriptionDiagnosticsDataType_members[31] = {
+{
+    UA_TYPENAME("SessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SubscriptionId") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, subscriptionId) - offsetof(UA_SubscriptionDiagnosticsDataType, sessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Priority") /* .memberName */
+    UA_TYPES_BYTE, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, priority) - offsetof(UA_SubscriptionDiagnosticsDataType, subscriptionId) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PublishingInterval") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, publishingInterval) - offsetof(UA_SubscriptionDiagnosticsDataType, priority) - sizeof(UA_Byte), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxKeepAliveCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, maxKeepAliveCount) - offsetof(UA_SubscriptionDiagnosticsDataType, publishingInterval) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxLifetimeCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, maxLifetimeCount) - offsetof(UA_SubscriptionDiagnosticsDataType, maxKeepAliveCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxNotificationsPerPublish") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, maxNotificationsPerPublish) - offsetof(UA_SubscriptionDiagnosticsDataType, maxLifetimeCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PublishingEnabled") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, publishingEnabled) - offsetof(UA_SubscriptionDiagnosticsDataType, maxNotificationsPerPublish) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ModifyCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, modifyCount) - offsetof(UA_SubscriptionDiagnosticsDataType, publishingEnabled) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EnableCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, enableCount) - offsetof(UA_SubscriptionDiagnosticsDataType, modifyCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DisableCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, disableCount) - offsetof(UA_SubscriptionDiagnosticsDataType, enableCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RepublishRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, republishRequestCount) - offsetof(UA_SubscriptionDiagnosticsDataType, disableCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RepublishMessageRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, republishMessageRequestCount) - offsetof(UA_SubscriptionDiagnosticsDataType, republishRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RepublishMessageCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, republishMessageCount) - offsetof(UA_SubscriptionDiagnosticsDataType, republishMessageRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransferRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, transferRequestCount) - offsetof(UA_SubscriptionDiagnosticsDataType, republishMessageCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransferredToAltClientCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, transferredToAltClientCount) - offsetof(UA_SubscriptionDiagnosticsDataType, transferRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransferredToSameClientCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, transferredToSameClientCount) - offsetof(UA_SubscriptionDiagnosticsDataType, transferredToAltClientCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PublishRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, publishRequestCount) - offsetof(UA_SubscriptionDiagnosticsDataType, transferredToSameClientCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataChangeNotificationsCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, dataChangeNotificationsCount) - offsetof(UA_SubscriptionDiagnosticsDataType, publishRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EventNotificationsCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, eventNotificationsCount) - offsetof(UA_SubscriptionDiagnosticsDataType, dataChangeNotificationsCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NotificationsCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, notificationsCount) - offsetof(UA_SubscriptionDiagnosticsDataType, eventNotificationsCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LatePublishRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, latePublishRequestCount) - offsetof(UA_SubscriptionDiagnosticsDataType, notificationsCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CurrentKeepAliveCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, currentKeepAliveCount) - offsetof(UA_SubscriptionDiagnosticsDataType, latePublishRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CurrentLifetimeCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, currentLifetimeCount) - offsetof(UA_SubscriptionDiagnosticsDataType, currentKeepAliveCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UnacknowledgedMessageCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, unacknowledgedMessageCount) - offsetof(UA_SubscriptionDiagnosticsDataType, currentLifetimeCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DiscardedMessageCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, discardedMessageCount) - offsetof(UA_SubscriptionDiagnosticsDataType, unacknowledgedMessageCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MonitoredItemCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, monitoredItemCount) - offsetof(UA_SubscriptionDiagnosticsDataType, discardedMessageCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DisabledMonitoredItemCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, disabledMonitoredItemCount) - offsetof(UA_SubscriptionDiagnosticsDataType, monitoredItemCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MonitoringQueueOverflowCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, monitoringQueueOverflowCount) - offsetof(UA_SubscriptionDiagnosticsDataType, disabledMonitoredItemCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("NextSequenceNumber") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, nextSequenceNumber) - offsetof(UA_SubscriptionDiagnosticsDataType, monitoringQueueOverflowCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EventQueueOverFlowCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SubscriptionDiagnosticsDataType, eventQueueOverFlowCount) - offsetof(UA_SubscriptionDiagnosticsDataType, nextSequenceNumber) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ModelChangeStructureVerbMask */
+#define ModelChangeStructureVerbMask_members NULL
+
+/* ModelChangeStructureDataType */
+static UA_DataTypeMember ModelChangeStructureDataType_members[3] = {
+{
+    UA_TYPENAME("Affected") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AffectedType") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_ModelChangeStructureDataType, affectedType) - offsetof(UA_ModelChangeStructureDataType, affected) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Verb") /* .memberName */
+    UA_TYPES_BYTE, /* .memberTypeIndex */
+    offsetof(UA_ModelChangeStructureDataType, verb) - offsetof(UA_ModelChangeStructureDataType, affectedType) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* SemanticChangeStructureDataType */
+static UA_DataTypeMember SemanticChangeStructureDataType_members[2] = {
+{
+    UA_TYPENAME("Affected") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AffectedType") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_SemanticChangeStructureDataType, affectedType) - offsetof(UA_SemanticChangeStructureDataType, affected) - sizeof(UA_NodeId), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -5329,6 +7752,253 @@ static UA_DataTypeMember XVType_members[2] = {
     false /* .isOptional */
 },};
 
+/* ProgramDiagnosticDataType */
+static UA_DataTypeMember ProgramDiagnosticDataType_members[10] = {
+{
+    UA_TYPENAME("CreateSessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CreateClientName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, createClientName) - offsetof(UA_ProgramDiagnosticDataType, createSessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("InvocationCreationTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, invocationCreationTime) - offsetof(UA_ProgramDiagnosticDataType, createClientName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastTransitionTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastTransitionTime) - offsetof(UA_ProgramDiagnosticDataType, invocationCreationTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodCall") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodCall) - offsetof(UA_ProgramDiagnosticDataType, lastTransitionTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodSessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodSessionId) - offsetof(UA_ProgramDiagnosticDataType, lastMethodCall) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodInputArguments") /* .memberName */
+    UA_TYPES_ARGUMENT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodInputArgumentsSize) - offsetof(UA_ProgramDiagnosticDataType, lastMethodSessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodOutputArguments") /* .memberName */
+    UA_TYPES_ARGUMENT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodOutputArgumentsSize) - offsetof(UA_ProgramDiagnosticDataType, lastMethodInputArguments) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodCallTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodCallTime) - offsetof(UA_ProgramDiagnosticDataType, lastMethodOutputArguments) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodReturnStatus") /* .memberName */
+    UA_TYPES_STATUSRESULT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnosticDataType, lastMethodReturnStatus) - offsetof(UA_ProgramDiagnosticDataType, lastMethodCallTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ProgramDiagnostic2DataType */
+static UA_DataTypeMember ProgramDiagnostic2DataType_members[12] = {
+{
+    UA_TYPENAME("CreateSessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CreateClientName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, createClientName) - offsetof(UA_ProgramDiagnostic2DataType, createSessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("InvocationCreationTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, invocationCreationTime) - offsetof(UA_ProgramDiagnostic2DataType, createClientName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastTransitionTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastTransitionTime) - offsetof(UA_ProgramDiagnostic2DataType, invocationCreationTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodCall") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodCall) - offsetof(UA_ProgramDiagnostic2DataType, lastTransitionTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodSessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodSessionId) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodCall) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodInputArguments") /* .memberName */
+    UA_TYPES_ARGUMENT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodInputArgumentsSize) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodSessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodOutputArguments") /* .memberName */
+    UA_TYPES_ARGUMENT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodOutputArgumentsSize) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodInputArguments) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodInputValues") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodInputValuesSize) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodOutputArguments) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodOutputValues") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodOutputValuesSize) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodInputValues) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodCallTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodCallTime) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodOutputValues) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LastMethodReturnStatus") /* .memberName */
+    UA_TYPES_STATUSRESULT, /* .memberTypeIndex */
+    offsetof(UA_ProgramDiagnostic2DataType, lastMethodReturnStatus) - offsetof(UA_ProgramDiagnostic2DataType, lastMethodCallTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* Annotation */
+static UA_DataTypeMember Annotation_members[3] = {
+{
+    UA_TYPENAME("Message") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UserName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_Annotation, userName) - offsetof(UA_Annotation, message) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AnnotationTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_Annotation, annotationTime) - offsetof(UA_Annotation, userName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ExceptionDeviationFormat */
+#define ExceptionDeviationFormat_members NULL
+
+/* EndpointType */
+static UA_DataTypeMember EndpointType_members[4] = {
+{
+    UA_TYPENAME("EndpointUrl") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityMode") /* .memberName */
+    UA_TYPES_MESSAGESECURITYMODE, /* .memberTypeIndex */
+    offsetof(UA_EndpointType, securityMode) - offsetof(UA_EndpointType, endpointUrl) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityPolicyUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_EndpointType, securityPolicyUri) - offsetof(UA_EndpointType, securityMode) - sizeof(UA_MessageSecurityMode), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransportProfileUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_EndpointType, transportProfileUri) - offsetof(UA_EndpointType, securityPolicyUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* StructureDescription */
 static UA_DataTypeMember StructureDescription_members[3] = {
 {
@@ -5434,6 +8104,92 @@ static UA_DataTypeMember FieldMetaData_members[10] = {
     UA_TYPENAME("Properties") /* .memberName */
     UA_TYPES_KEYVALUEPAIR, /* .memberTypeIndex */
     offsetof(UA_FieldMetaData, propertiesSize) - offsetof(UA_FieldMetaData, dataSetFieldId) - sizeof(UA_Guid), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* PublishedEventsDataType */
+static UA_DataTypeMember PublishedEventsDataType_members[3] = {
+{
+    UA_TYPENAME("EventNotifier") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SelectedFields") /* .memberName */
+    UA_TYPES_SIMPLEATTRIBUTEOPERAND, /* .memberTypeIndex */
+    offsetof(UA_PublishedEventsDataType, selectedFieldsSize) - offsetof(UA_PublishedEventsDataType, eventNotifier) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Filter") /* .memberName */
+    UA_TYPES_CONTENTFILTER, /* .memberTypeIndex */
+    offsetof(UA_PublishedEventsDataType, filter) - offsetof(UA_PublishedEventsDataType, selectedFields) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* PubSubGroupDataType */
+static UA_DataTypeMember PubSubGroupDataType_members[7] = {
+{
+    UA_TYPENAME("Name") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Enabled") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, enabled) - offsetof(UA_PubSubGroupDataType, name) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityMode") /* .memberName */
+    UA_TYPES_MESSAGESECURITYMODE, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, securityMode) - offsetof(UA_PubSubGroupDataType, enabled) - sizeof(UA_Boolean), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityGroupId") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, securityGroupId) - offsetof(UA_PubSubGroupDataType, securityMode) - sizeof(UA_MessageSecurityMode), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SecurityKeyServices") /* .memberName */
+    UA_TYPES_ENDPOINTDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, securityKeyServicesSize) - offsetof(UA_PubSubGroupDataType, securityGroupId) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxNetworkMessageSize") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, maxNetworkMessageSize) - offsetof(UA_PubSubGroupDataType, securityKeyServices) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("GroupProperties") /* .memberName */
+    UA_TYPES_KEYVALUEPAIR, /* .memberTypeIndex */
+    offsetof(UA_PubSubGroupDataType, groupPropertiesSize) - offsetof(UA_PubSubGroupDataType, maxNetworkMessageSize) - sizeof(UA_UInt32), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -5629,12 +8385,201 @@ static UA_DataTypeMember FieldTargetDataType_members[7] = {
     false /* .isOptional */
 },};
 
+/* SubscribedDataSetMirrorDataType */
+static UA_DataTypeMember SubscribedDataSetMirrorDataType_members[2] = {
+{
+    UA_TYPENAME("ParentNodeName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RolePermissions") /* .memberName */
+    UA_TYPES_ROLEPERMISSIONTYPE, /* .memberTypeIndex */
+    offsetof(UA_SubscribedDataSetMirrorDataType, rolePermissionsSize) - offsetof(UA_SubscribedDataSetMirrorDataType, parentNodeName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* EnumDefinition */
 static UA_DataTypeMember EnumDefinition_members[1] = {
 {
     UA_TYPENAME("Fields") /* .memberName */
     UA_TYPES_ENUMFIELD, /* .memberTypeIndex */
     0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ReadEventDetails */
+static UA_DataTypeMember ReadEventDetails_members[4] = {
+{
+    UA_TYPENAME("NumValuesPerNode") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StartTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ReadEventDetails, startTime) - offsetof(UA_ReadEventDetails, numValuesPerNode) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EndTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ReadEventDetails, endTime) - offsetof(UA_ReadEventDetails, startTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Filter") /* .memberName */
+    UA_TYPES_EVENTFILTER, /* .memberTypeIndex */
+    offsetof(UA_ReadEventDetails, filter) - offsetof(UA_ReadEventDetails, endTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ReadProcessedDetails */
+static UA_DataTypeMember ReadProcessedDetails_members[5] = {
+{
+    UA_TYPENAME("StartTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EndTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_ReadProcessedDetails, endTime) - offsetof(UA_ReadProcessedDetails, startTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ProcessingInterval") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_ReadProcessedDetails, processingInterval) - offsetof(UA_ReadProcessedDetails, endTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AggregateType") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    offsetof(UA_ReadProcessedDetails, aggregateTypeSize) - offsetof(UA_ReadProcessedDetails, processingInterval) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AggregateConfiguration") /* .memberName */
+    UA_TYPES_AGGREGATECONFIGURATION, /* .memberTypeIndex */
+    offsetof(UA_ReadProcessedDetails, aggregateConfiguration) - offsetof(UA_ReadProcessedDetails, aggregateType) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* ModificationInfo */
+static UA_DataTypeMember ModificationInfo_members[3] = {
+{
+    UA_TYPENAME("ModificationTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UpdateType") /* .memberName */
+    UA_TYPES_HISTORYUPDATETYPE, /* .memberTypeIndex */
+    offsetof(UA_ModificationInfo, updateType) - offsetof(UA_ModificationInfo, modificationTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UserName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_ModificationInfo, userName) - offsetof(UA_ModificationInfo, updateType) - sizeof(UA_HistoryUpdateType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryModifiedData */
+static UA_DataTypeMember HistoryModifiedData_members[2] = {
+{
+    UA_TYPENAME("DataValues") /* .memberName */
+    UA_TYPES_DATAVALUE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ModificationInfos") /* .memberName */
+    UA_TYPES_MODIFICATIONINFO, /* .memberTypeIndex */
+    offsetof(UA_HistoryModifiedData, modificationInfosSize) - offsetof(UA_HistoryModifiedData, dataValues) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* HistoryEvent */
+static UA_DataTypeMember HistoryEvent_members[1] = {
+{
+    UA_TYPENAME("Events") /* .memberName */
+    UA_TYPES_HISTORYEVENTFIELDLIST, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* UpdateEventDetails */
+static UA_DataTypeMember UpdateEventDetails_members[4] = {
+{
+    UA_TYPENAME("NodeId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PerformInsertReplace") /* .memberName */
+    UA_TYPES_PERFORMUPDATETYPE, /* .memberTypeIndex */
+    offsetof(UA_UpdateEventDetails, performInsertReplace) - offsetof(UA_UpdateEventDetails, nodeId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Filter") /* .memberName */
+    UA_TYPES_EVENTFILTER, /* .memberTypeIndex */
+    offsetof(UA_UpdateEventDetails, filter) - offsetof(UA_UpdateEventDetails, performInsertReplace) - sizeof(UA_PerformUpdateType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EventData") /* .memberName */
+    UA_TYPES_HISTORYEVENTFIELDLIST, /* .memberTypeIndex */
+    offsetof(UA_UpdateEventDetails, eventDataSize) - offsetof(UA_UpdateEventDetails, filter) - sizeof(UA_EventFilter), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -5670,6 +8615,353 @@ static UA_DataTypeMember EventNotificationList_members[1] = {
     false /* .isOptional */
 },};
 
+/* SessionDiagnosticsDataType */
+static UA_DataTypeMember SessionDiagnosticsDataType_members[43] = {
+{
+    UA_TYPENAME("SessionId") /* .memberName */
+    UA_TYPES_NODEID, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SessionName") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, sessionName) - offsetof(UA_SessionDiagnosticsDataType, sessionId) - sizeof(UA_NodeId), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientDescription") /* .memberName */
+    UA_TYPES_APPLICATIONDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, clientDescription) - offsetof(UA_SessionDiagnosticsDataType, sessionName) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ServerUri") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, serverUri) - offsetof(UA_SessionDiagnosticsDataType, clientDescription) - sizeof(UA_ApplicationDescription), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EndpointUrl") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, endpointUrl) - offsetof(UA_SessionDiagnosticsDataType, serverUri) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("LocaleIds") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, localeIdsSize) - offsetof(UA_SessionDiagnosticsDataType, endpointUrl) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ActualSessionTimeout") /* .memberName */
+    UA_TYPES_DOUBLE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, actualSessionTimeout) - offsetof(UA_SessionDiagnosticsDataType, localeIds) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("MaxResponseMessageSize") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, maxResponseMessageSize) - offsetof(UA_SessionDiagnosticsDataType, actualSessionTimeout) - sizeof(UA_Double), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientConnectionTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, clientConnectionTime) - offsetof(UA_SessionDiagnosticsDataType, maxResponseMessageSize) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ClientLastContactTime") /* .memberName */
+    UA_TYPES_DATETIME, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, clientLastContactTime) - offsetof(UA_SessionDiagnosticsDataType, clientConnectionTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CurrentSubscriptionsCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, currentSubscriptionsCount) - offsetof(UA_SessionDiagnosticsDataType, clientLastContactTime) - sizeof(UA_DateTime), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CurrentMonitoredItemsCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, currentMonitoredItemsCount) - offsetof(UA_SessionDiagnosticsDataType, currentSubscriptionsCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CurrentPublishRequestsInQueue") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, currentPublishRequestsInQueue) - offsetof(UA_SessionDiagnosticsDataType, currentMonitoredItemsCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TotalRequestCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, totalRequestCount) - offsetof(UA_SessionDiagnosticsDataType, currentPublishRequestsInQueue) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UnauthorizedRequestCount") /* .memberName */
+    UA_TYPES_UINT32, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, unauthorizedRequestCount) - offsetof(UA_SessionDiagnosticsDataType, totalRequestCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ReadCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, readCount) - offsetof(UA_SessionDiagnosticsDataType, unauthorizedRequestCount) - sizeof(UA_UInt32), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("HistoryReadCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, historyReadCount) - offsetof(UA_SessionDiagnosticsDataType, readCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("WriteCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, writeCount) - offsetof(UA_SessionDiagnosticsDataType, historyReadCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("HistoryUpdateCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, historyUpdateCount) - offsetof(UA_SessionDiagnosticsDataType, writeCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CallCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, callCount) - offsetof(UA_SessionDiagnosticsDataType, historyUpdateCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CreateMonitoredItemsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, createMonitoredItemsCount) - offsetof(UA_SessionDiagnosticsDataType, callCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ModifyMonitoredItemsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, modifyMonitoredItemsCount) - offsetof(UA_SessionDiagnosticsDataType, createMonitoredItemsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SetMonitoringModeCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, setMonitoringModeCount) - offsetof(UA_SessionDiagnosticsDataType, modifyMonitoredItemsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SetTriggeringCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, setTriggeringCount) - offsetof(UA_SessionDiagnosticsDataType, setMonitoringModeCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DeleteMonitoredItemsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, deleteMonitoredItemsCount) - offsetof(UA_SessionDiagnosticsDataType, setTriggeringCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("CreateSubscriptionCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, createSubscriptionCount) - offsetof(UA_SessionDiagnosticsDataType, deleteMonitoredItemsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ModifySubscriptionCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, modifySubscriptionCount) - offsetof(UA_SessionDiagnosticsDataType, createSubscriptionCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SetPublishingModeCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, setPublishingModeCount) - offsetof(UA_SessionDiagnosticsDataType, modifySubscriptionCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("PublishCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, publishCount) - offsetof(UA_SessionDiagnosticsDataType, setPublishingModeCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RepublishCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, republishCount) - offsetof(UA_SessionDiagnosticsDataType, publishCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TransferSubscriptionsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, transferSubscriptionsCount) - offsetof(UA_SessionDiagnosticsDataType, republishCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DeleteSubscriptionsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, deleteSubscriptionsCount) - offsetof(UA_SessionDiagnosticsDataType, transferSubscriptionsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AddNodesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, addNodesCount) - offsetof(UA_SessionDiagnosticsDataType, deleteSubscriptionsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("AddReferencesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, addReferencesCount) - offsetof(UA_SessionDiagnosticsDataType, addNodesCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DeleteNodesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, deleteNodesCount) - offsetof(UA_SessionDiagnosticsDataType, addReferencesCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DeleteReferencesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, deleteReferencesCount) - offsetof(UA_SessionDiagnosticsDataType, deleteNodesCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("BrowseCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, browseCount) - offsetof(UA_SessionDiagnosticsDataType, deleteReferencesCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("BrowseNextCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, browseNextCount) - offsetof(UA_SessionDiagnosticsDataType, browseCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("TranslateBrowsePathsToNodeIdsCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, translateBrowsePathsToNodeIdsCount) - offsetof(UA_SessionDiagnosticsDataType, browseNextCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("QueryFirstCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, queryFirstCount) - offsetof(UA_SessionDiagnosticsDataType, translateBrowsePathsToNodeIdsCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("QueryNextCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, queryNextCount) - offsetof(UA_SessionDiagnosticsDataType, queryFirstCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("RegisterNodesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, registerNodesCount) - offsetof(UA_SessionDiagnosticsDataType, queryNextCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("UnregisterNodesCount") /* .memberName */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_SessionDiagnosticsDataType, unregisterNodesCount) - offsetof(UA_SessionDiagnosticsDataType, registerNodesCount) - sizeof(UA_ServiceCounterDataType), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
 /* EnumDescription */
 static UA_DataTypeMember EnumDescription_members[4] = {
 {
@@ -5700,6 +8992,65 @@ static UA_DataTypeMember EnumDescription_members[4] = {
     UA_TYPENAME("BuiltInType") /* .memberName */
     UA_TYPES_BYTE, /* .memberTypeIndex */
     offsetof(UA_EnumDescription, builtInType) - offsetof(UA_EnumDescription, enumDefinition) - sizeof(UA_EnumDefinition), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* UABinaryFileDataType */
+static UA_DataTypeMember UABinaryFileDataType_members[7] = {
+{
+    UA_TYPENAME("Namespaces") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StructureDataTypes") /* .memberName */
+    UA_TYPES_STRUCTUREDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, structureDataTypesSize) - offsetof(UA_UABinaryFileDataType, namespaces) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EnumDataTypes") /* .memberName */
+    UA_TYPES_ENUMDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, enumDataTypesSize) - offsetof(UA_UABinaryFileDataType, structureDataTypes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SimpleDataTypes") /* .memberName */
+    UA_TYPES_SIMPLETYPEDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, simpleDataTypesSize) - offsetof(UA_UABinaryFileDataType, enumDataTypes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SchemaLocation") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, schemaLocation) - offsetof(UA_UABinaryFileDataType, simpleDataTypes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("FileHeader") /* .memberName */
+    UA_TYPES_KEYVALUEPAIR, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, fileHeaderSize) - offsetof(UA_UABinaryFileDataType, schemaLocation) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Body") /* .memberName */
+    UA_TYPES_VARIANT, /* .memberTypeIndex */
+    offsetof(UA_UABinaryFileDataType, body) - offsetof(UA_UABinaryFileDataType, fileHeader) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -5775,6 +9126,49 @@ static UA_DataTypeMember DataSetMetaDataType_members[9] = {
     UA_TYPENAME("ConfigurationVersion") /* .memberName */
     UA_TYPES_CONFIGURATIONVERSIONDATATYPE, /* .memberTypeIndex */
     offsetof(UA_DataSetMetaDataType, configurationVersion) - offsetof(UA_DataSetMetaDataType, dataSetClassId) - sizeof(UA_Guid), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* PublishedDataSetDataType */
+static UA_DataTypeMember PublishedDataSetDataType_members[5] = {
+{
+    UA_TYPENAME("Name") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataSetFolder") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    offsetof(UA_PublishedDataSetDataType, dataSetFolderSize) - offsetof(UA_PublishedDataSetDataType, name) - sizeof(UA_String), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataSetMetaData") /* .memberName */
+    UA_TYPES_DATASETMETADATATYPE, /* .memberTypeIndex */
+    offsetof(UA_PublishedDataSetDataType, dataSetMetaData) - offsetof(UA_PublishedDataSetDataType, dataSetFolder) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("ExtensionFields") /* .memberName */
+    UA_TYPES_KEYVALUEPAIR, /* .memberTypeIndex */
+    offsetof(UA_PublishedDataSetDataType, extensionFieldsSize) - offsetof(UA_PublishedDataSetDataType, dataSetMetaData) - sizeof(UA_DataSetMetaDataType), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("DataSetSource") /* .memberName */
+    UA_TYPES_EXTENSIONOBJECT, /* .memberTypeIndex */
+    offsetof(UA_PublishedDataSetDataType, dataSetSource) - offsetof(UA_PublishedDataSetDataType, extensionFields) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     false, /* .isArray */
     false /* .isOptional */
@@ -5925,6 +9319,41 @@ static UA_DataTypeMember TargetVariablesDataType_members[1] = {
     UA_TYPENAME("TargetVariables") /* .memberName */
     UA_TYPES_FIELDTARGETDATATYPE, /* .memberTypeIndex */
     0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* DataTypeSchemaHeader */
+static UA_DataTypeMember DataTypeSchemaHeader_members[4] = {
+{
+    UA_TYPENAME("Namespaces") /* .memberName */
+    UA_TYPES_STRING, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("StructureDataTypes") /* .memberName */
+    UA_TYPES_STRUCTUREDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_DataTypeSchemaHeader, structureDataTypesSize) - offsetof(UA_DataTypeSchemaHeader, namespaces) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("EnumDataTypes") /* .memberName */
+    UA_TYPES_ENUMDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_DataTypeSchemaHeader, enumDataTypesSize) - offsetof(UA_DataTypeSchemaHeader, structureDataTypes) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("SimpleDataTypes") /* .memberName */
+    UA_TYPES_SIMPLETYPEDESCRIPTION, /* .memberTypeIndex */
+    offsetof(UA_DataTypeSchemaHeader, simpleDataTypesSize) - offsetof(UA_DataTypeSchemaHeader, enumDataTypes) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
     false /* .isOptional */
@@ -6085,6 +9514,33 @@ static UA_DataTypeMember PubSubConnectionDataType_members[9] = {
     offsetof(UA_PubSubConnectionDataType, readerGroupsSize) - offsetof(UA_PubSubConnectionDataType, writerGroups) - sizeof(void *), /* .padding */
     true, /* .namespaceZero */
     true, /* .isArray */
+    false /* .isOptional */
+},};
+
+/* PubSubConfigurationDataType */
+static UA_DataTypeMember PubSubConfigurationDataType_members[3] = {
+{
+    UA_TYPENAME("PublishedDataSets") /* .memberName */
+    UA_TYPES_PUBLISHEDDATASETDATATYPE, /* .memberTypeIndex */
+    0, /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Connections") /* .memberName */
+    UA_TYPES_PUBSUBCONNECTIONDATATYPE, /* .memberTypeIndex */
+    offsetof(UA_PubSubConfigurationDataType, connectionsSize) - offsetof(UA_PubSubConfigurationDataType, publishedDataSets) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    true, /* .isArray */
+    false /* .isOptional */
+},
+{
+    UA_TYPENAME("Enabled") /* .memberName */
+    UA_TYPES_BOOLEAN, /* .memberTypeIndex */
+    offsetof(UA_PubSubConfigurationDataType, enabled) - offsetof(UA_PubSubConfigurationDataType, connections) - sizeof(void *), /* .padding */
+    true, /* .namespaceZero */
+    false, /* .isArray */
     false /* .isOptional */
 },};
 const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
@@ -6413,6 +9869,97 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0LU, /* .binaryEncodingId */
     DiagnosticInfo_members /* .members */
 },
+/* NamingRuleType */
+{
+    UA_TYPENAME("NamingRuleType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {120LU}}, /* .typeId */
+    sizeof(UA_NamingRuleType), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    NamingRuleType_members /* .members */
+},
+/* ImageBMP */
+{
+    UA_TYPENAME("ImageBMP") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {2000LU}}, /* .typeId */
+    sizeof(UA_ImageBMP), /* .memSize */
+    UA_TYPES_IMAGEBMP, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ImageBMP_members /* .members */
+},
+/* ImageGIF */
+{
+    UA_TYPENAME("ImageGIF") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {2001LU}}, /* .typeId */
+    sizeof(UA_ImageGIF), /* .memSize */
+    UA_TYPES_IMAGEGIF, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ImageGIF_members /* .members */
+},
+/* ImageJPG */
+{
+    UA_TYPENAME("ImageJPG") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {2002LU}}, /* .typeId */
+    sizeof(UA_ImageJPG), /* .memSize */
+    UA_TYPES_IMAGEJPG, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ImageJPG_members /* .members */
+},
+/* ImagePNG */
+{
+    UA_TYPENAME("ImagePNG") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {2003LU}}, /* .typeId */
+    sizeof(UA_ImagePNG), /* .memSize */
+    UA_TYPES_IMAGEPNG, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ImagePNG_members /* .members */
+},
+/* AudioDataType */
+{
+    UA_TYPENAME("AudioDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {16307LU}}, /* .typeId */
+    sizeof(UA_AudioDataType), /* .memSize */
+    UA_TYPES_AUDIODATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    AudioDataType_members /* .members */
+},
+/* BitFieldMaskDataType */
+{
+    UA_TYPENAME("BitFieldMaskDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11737LU}}, /* .typeId */
+    sizeof(UA_BitFieldMaskDataType), /* .memSize */
+    UA_TYPES_BITFIELDMASKDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_UINT64, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    BitFieldMaskDataType_members /* .members */
+},
 /* KeyValuePair */
 {
     UA_TYPENAME("KeyValuePair") /* .typeName */
@@ -6425,6 +9972,227 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     14846LU, /* .binaryEncodingId */
     KeyValuePair_members /* .members */
+},
+/* RationalNumber */
+{
+    UA_TYPENAME("RationalNumber") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18806LU}}, /* .typeId */
+    sizeof(UA_RationalNumber), /* .memSize */
+    UA_TYPES_RATIONALNUMBER, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    18815LU, /* .binaryEncodingId */
+    RationalNumber_members /* .members */
+},
+/* Vector */
+{
+    UA_TYPENAME("Vector") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18807LU}}, /* .typeId */
+    sizeof(UA_Vector), /* .memSize */
+    UA_TYPES_VECTOR, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    18816LU, /* .binaryEncodingId */
+    Vector_members /* .members */
+},
+/* ThreeDVector */
+{
+    UA_TYPENAME("ThreeDVector") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18808LU}}, /* .typeId */
+    sizeof(UA_ThreeDVector), /* .memSize */
+    UA_TYPES_THREEDVECTOR, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    18817LU, /* .binaryEncodingId */
+    ThreeDVector_members /* .members */
+},
+/* CartesianCoordinates */
+{
+    UA_TYPENAME("CartesianCoordinates") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18809LU}}, /* .typeId */
+    sizeof(UA_CartesianCoordinates), /* .memSize */
+    UA_TYPES_CARTESIANCOORDINATES, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    18818LU, /* .binaryEncodingId */
+    CartesianCoordinates_members /* .members */
+},
+/* ThreeDCartesianCoordinates */
+{
+    UA_TYPENAME("ThreeDCartesianCoordinates") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18810LU}}, /* .typeId */
+    sizeof(UA_ThreeDCartesianCoordinates), /* .memSize */
+    UA_TYPES_THREEDCARTESIANCOORDINATES, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    18819LU, /* .binaryEncodingId */
+    ThreeDCartesianCoordinates_members /* .members */
+},
+/* Orientation */
+{
+    UA_TYPENAME("Orientation") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18811LU}}, /* .typeId */
+    sizeof(UA_Orientation), /* .memSize */
+    UA_TYPES_ORIENTATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    18820LU, /* .binaryEncodingId */
+    Orientation_members /* .members */
+},
+/* ThreeDOrientation */
+{
+    UA_TYPENAME("ThreeDOrientation") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18812LU}}, /* .typeId */
+    sizeof(UA_ThreeDOrientation), /* .memSize */
+    UA_TYPES_THREEDORIENTATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    18821LU, /* .binaryEncodingId */
+    ThreeDOrientation_members /* .members */
+},
+/* Frame */
+{
+    UA_TYPENAME("Frame") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18813LU}}, /* .typeId */
+    sizeof(UA_Frame), /* .memSize */
+    UA_TYPES_FRAME, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    18822LU, /* .binaryEncodingId */
+    Frame_members /* .members */
+},
+/* ThreeDFrame */
+{
+    UA_TYPENAME("ThreeDFrame") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {18814LU}}, /* .typeId */
+    sizeof(UA_ThreeDFrame), /* .memSize */
+    UA_TYPES_THREEDFRAME, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    18823LU, /* .binaryEncodingId */
+    ThreeDFrame_members /* .members */
+},
+/* OpenFileMode */
+{
+    UA_TYPENAME("OpenFileMode") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11939LU}}, /* .typeId */
+    sizeof(UA_OpenFileMode), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    OpenFileMode_members /* .members */
+},
+/* IdentityCriteriaType */
+{
+    UA_TYPENAME("IdentityCriteriaType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15632LU}}, /* .typeId */
+    sizeof(UA_IdentityCriteriaType), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    IdentityCriteriaType_members /* .members */
+},
+/* IdentityMappingRuleType */
+{
+    UA_TYPENAME("IdentityMappingRuleType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15634LU}}, /* .typeId */
+    sizeof(UA_IdentityMappingRuleType), /* .memSize */
+    UA_TYPES_IDENTITYMAPPINGRULETYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    15736LU, /* .binaryEncodingId */
+    IdentityMappingRuleType_members /* .members */
+},
+/* CurrencyUnitType */
+{
+    UA_TYPENAME("CurrencyUnitType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {23498LU}}, /* .typeId */
+    sizeof(UA_CurrencyUnitType), /* .memSize */
+    UA_TYPES_CURRENCYUNITTYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    23507LU, /* .binaryEncodingId */
+    CurrencyUnitType_members /* .members */
+},
+/* TrustListMasks */
+{
+    UA_TYPENAME("TrustListMasks") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12552LU}}, /* .typeId */
+    sizeof(UA_TrustListMasks), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    TrustListMasks_members /* .members */
+},
+/* TrustListDataType */
+{
+    UA_TYPENAME("TrustListDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12554LU}}, /* .typeId */
+    sizeof(UA_TrustListDataType), /* .memSize */
+    UA_TYPES_TRUSTLISTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    12680LU, /* .binaryEncodingId */
+    TrustListDataType_members /* .members */
+},
+/* DecimalDataType */
+{
+    UA_TYPENAME("DecimalDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17861LU}}, /* .typeId */
+    sizeof(UA_DecimalDataType), /* .memSize */
+    UA_TYPES_DECIMALDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    17863LU, /* .binaryEncodingId */
+    DecimalDataType_members /* .members */
+},
+/* DataTypeDescription */
+{
+    UA_TYPENAME("DataTypeDescription") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {14525LU}}, /* .typeId */
+    sizeof(UA_DataTypeDescription), /* .memSize */
+    UA_TYPES_DATATYPEDESCRIPTION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    125LU, /* .binaryEncodingId */
+    DataTypeDescription_members /* .members */
 },
 /* SimpleTypeDescription */
 {
@@ -6478,6 +10246,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     14847LU, /* .binaryEncodingId */
     ConfigurationVersionDataType_members /* .members */
 },
+/* PublishedDataSetSourceDataType */
+{
+    UA_TYPENAME("PublishedDataSetSourceDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15580LU}}, /* .typeId */
+    sizeof(UA_PublishedDataSetSourceDataType), /* .memSize */
+    UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15678LU, /* .binaryEncodingId */
+    PublishedDataSetSourceDataType_members /* .members */
+},
 /* PublishedVariableDataType */
 {
     UA_TYPENAME("PublishedVariableDataType") /* .typeName */
@@ -6490,6 +10271,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     8, /* .membersSize */
     14323LU, /* .binaryEncodingId */
     PublishedVariableDataType_members /* .members */
+},
+/* PublishedDataItemsDataType */
+{
+    UA_TYPENAME("PublishedDataItemsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15581LU}}, /* .typeId */
+    sizeof(UA_PublishedDataItemsDataType), /* .memSize */
+    UA_TYPES_PUBLISHEDDATAITEMSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    15679LU, /* .binaryEncodingId */
+    PublishedDataItemsDataType_members /* .members */
 },
 /* DataSetFieldContentMask */
 {
@@ -6517,6 +10311,84 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     15682LU, /* .binaryEncodingId */
     DataSetWriterDataType_members /* .members */
 },
+/* DataSetWriterTransportDataType */
+{
+    UA_TYPENAME("DataSetWriterTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15598LU}}, /* .typeId */
+    sizeof(UA_DataSetWriterTransportDataType), /* .memSize */
+    UA_TYPES_DATASETWRITERTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15683LU, /* .binaryEncodingId */
+    DataSetWriterTransportDataType_members /* .members */
+},
+/* DataSetWriterMessageDataType */
+{
+    UA_TYPENAME("DataSetWriterMessageDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15605LU}}, /* .typeId */
+    sizeof(UA_DataSetWriterMessageDataType), /* .memSize */
+    UA_TYPES_DATASETWRITERMESSAGEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15688LU, /* .binaryEncodingId */
+    DataSetWriterMessageDataType_members /* .members */
+},
+/* WriterGroupTransportDataType */
+{
+    UA_TYPENAME("WriterGroupTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15611LU}}, /* .typeId */
+    sizeof(UA_WriterGroupTransportDataType), /* .memSize */
+    UA_TYPES_WRITERGROUPTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15691LU, /* .binaryEncodingId */
+    WriterGroupTransportDataType_members /* .members */
+},
+/* WriterGroupMessageDataType */
+{
+    UA_TYPENAME("WriterGroupMessageDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15616LU}}, /* .typeId */
+    sizeof(UA_WriterGroupMessageDataType), /* .memSize */
+    UA_TYPES_WRITERGROUPMESSAGEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15693LU, /* .binaryEncodingId */
+    WriterGroupMessageDataType_members /* .members */
+},
+/* ConnectionTransportDataType */
+{
+    UA_TYPENAME("ConnectionTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15618LU}}, /* .typeId */
+    sizeof(UA_ConnectionTransportDataType), /* .memSize */
+    UA_TYPES_CONNECTIONTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15695LU, /* .binaryEncodingId */
+    ConnectionTransportDataType_members /* .members */
+},
+/* NetworkAddressDataType */
+{
+    UA_TYPENAME("NetworkAddressDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15502LU}}, /* .typeId */
+    sizeof(UA_NetworkAddressDataType), /* .memSize */
+    UA_TYPES_NETWORKADDRESSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    21151LU, /* .binaryEncodingId */
+    NetworkAddressDataType_members /* .members */
+},
 /* NetworkAddressUrlDataType */
 {
     UA_TYPENAME("NetworkAddressUrlDataType") /* .typeName */
@@ -6529,6 +10401,71 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     21152LU, /* .binaryEncodingId */
     NetworkAddressUrlDataType_members /* .members */
+},
+/* ReaderGroupTransportDataType */
+{
+    UA_TYPENAME("ReaderGroupTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15621LU}}, /* .typeId */
+    sizeof(UA_ReaderGroupTransportDataType), /* .memSize */
+    UA_TYPES_READERGROUPTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15701LU, /* .binaryEncodingId */
+    ReaderGroupTransportDataType_members /* .members */
+},
+/* ReaderGroupMessageDataType */
+{
+    UA_TYPENAME("ReaderGroupMessageDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15622LU}}, /* .typeId */
+    sizeof(UA_ReaderGroupMessageDataType), /* .memSize */
+    UA_TYPES_READERGROUPMESSAGEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15702LU, /* .binaryEncodingId */
+    ReaderGroupMessageDataType_members /* .members */
+},
+/* DataSetReaderTransportDataType */
+{
+    UA_TYPENAME("DataSetReaderTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15628LU}}, /* .typeId */
+    sizeof(UA_DataSetReaderTransportDataType), /* .memSize */
+    UA_TYPES_DATASETREADERTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15705LU, /* .binaryEncodingId */
+    DataSetReaderTransportDataType_members /* .members */
+},
+/* DataSetReaderMessageDataType */
+{
+    UA_TYPENAME("DataSetReaderMessageDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15629LU}}, /* .typeId */
+    sizeof(UA_DataSetReaderMessageDataType), /* .memSize */
+    UA_TYPES_DATASETREADERMESSAGEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15706LU, /* .binaryEncodingId */
+    DataSetReaderMessageDataType_members /* .members */
+},
+/* SubscribedDataSetDataType */
+{
+    UA_TYPENAME("SubscribedDataSetDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15630LU}}, /* .typeId */
+    sizeof(UA_SubscribedDataSetDataType), /* .memSize */
+    UA_TYPES_SUBSCRIBEDDATASETDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    15707LU, /* .binaryEncodingId */
+    SubscribedDataSetDataType_members /* .members */
 },
 /* OverrideValueHandling */
 {
@@ -6686,6 +10623,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     15725LU, /* .binaryEncodingId */
     JsonDataSetReaderMessageDataType_members /* .members */
 },
+/* DatagramConnectionTransportDataType */
+{
+    UA_TYPENAME("DatagramConnectionTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17467LU}}, /* .typeId */
+    sizeof(UA_DatagramConnectionTransportDataType), /* .memSize */
+    UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    17468LU, /* .binaryEncodingId */
+    DatagramConnectionTransportDataType_members /* .members */
+},
+/* DatagramWriterGroupTransportDataType */
+{
+    UA_TYPENAME("DatagramWriterGroupTransportDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15532LU}}, /* .typeId */
+    sizeof(UA_DatagramWriterGroupTransportDataType), /* .memSize */
+    UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    21155LU, /* .binaryEncodingId */
+    DatagramWriterGroupTransportDataType_members /* .members */
+},
 /* BrokerConnectionTransportDataType */
 {
     UA_TYPENAME("BrokerConnectionTransportDataType") /* .typeName */
@@ -6751,6 +10714,45 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     15733LU, /* .binaryEncodingId */
     BrokerDataSetReaderTransportDataType_members /* .members */
 },
+/* DiagnosticsLevel */
+{
+    UA_TYPENAME("DiagnosticsLevel") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {19723LU}}, /* .typeId */
+    sizeof(UA_DiagnosticsLevel), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    DiagnosticsLevel_members /* .members */
+},
+/* PubSubDiagnosticsCounterClassification */
+{
+    UA_TYPENAME("PubSubDiagnosticsCounterClassification") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {19730LU}}, /* .typeId */
+    sizeof(UA_PubSubDiagnosticsCounterClassification), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    PubSubDiagnosticsCounterClassification_members /* .members */
+},
+/* IdType */
+{
+    UA_TYPENAME("IdType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {256LU}}, /* .typeId */
+    sizeof(UA_IdType), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    IdType_members /* .members */
+},
 /* NodeClass */
 {
     UA_TYPENAME("NodeClass") /* .typeName */
@@ -6763,6 +10765,84 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0, /* .membersSize */
     0LU, /* .binaryEncodingId */
     NodeClass_members /* .members */
+},
+/* PermissionType */
+{
+    UA_TYPENAME("PermissionType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {94LU}}, /* .typeId */
+    sizeof(UA_PermissionType), /* .memSize */
+    UA_TYPES_UINT32, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    PermissionType_members /* .members */
+},
+/* AccessLevelType */
+{
+    UA_TYPENAME("AccessLevelType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15031LU}}, /* .typeId */
+    sizeof(UA_AccessLevelType), /* .memSize */
+    UA_TYPES_BYTE, /* .typeIndex */
+    UA_DATATYPEKIND_BYTE, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    AccessLevelType_members /* .members */
+},
+/* AccessLevelExType */
+{
+    UA_TYPENAME("AccessLevelExType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15406LU}}, /* .typeId */
+    sizeof(UA_AccessLevelExType), /* .memSize */
+    UA_TYPES_UINT32, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    AccessLevelExType_members /* .members */
+},
+/* EventNotifierType */
+{
+    UA_TYPENAME("EventNotifierType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15033LU}}, /* .typeId */
+    sizeof(UA_EventNotifierType), /* .memSize */
+    UA_TYPES_BYTE, /* .typeIndex */
+    UA_DATATYPEKIND_BYTE, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    EventNotifierType_members /* .members */
+},
+/* AccessRestrictionType */
+{
+    UA_TYPENAME("AccessRestrictionType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {95LU}}, /* .typeId */
+    sizeof(UA_AccessRestrictionType), /* .memSize */
+    UA_TYPES_UINT32, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    AccessRestrictionType_members /* .members */
+},
+/* RolePermissionType */
+{
+    UA_TYPENAME("RolePermissionType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {96LU}}, /* .typeId */
+    sizeof(UA_RolePermissionType), /* .memSize */
+    UA_TYPES_ROLEPERMISSIONTYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    128LU, /* .binaryEncodingId */
+    RolePermissionType_members /* .members */
 },
 /* StructureType */
 {
@@ -6803,6 +10883,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     122LU, /* .binaryEncodingId */
     StructureDefinition_members /* .members */
 },
+/* ReferenceNode */
+{
+    UA_TYPENAME("ReferenceNode") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {285LU}}, /* .typeId */
+    sizeof(UA_ReferenceNode), /* .memSize */
+    UA_TYPES_REFERENCENODE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    287LU, /* .binaryEncodingId */
+    ReferenceNode_members /* .members */
+},
 /* Argument */
 {
     UA_TYPENAME("Argument") /* .typeName */
@@ -6842,6 +10935,97 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     14845LU, /* .binaryEncodingId */
     EnumField_members /* .members */
 },
+/* OptionSet */
+{
+    UA_TYPENAME("OptionSet") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12755LU}}, /* .typeId */
+    sizeof(UA_OptionSet), /* .memSize */
+    UA_TYPES_OPTIONSET, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    12765LU, /* .binaryEncodingId */
+    OptionSet_members /* .members */
+},
+/* Union */
+{
+    UA_TYPENAME("Union") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12756LU}}, /* .typeId */
+    sizeof(UA_Union), /* .memSize */
+    UA_TYPES_UNION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    12766LU, /* .binaryEncodingId */
+    Union_members /* .members */
+},
+/* NormalizedString */
+{
+    UA_TYPENAME("NormalizedString") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12877LU}}, /* .typeId */
+    sizeof(UA_NormalizedString), /* .memSize */
+    UA_TYPES_NORMALIZEDSTRING, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    NormalizedString_members /* .members */
+},
+/* DecimalString */
+{
+    UA_TYPENAME("DecimalString") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12878LU}}, /* .typeId */
+    sizeof(UA_DecimalString), /* .memSize */
+    UA_TYPES_DECIMALSTRING, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    DecimalString_members /* .members */
+},
+/* DurationString */
+{
+    UA_TYPENAME("DurationString") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12879LU}}, /* .typeId */
+    sizeof(UA_DurationString), /* .memSize */
+    UA_TYPES_DURATIONSTRING, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    DurationString_members /* .members */
+},
+/* TimeString */
+{
+    UA_TYPENAME("TimeString") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12880LU}}, /* .typeId */
+    sizeof(UA_TimeString), /* .memSize */
+    UA_TYPES_TIMESTRING, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    TimeString_members /* .members */
+},
+/* DateString */
+{
+    UA_TYPENAME("DateString") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12881LU}}, /* .typeId */
+    sizeof(UA_DateString), /* .memSize */
+    UA_TYPES_DATESTRING, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    DateString_members /* .members */
+},
 /* Duration */
 {
     UA_TYPENAME("Duration") /* .typeName */
@@ -6880,6 +11064,45 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0, /* .membersSize */
     0LU, /* .binaryEncodingId */
     LocaleId_members /* .members */
+},
+/* TimeZoneDataType */
+{
+    UA_TYPENAME("TimeZoneDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {8912LU}}, /* .typeId */
+    sizeof(UA_TimeZoneDataType), /* .memSize */
+    UA_TYPES_TIMEZONEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    8917LU, /* .binaryEncodingId */
+    TimeZoneDataType_members /* .members */
+},
+/* Index */
+{
+    UA_TYPENAME("Index") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17588LU}}, /* .typeId */
+    sizeof(UA_Index), /* .memSize */
+    UA_TYPES_INDEX, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    Index_members /* .members */
+},
+/* IntegerId */
+{
+    UA_TYPENAME("IntegerId") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {288LU}}, /* .typeId */
+    sizeof(UA_IntegerId), /* .memSize */
+    UA_TYPES_INTEGERID, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    IntegerId_members /* .members */
 },
 /* ApplicationType */
 {
@@ -6933,6 +11156,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     394LU, /* .binaryEncodingId */
     ResponseHeader_members /* .members */
 },
+/* VersionTime */
+{
+    UA_TYPENAME("VersionTime") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {20998LU}}, /* .typeId */
+    sizeof(UA_VersionTime), /* .memSize */
+    UA_TYPES_VERSIONTIME, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    VersionTime_members /* .members */
+},
 /* ServiceFault */
 {
     UA_TYPENAME("ServiceFault") /* .typeName */
@@ -6945,6 +11181,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     1, /* .membersSize */
     397LU, /* .binaryEncodingId */
     ServiceFault_members /* .members */
+},
+/* SessionlessInvokeRequestType */
+{
+    UA_TYPENAME("SessionlessInvokeRequestType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15901LU}}, /* .typeId */
+    sizeof(UA_SessionlessInvokeRequestType), /* .memSize */
+    UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    15903LU, /* .binaryEncodingId */
+    SessionlessInvokeRequestType_members /* .members */
+},
+/* SessionlessInvokeResponseType */
+{
+    UA_TYPENAME("SessionlessInvokeResponseType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {20999LU}}, /* .typeId */
+    sizeof(UA_SessionlessInvokeResponseType), /* .memSize */
+    UA_TYPES_SESSIONLESSINVOKERESPONSETYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    21001LU, /* .binaryEncodingId */
+    SessionlessInvokeResponseType_members /* .members */
 },
 /* FindServersRequest */
 {
@@ -6971,6 +11233,58 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     425LU, /* .binaryEncodingId */
     FindServersResponse_members /* .members */
+},
+/* ServerOnNetwork */
+{
+    UA_TYPENAME("ServerOnNetwork") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12189LU}}, /* .typeId */
+    sizeof(UA_ServerOnNetwork), /* .memSize */
+    UA_TYPES_SERVERONNETWORK, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    12207LU, /* .binaryEncodingId */
+    ServerOnNetwork_members /* .members */
+},
+/* FindServersOnNetworkRequest */
+{
+    UA_TYPENAME("FindServersOnNetworkRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12190LU}}, /* .typeId */
+    sizeof(UA_FindServersOnNetworkRequest), /* .memSize */
+    UA_TYPES_FINDSERVERSONNETWORKREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    12208LU, /* .binaryEncodingId */
+    FindServersOnNetworkRequest_members /* .members */
+},
+/* FindServersOnNetworkResponse */
+{
+    UA_TYPENAME("FindServersOnNetworkResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12191LU}}, /* .typeId */
+    sizeof(UA_FindServersOnNetworkResponse), /* .memSize */
+    UA_TYPES_FINDSERVERSONNETWORKRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    12209LU, /* .binaryEncodingId */
+    FindServersOnNetworkResponse_members /* .members */
+},
+/* ApplicationInstanceCertificate */
+{
+    UA_TYPENAME("ApplicationInstanceCertificate") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {311LU}}, /* .typeId */
+    sizeof(UA_ApplicationInstanceCertificate), /* .memSize */
+    UA_TYPES_APPLICATIONINSTANCECERTIFICATE, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ApplicationInstanceCertificate_members /* .members */
 },
 /* MessageSecurityMode */
 {
@@ -7049,6 +11363,97 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     431LU, /* .binaryEncodingId */
     GetEndpointsResponse_members /* .members */
+},
+/* RegisteredServer */
+{
+    UA_TYPENAME("RegisteredServer") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {432LU}}, /* .typeId */
+    sizeof(UA_RegisteredServer), /* .memSize */
+    UA_TYPES_REGISTEREDSERVER, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    8, /* .membersSize */
+    434LU, /* .binaryEncodingId */
+    RegisteredServer_members /* .members */
+},
+/* RegisterServerRequest */
+{
+    UA_TYPENAME("RegisterServerRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {435LU}}, /* .typeId */
+    sizeof(UA_RegisterServerRequest), /* .memSize */
+    UA_TYPES_REGISTERSERVERREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    437LU, /* .binaryEncodingId */
+    RegisterServerRequest_members /* .members */
+},
+/* RegisterServerResponse */
+{
+    UA_TYPENAME("RegisterServerResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {438LU}}, /* .typeId */
+    sizeof(UA_RegisterServerResponse), /* .memSize */
+    UA_TYPES_REGISTERSERVERRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    440LU, /* .binaryEncodingId */
+    RegisterServerResponse_members /* .members */
+},
+/* DiscoveryConfiguration */
+{
+    UA_TYPENAME("DiscoveryConfiguration") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12890LU}}, /* .typeId */
+    sizeof(UA_DiscoveryConfiguration), /* .memSize */
+    UA_TYPES_DISCOVERYCONFIGURATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    12900LU, /* .binaryEncodingId */
+    DiscoveryConfiguration_members /* .members */
+},
+/* MdnsDiscoveryConfiguration */
+{
+    UA_TYPENAME("MdnsDiscoveryConfiguration") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12891LU}}, /* .typeId */
+    sizeof(UA_MdnsDiscoveryConfiguration), /* .memSize */
+    UA_TYPES_MDNSDISCOVERYCONFIGURATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    12901LU, /* .binaryEncodingId */
+    MdnsDiscoveryConfiguration_members /* .members */
+},
+/* RegisterServer2Request */
+{
+    UA_TYPENAME("RegisterServer2Request") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12193LU}}, /* .typeId */
+    sizeof(UA_RegisterServer2Request), /* .memSize */
+    UA_TYPES_REGISTERSERVER2REQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    12211LU, /* .binaryEncodingId */
+    RegisterServer2Request_members /* .members */
+},
+/* RegisterServer2Response */
+{
+    UA_TYPENAME("RegisterServer2Response") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {12194LU}}, /* .typeId */
+    sizeof(UA_RegisterServer2Response), /* .memSize */
+    UA_TYPES_REGISTERSERVER2RESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    12212LU, /* .binaryEncodingId */
+    RegisterServer2Response_members /* .members */
 },
 /* SecurityTokenRequestType */
 {
@@ -7140,6 +11545,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     346LU, /* .binaryEncodingId */
     SignedSoftwareCertificate_members /* .members */
+},
+/* SessionAuthenticationToken */
+{
+    UA_TYPENAME("SessionAuthenticationToken") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {388LU}}, /* .typeId */
+    sizeof(UA_SessionAuthenticationToken), /* .memSize */
+    UA_TYPES_SESSIONAUTHENTICATIONTOKEN, /* .typeIndex */
+    UA_DATATYPEKIND_NODEID, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    SessionAuthenticationToken_members /* .members */
 },
 /* SignatureData */
 {
@@ -7245,6 +11663,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     940LU, /* .binaryEncodingId */
     IssuedIdentityToken_members /* .members */
 },
+/* RsaEncryptedSecret */
+{
+    UA_TYPENAME("RsaEncryptedSecret") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17545LU}}, /* .typeId */
+    sizeof(UA_RsaEncryptedSecret), /* .memSize */
+    UA_TYPES_RSAENCRYPTEDSECRET, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    RsaEncryptedSecret_members /* .members */
+},
 /* ActivateSessionRequest */
 {
     UA_TYPENAME("ActivateSessionRequest") /* .typeName */
@@ -7296,6 +11727,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     1, /* .membersSize */
     476LU, /* .binaryEncodingId */
     CloseSessionResponse_members /* .members */
+},
+/* CancelRequest */
+{
+    UA_TYPENAME("CancelRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {477LU}}, /* .typeId */
+    sizeof(UA_CancelRequest), /* .memSize */
+    UA_TYPES_CANCELREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    479LU, /* .binaryEncodingId */
+    CancelRequest_members /* .members */
+},
+/* CancelResponse */
+{
+    UA_TYPENAME("CancelResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {480LU}}, /* .typeId */
+    sizeof(UA_CancelResponse), /* .memSize */
+    UA_TYPES_CANCELRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    482LU, /* .binaryEncodingId */
+    CancelResponse_members /* .members */
 },
 /* NodeAttributesMask */
 {
@@ -7426,6 +11883,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     7, /* .membersSize */
     375LU, /* .binaryEncodingId */
     ViewAttributes_members /* .members */
+},
+/* GenericAttributeValue */
+{
+    UA_TYPENAME("GenericAttributeValue") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17606LU}}, /* .typeId */
+    sizeof(UA_GenericAttributeValue), /* .memSize */
+    UA_TYPES_GENERICATTRIBUTEVALUE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    17610LU, /* .binaryEncodingId */
+    GenericAttributeValue_members /* .members */
+},
+/* GenericAttributes */
+{
+    UA_TYPENAME("GenericAttributes") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {17607LU}}, /* .typeId */
+    sizeof(UA_GenericAttributes), /* .memSize */
+    UA_TYPES_GENERICATTRIBUTES, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    6, /* .membersSize */
+    17611LU, /* .binaryEncodingId */
+    GenericAttributes_members /* .members */
 },
 /* AddNodesItem */
 {
@@ -7596,6 +12079,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     509LU, /* .binaryEncodingId */
     DeleteReferencesResponse_members /* .members */
 },
+/* AttributeWriteMask */
+{
+    UA_TYPENAME("AttributeWriteMask") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {347LU}}, /* .typeId */
+    sizeof(UA_AttributeWriteMask), /* .memSize */
+    UA_TYPES_UINT32, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    AttributeWriteMask_members /* .members */
+},
 /* BrowseDirection */
 {
     UA_TYPENAME("BrowseDirection") /* .typeName */
@@ -7660,6 +12156,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     7, /* .membersSize */
     520LU, /* .binaryEncodingId */
     ReferenceDescription_members /* .members */
+},
+/* ContinuationPoint */
+{
+    UA_TYPENAME("ContinuationPoint") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {521LU}}, /* .typeId */
+    sizeof(UA_ContinuationPoint), /* .memSize */
+    UA_TYPES_CONTINUATIONPOINT, /* .typeIndex */
+    UA_DATATYPEKIND_BYTESTRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ContinuationPoint_members /* .members */
 },
 /* BrowseResult */
 {
@@ -7869,6 +12378,84 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     569LU, /* .binaryEncodingId */
     UnregisterNodesResponse_members /* .members */
 },
+/* Counter */
+{
+    UA_TYPENAME("Counter") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {289LU}}, /* .typeId */
+    sizeof(UA_Counter), /* .memSize */
+    UA_TYPES_COUNTER, /* .typeIndex */
+    UA_DATATYPEKIND_UINT32, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    Counter_members /* .members */
+},
+/* Time */
+{
+    UA_TYPENAME("Time") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {292LU}}, /* .typeId */
+    sizeof(UA_Time), /* .memSize */
+    UA_TYPES_TIME, /* .typeIndex */
+    UA_DATATYPEKIND_STRING, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    Time_members /* .members */
+},
+/* Date */
+{
+    UA_TYPENAME("Date") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {293LU}}, /* .typeId */
+    sizeof(UA_Date), /* .memSize */
+    UA_TYPES_DATE, /* .typeIndex */
+    UA_DATATYPEKIND_DATETIME, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    Date_members /* .members */
+},
+/* EndpointConfiguration */
+{
+    UA_TYPENAME("EndpointConfiguration") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {331LU}}, /* .typeId */
+    sizeof(UA_EndpointConfiguration), /* .memSize */
+    UA_TYPES_ENDPOINTCONFIGURATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    9, /* .membersSize */
+    333LU, /* .binaryEncodingId */
+    EndpointConfiguration_members /* .members */
+},
+/* QueryDataDescription */
+{
+    UA_TYPENAME("QueryDataDescription") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {570LU}}, /* .typeId */
+    sizeof(UA_QueryDataDescription), /* .memSize */
+    UA_TYPES_QUERYDATADESCRIPTION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    572LU, /* .binaryEncodingId */
+    QueryDataDescription_members /* .members */
+},
+/* NodeTypeDescription */
+{
+    UA_TYPENAME("NodeTypeDescription") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {573LU}}, /* .typeId */
+    sizeof(UA_NodeTypeDescription), /* .memSize */
+    UA_TYPES_NODETYPEDESCRIPTION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    575LU, /* .binaryEncodingId */
+    NodeTypeDescription_members /* .members */
+},
 /* FilterOperator */
 {
     UA_TYPENAME("FilterOperator") /* .typeName */
@@ -7881,6 +12468,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0, /* .membersSize */
     0LU, /* .binaryEncodingId */
     FilterOperator_members /* .members */
+},
+/* QueryDataSet */
+{
+    UA_TYPENAME("QueryDataSet") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {577LU}}, /* .typeId */
+    sizeof(UA_QueryDataSet), /* .memSize */
+    UA_TYPES_QUERYDATASET, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    579LU, /* .binaryEncodingId */
+    QueryDataSet_members /* .members */
+},
+/* NodeReference */
+{
+    UA_TYPENAME("NodeReference") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {580LU}}, /* .typeId */
+    sizeof(UA_NodeReference), /* .memSize */
+    UA_TYPES_NODEREFERENCE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    582LU, /* .binaryEncodingId */
+    NodeReference_members /* .members */
 },
 /* ContentFilterElement */
 {
@@ -7999,6 +12612,71 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     609LU, /* .binaryEncodingId */
     ContentFilterResult_members /* .members */
 },
+/* ParsingResult */
+{
+    UA_TYPENAME("ParsingResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {610LU}}, /* .typeId */
+    sizeof(UA_ParsingResult), /* .memSize */
+    UA_TYPES_PARSINGRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    612LU, /* .binaryEncodingId */
+    ParsingResult_members /* .members */
+},
+/* QueryFirstRequest */
+{
+    UA_TYPENAME("QueryFirstRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {613LU}}, /* .typeId */
+    sizeof(UA_QueryFirstRequest), /* .memSize */
+    UA_TYPES_QUERYFIRSTREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    6, /* .membersSize */
+    615LU, /* .binaryEncodingId */
+    QueryFirstRequest_members /* .members */
+},
+/* QueryFirstResponse */
+{
+    UA_TYPENAME("QueryFirstResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {616LU}}, /* .typeId */
+    sizeof(UA_QueryFirstResponse), /* .memSize */
+    UA_TYPES_QUERYFIRSTRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    6, /* .membersSize */
+    618LU, /* .binaryEncodingId */
+    QueryFirstResponse_members /* .members */
+},
+/* QueryNextRequest */
+{
+    UA_TYPENAME("QueryNextRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {619LU}}, /* .typeId */
+    sizeof(UA_QueryNextRequest), /* .memSize */
+    UA_TYPES_QUERYNEXTREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    621LU, /* .binaryEncodingId */
+    QueryNextRequest_members /* .members */
+},
+/* QueryNextResponse */
+{
+    UA_TYPENAME("QueryNextResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {622LU}}, /* .typeId */
+    sizeof(UA_QueryNextResponse), /* .memSize */
+    UA_TYPES_QUERYNEXTRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    624LU, /* .binaryEncodingId */
+    QueryNextResponse_members /* .members */
+},
 /* TimestampsToReturn */
 {
     UA_TYPENAME("TimestampsToReturn") /* .typeName */
@@ -8051,6 +12729,123 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     634LU, /* .binaryEncodingId */
     ReadResponse_members /* .members */
 },
+/* HistoryReadValueId */
+{
+    UA_TYPENAME("HistoryReadValueId") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {635LU}}, /* .typeId */
+    sizeof(UA_HistoryReadValueId), /* .memSize */
+    UA_TYPES_HISTORYREADVALUEID, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    637LU, /* .binaryEncodingId */
+    HistoryReadValueId_members /* .members */
+},
+/* HistoryReadResult */
+{
+    UA_TYPENAME("HistoryReadResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {638LU}}, /* .typeId */
+    sizeof(UA_HistoryReadResult), /* .memSize */
+    UA_TYPES_HISTORYREADRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    640LU, /* .binaryEncodingId */
+    HistoryReadResult_members /* .members */
+},
+/* HistoryReadDetails */
+{
+    UA_TYPENAME("HistoryReadDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {641LU}}, /* .typeId */
+    sizeof(UA_HistoryReadDetails), /* .memSize */
+    UA_TYPES_HISTORYREADDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    643LU, /* .binaryEncodingId */
+    HistoryReadDetails_members /* .members */
+},
+/* ReadRawModifiedDetails */
+{
+    UA_TYPENAME("ReadRawModifiedDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {647LU}}, /* .typeId */
+    sizeof(UA_ReadRawModifiedDetails), /* .memSize */
+    UA_TYPES_READRAWMODIFIEDDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    649LU, /* .binaryEncodingId */
+    ReadRawModifiedDetails_members /* .members */
+},
+/* ReadAtTimeDetails */
+{
+    UA_TYPENAME("ReadAtTimeDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {653LU}}, /* .typeId */
+    sizeof(UA_ReadAtTimeDetails), /* .memSize */
+    UA_TYPES_READATTIMEDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    655LU, /* .binaryEncodingId */
+    ReadAtTimeDetails_members /* .members */
+},
+/* ReadAnnotationDataDetails */
+{
+    UA_TYPENAME("ReadAnnotationDataDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {23497LU}}, /* .typeId */
+    sizeof(UA_ReadAnnotationDataDetails), /* .memSize */
+    UA_TYPES_READANNOTATIONDATADETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    23500LU, /* .binaryEncodingId */
+    ReadAnnotationDataDetails_members /* .members */
+},
+/* HistoryData */
+{
+    UA_TYPENAME("HistoryData") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {656LU}}, /* .typeId */
+    sizeof(UA_HistoryData), /* .memSize */
+    UA_TYPES_HISTORYDATA, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    658LU, /* .binaryEncodingId */
+    HistoryData_members /* .members */
+},
+/* HistoryReadRequest */
+{
+    UA_TYPENAME("HistoryReadRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {662LU}}, /* .typeId */
+    sizeof(UA_HistoryReadRequest), /* .memSize */
+    UA_TYPES_HISTORYREADREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    664LU, /* .binaryEncodingId */
+    HistoryReadRequest_members /* .members */
+},
+/* HistoryReadResponse */
+{
+    UA_TYPENAME("HistoryReadResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {665LU}}, /* .typeId */
+    sizeof(UA_HistoryReadResponse), /* .memSize */
+    UA_TYPES_HISTORYREADRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    667LU, /* .binaryEncodingId */
+    HistoryReadResponse_members /* .members */
+},
 /* WriteValue */
 {
     UA_TYPENAME("WriteValue") /* .typeName */
@@ -8089,6 +12884,149 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     3, /* .membersSize */
     676LU, /* .binaryEncodingId */
     WriteResponse_members /* .members */
+},
+/* HistoryUpdateDetails */
+{
+    UA_TYPENAME("HistoryUpdateDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {677LU}}, /* .typeId */
+    sizeof(UA_HistoryUpdateDetails), /* .memSize */
+    UA_TYPES_HISTORYUPDATEDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    679LU, /* .binaryEncodingId */
+    HistoryUpdateDetails_members /* .members */
+},
+/* HistoryUpdateType */
+{
+    UA_TYPENAME("HistoryUpdateType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11234LU}}, /* .typeId */
+    sizeof(UA_HistoryUpdateType), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    HistoryUpdateType_members /* .members */
+},
+/* PerformUpdateType */
+{
+    UA_TYPENAME("PerformUpdateType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11293LU}}, /* .typeId */
+    sizeof(UA_PerformUpdateType), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    PerformUpdateType_members /* .members */
+},
+/* UpdateDataDetails */
+{
+    UA_TYPENAME("UpdateDataDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {680LU}}, /* .typeId */
+    sizeof(UA_UpdateDataDetails), /* .memSize */
+    UA_TYPES_UPDATEDATADETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    682LU, /* .binaryEncodingId */
+    UpdateDataDetails_members /* .members */
+},
+/* UpdateStructureDataDetails */
+{
+    UA_TYPENAME("UpdateStructureDataDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11295LU}}, /* .typeId */
+    sizeof(UA_UpdateStructureDataDetails), /* .memSize */
+    UA_TYPES_UPDATESTRUCTUREDATADETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    11300LU, /* .binaryEncodingId */
+    UpdateStructureDataDetails_members /* .members */
+},
+/* DeleteRawModifiedDetails */
+{
+    UA_TYPENAME("DeleteRawModifiedDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {686LU}}, /* .typeId */
+    sizeof(UA_DeleteRawModifiedDetails), /* .memSize */
+    UA_TYPES_DELETERAWMODIFIEDDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    688LU, /* .binaryEncodingId */
+    DeleteRawModifiedDetails_members /* .members */
+},
+/* DeleteAtTimeDetails */
+{
+    UA_TYPENAME("DeleteAtTimeDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {689LU}}, /* .typeId */
+    sizeof(UA_DeleteAtTimeDetails), /* .memSize */
+    UA_TYPES_DELETEATTIMEDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    691LU, /* .binaryEncodingId */
+    DeleteAtTimeDetails_members /* .members */
+},
+/* DeleteEventDetails */
+{
+    UA_TYPENAME("DeleteEventDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {692LU}}, /* .typeId */
+    sizeof(UA_DeleteEventDetails), /* .memSize */
+    UA_TYPES_DELETEEVENTDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    694LU, /* .binaryEncodingId */
+    DeleteEventDetails_members /* .members */
+},
+/* HistoryUpdateResult */
+{
+    UA_TYPENAME("HistoryUpdateResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {695LU}}, /* .typeId */
+    sizeof(UA_HistoryUpdateResult), /* .memSize */
+    UA_TYPES_HISTORYUPDATERESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    697LU, /* .binaryEncodingId */
+    HistoryUpdateResult_members /* .members */
+},
+/* HistoryUpdateRequest */
+{
+    UA_TYPENAME("HistoryUpdateRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {698LU}}, /* .typeId */
+    sizeof(UA_HistoryUpdateRequest), /* .memSize */
+    UA_TYPES_HISTORYUPDATEREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    700LU, /* .binaryEncodingId */
+    HistoryUpdateRequest_members /* .members */
+},
+/* HistoryUpdateResponse */
+{
+    UA_TYPENAME("HistoryUpdateResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {701LU}}, /* .typeId */
+    sizeof(UA_HistoryUpdateResponse), /* .memSize */
+    UA_TYPES_HISTORYUPDATERESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    703LU, /* .binaryEncodingId */
+    HistoryUpdateResponse_members /* .members */
 },
 /* CallMethodRequest */
 {
@@ -8181,6 +13119,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0LU, /* .binaryEncodingId */
     DeadbandType_members /* .members */
 },
+/* MonitoringFilter */
+{
+    UA_TYPENAME("MonitoringFilter") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {719LU}}, /* .typeId */
+    sizeof(UA_MonitoringFilter), /* .memSize */
+    UA_TYPES_MONITORINGFILTER, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    721LU, /* .binaryEncodingId */
+    MonitoringFilter_members /* .members */
+},
 /* DataChangeFilter */
 {
     UA_TYPENAME("DataChangeFilter") /* .typeName */
@@ -8233,6 +13184,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     730LU, /* .binaryEncodingId */
     AggregateFilter_members /* .members */
 },
+/* MonitoringFilterResult */
+{
+    UA_TYPENAME("MonitoringFilterResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {731LU}}, /* .typeId */
+    sizeof(UA_MonitoringFilterResult), /* .memSize */
+    UA_TYPES_MONITORINGFILTERRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    733LU, /* .binaryEncodingId */
+    MonitoringFilterResult_members /* .members */
+},
 /* EventFilterResult */
 {
     UA_TYPENAME("EventFilterResult") /* .typeName */
@@ -8245,6 +13209,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     3, /* .membersSize */
     736LU, /* .binaryEncodingId */
     EventFilterResult_members /* .members */
+},
+/* AggregateFilterResult */
+{
+    UA_TYPENAME("AggregateFilterResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {737LU}}, /* .typeId */
+    sizeof(UA_AggregateFilterResult), /* .memSize */
+    UA_TYPES_AGGREGATEFILTERRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    739LU, /* .binaryEncodingId */
+    AggregateFilterResult_members /* .members */
 },
 /* MonitoringParameters */
 {
@@ -8532,6 +13509,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     805LU, /* .binaryEncodingId */
     NotificationMessage_members /* .members */
 },
+/* NotificationData */
+{
+    UA_TYPENAME("NotificationData") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {945LU}}, /* .typeId */
+    sizeof(UA_NotificationData), /* .memSize */
+    UA_TYPES_NOTIFICATIONDATA, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    0, /* .membersSize */
+    947LU, /* .binaryEncodingId */
+    NotificationData_members /* .members */
+},
 /* MonitoredItemNotification */
 {
     UA_TYPENAME("MonitoredItemNotification") /* .typeName */
@@ -8557,6 +13547,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     2, /* .membersSize */
     919LU, /* .binaryEncodingId */
     EventFieldList_members /* .members */
+},
+/* HistoryEventFieldList */
+{
+    UA_TYPENAME("HistoryEventFieldList") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {920LU}}, /* .typeId */
+    sizeof(UA_HistoryEventFieldList), /* .memSize */
+    UA_TYPES_HISTORYEVENTFIELDLIST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    922LU, /* .binaryEncodingId */
+    HistoryEventFieldList_members /* .members */
 },
 /* StatusChangeNotification */
 {
@@ -8636,6 +13639,45 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     835LU, /* .binaryEncodingId */
     RepublishResponse_members /* .members */
 },
+/* TransferResult */
+{
+    UA_TYPENAME("TransferResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {836LU}}, /* .typeId */
+    sizeof(UA_TransferResult), /* .memSize */
+    UA_TYPES_TRANSFERRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    838LU, /* .binaryEncodingId */
+    TransferResult_members /* .members */
+},
+/* TransferSubscriptionsRequest */
+{
+    UA_TYPENAME("TransferSubscriptionsRequest") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {839LU}}, /* .typeId */
+    sizeof(UA_TransferSubscriptionsRequest), /* .memSize */
+    UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    841LU, /* .binaryEncodingId */
+    TransferSubscriptionsRequest_members /* .members */
+},
+/* TransferSubscriptionsResponse */
+{
+    UA_TYPENAME("TransferSubscriptionsResponse") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {842LU}}, /* .typeId */
+    sizeof(UA_TransferSubscriptionsResponse), /* .memSize */
+    UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    844LU, /* .binaryEncodingId */
+    TransferSubscriptionsResponse_members /* .members */
+},
 /* DeleteSubscriptionsRequest */
 {
     UA_TYPENAME("DeleteSubscriptionsRequest") /* .typeName */
@@ -8701,6 +13743,58 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     0LU, /* .binaryEncodingId */
     ServerState_members /* .members */
 },
+/* RedundantServerDataType */
+{
+    UA_TYPENAME("RedundantServerDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {853LU}}, /* .typeId */
+    sizeof(UA_RedundantServerDataType), /* .memSize */
+    UA_TYPES_REDUNDANTSERVERDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    855LU, /* .binaryEncodingId */
+    RedundantServerDataType_members /* .members */
+},
+/* EndpointUrlListDataType */
+{
+    UA_TYPENAME("EndpointUrlListDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11943LU}}, /* .typeId */
+    sizeof(UA_EndpointUrlListDataType), /* .memSize */
+    UA_TYPES_ENDPOINTURLLISTDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    11957LU, /* .binaryEncodingId */
+    EndpointUrlListDataType_members /* .members */
+},
+/* NetworkGroupDataType */
+{
+    UA_TYPENAME("NetworkGroupDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11944LU}}, /* .typeId */
+    sizeof(UA_NetworkGroupDataType), /* .memSize */
+    UA_TYPES_NETWORKGROUPDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    11958LU, /* .binaryEncodingId */
+    NetworkGroupDataType_members /* .members */
+},
+/* SamplingIntervalDiagnosticsDataType */
+{
+    UA_TYPENAME("SamplingIntervalDiagnosticsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {856LU}}, /* .typeId */
+    sizeof(UA_SamplingIntervalDiagnosticsDataType), /* .memSize */
+    UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    858LU, /* .binaryEncodingId */
+    SamplingIntervalDiagnosticsDataType_members /* .members */
+},
 /* ServerDiagnosticsSummaryDataType */
 {
     UA_TYPENAME("ServerDiagnosticsSummaryDataType") /* .typeName */
@@ -8726,6 +13820,97 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     6, /* .membersSize */
     864LU, /* .binaryEncodingId */
     ServerStatusDataType_members /* .members */
+},
+/* SessionSecurityDiagnosticsDataType */
+{
+    UA_TYPENAME("SessionSecurityDiagnosticsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {868LU}}, /* .typeId */
+    sizeof(UA_SessionSecurityDiagnosticsDataType), /* .memSize */
+    UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    9, /* .membersSize */
+    870LU, /* .binaryEncodingId */
+    SessionSecurityDiagnosticsDataType_members /* .members */
+},
+/* ServiceCounterDataType */
+{
+    UA_TYPENAME("ServiceCounterDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {871LU}}, /* .typeId */
+    sizeof(UA_ServiceCounterDataType), /* .memSize */
+    UA_TYPES_SERVICECOUNTERDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    true, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    873LU, /* .binaryEncodingId */
+    ServiceCounterDataType_members /* .members */
+},
+/* StatusResult */
+{
+    UA_TYPENAME("StatusResult") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {299LU}}, /* .typeId */
+    sizeof(UA_StatusResult), /* .memSize */
+    UA_TYPES_STATUSRESULT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    301LU, /* .binaryEncodingId */
+    StatusResult_members /* .members */
+},
+/* SubscriptionDiagnosticsDataType */
+{
+    UA_TYPENAME("SubscriptionDiagnosticsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {874LU}}, /* .typeId */
+    sizeof(UA_SubscriptionDiagnosticsDataType), /* .memSize */
+    UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    31, /* .membersSize */
+    876LU, /* .binaryEncodingId */
+    SubscriptionDiagnosticsDataType_members /* .members */
+},
+/* ModelChangeStructureVerbMask */
+{
+    UA_TYPENAME("ModelChangeStructureVerbMask") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11941LU}}, /* .typeId */
+    sizeof(UA_ModelChangeStructureVerbMask), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ModelChangeStructureVerbMask_members /* .members */
+},
+/* ModelChangeStructureDataType */
+{
+    UA_TYPENAME("ModelChangeStructureDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {877LU}}, /* .typeId */
+    sizeof(UA_ModelChangeStructureDataType), /* .memSize */
+    UA_TYPES_MODELCHANGESTRUCTUREDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    879LU, /* .binaryEncodingId */
+    ModelChangeStructureDataType_members /* .members */
+},
+/* SemanticChangeStructureDataType */
+{
+    UA_TYPENAME("SemanticChangeStructureDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {897LU}}, /* .typeId */
+    sizeof(UA_SemanticChangeStructureDataType), /* .memSize */
+    UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    899LU, /* .binaryEncodingId */
+    SemanticChangeStructureDataType_members /* .members */
 },
 /* Range */
 {
@@ -8818,6 +14003,71 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     12090LU, /* .binaryEncodingId */
     XVType_members /* .members */
 },
+/* ProgramDiagnosticDataType */
+{
+    UA_TYPENAME("ProgramDiagnosticDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {894LU}}, /* .typeId */
+    sizeof(UA_ProgramDiagnosticDataType), /* .memSize */
+    UA_TYPES_PROGRAMDIAGNOSTICDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    10, /* .membersSize */
+    896LU, /* .binaryEncodingId */
+    ProgramDiagnosticDataType_members /* .members */
+},
+/* ProgramDiagnostic2DataType */
+{
+    UA_TYPENAME("ProgramDiagnostic2DataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15396LU}}, /* .typeId */
+    sizeof(UA_ProgramDiagnostic2DataType), /* .memSize */
+    UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    12, /* .membersSize */
+    15397LU, /* .binaryEncodingId */
+    ProgramDiagnostic2DataType_members /* .members */
+},
+/* Annotation */
+{
+    UA_TYPENAME("Annotation") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {891LU}}, /* .typeId */
+    sizeof(UA_Annotation), /* .memSize */
+    UA_TYPES_ANNOTATION, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    893LU, /* .binaryEncodingId */
+    Annotation_members /* .members */
+},
+/* ExceptionDeviationFormat */
+{
+    UA_TYPENAME("ExceptionDeviationFormat") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {890LU}}, /* .typeId */
+    sizeof(UA_ExceptionDeviationFormat), /* .memSize */
+    UA_TYPES_INT32, /* .typeIndex */
+    UA_DATATYPEKIND_ENUM, /* .typeKind */
+    true, /* .pointerFree */
+    UA_BINARY_OVERLAYABLE_INTEGER, /* .overlayable */
+    0, /* .membersSize */
+    0LU, /* .binaryEncodingId */
+    ExceptionDeviationFormat_members /* .members */
+},
+/* EndpointType */
+{
+    UA_TYPENAME("EndpointType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15528LU}}, /* .typeId */
+    sizeof(UA_EndpointType), /* .memSize */
+    UA_TYPES_ENDPOINTTYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    15671LU, /* .binaryEncodingId */
+    EndpointType_members /* .members */
+},
 /* StructureDescription */
 {
     UA_TYPENAME("StructureDescription") /* .typeName */
@@ -8843,6 +14093,32 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     10, /* .membersSize */
     14839LU, /* .binaryEncodingId */
     FieldMetaData_members /* .members */
+},
+/* PublishedEventsDataType */
+{
+    UA_TYPENAME("PublishedEventsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15582LU}}, /* .typeId */
+    sizeof(UA_PublishedEventsDataType), /* .memSize */
+    UA_TYPES_PUBLISHEDEVENTSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    15681LU, /* .binaryEncodingId */
+    PublishedEventsDataType_members /* .members */
+},
+/* PubSubGroupDataType */
+{
+    UA_TYPENAME("PubSubGroupDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15609LU}}, /* .typeId */
+    sizeof(UA_PubSubGroupDataType), /* .memSize */
+    UA_TYPES_PUBSUBGROUPDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    7, /* .membersSize */
+    15689LU, /* .binaryEncodingId */
+    PubSubGroupDataType_members /* .members */
 },
 /* WriterGroupDataType */
 {
@@ -8870,6 +14146,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     14848LU, /* .binaryEncodingId */
     FieldTargetDataType_members /* .members */
 },
+/* SubscribedDataSetMirrorDataType */
+{
+    UA_TYPENAME("SubscribedDataSetMirrorDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15635LU}}, /* .typeId */
+    sizeof(UA_SubscribedDataSetMirrorDataType), /* .memSize */
+    UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    15713LU, /* .binaryEncodingId */
+    SubscribedDataSetMirrorDataType_members /* .members */
+},
 /* EnumDefinition */
 {
     UA_TYPENAME("EnumDefinition") /* .typeName */
@@ -8882,6 +14171,84 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     1, /* .membersSize */
     123LU, /* .binaryEncodingId */
     EnumDefinition_members /* .members */
+},
+/* ReadEventDetails */
+{
+    UA_TYPENAME("ReadEventDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {644LU}}, /* .typeId */
+    sizeof(UA_ReadEventDetails), /* .memSize */
+    UA_TYPES_READEVENTDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    646LU, /* .binaryEncodingId */
+    ReadEventDetails_members /* .members */
+},
+/* ReadProcessedDetails */
+{
+    UA_TYPENAME("ReadProcessedDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {650LU}}, /* .typeId */
+    sizeof(UA_ReadProcessedDetails), /* .memSize */
+    UA_TYPES_READPROCESSEDDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    652LU, /* .binaryEncodingId */
+    ReadProcessedDetails_members /* .members */
+},
+/* ModificationInfo */
+{
+    UA_TYPENAME("ModificationInfo") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11216LU}}, /* .typeId */
+    sizeof(UA_ModificationInfo), /* .memSize */
+    UA_TYPES_MODIFICATIONINFO, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    11226LU, /* .binaryEncodingId */
+    ModificationInfo_members /* .members */
+},
+/* HistoryModifiedData */
+{
+    UA_TYPENAME("HistoryModifiedData") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {11217LU}}, /* .typeId */
+    sizeof(UA_HistoryModifiedData), /* .memSize */
+    UA_TYPES_HISTORYMODIFIEDDATA, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    2, /* .membersSize */
+    11227LU, /* .binaryEncodingId */
+    HistoryModifiedData_members /* .members */
+},
+/* HistoryEvent */
+{
+    UA_TYPENAME("HistoryEvent") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {659LU}}, /* .typeId */
+    sizeof(UA_HistoryEvent), /* .memSize */
+    UA_TYPES_HISTORYEVENT, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    1, /* .membersSize */
+    661LU, /* .binaryEncodingId */
+    HistoryEvent_members /* .members */
+},
+/* UpdateEventDetails */
+{
+    UA_TYPENAME("UpdateEventDetails") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {683LU}}, /* .typeId */
+    sizeof(UA_UpdateEventDetails), /* .memSize */
+    UA_TYPES_UPDATEEVENTDETAILS, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    685LU, /* .binaryEncodingId */
+    UpdateEventDetails_members /* .members */
 },
 /* DataChangeNotification */
 {
@@ -8909,6 +14276,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     916LU, /* .binaryEncodingId */
     EventNotificationList_members /* .members */
 },
+/* SessionDiagnosticsDataType */
+{
+    UA_TYPENAME("SessionDiagnosticsDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {865LU}}, /* .typeId */
+    sizeof(UA_SessionDiagnosticsDataType), /* .memSize */
+    UA_TYPES_SESSIONDIAGNOSTICSDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    43, /* .membersSize */
+    867LU, /* .binaryEncodingId */
+    SessionDiagnosticsDataType_members /* .members */
+},
 /* EnumDescription */
 {
     UA_TYPENAME("EnumDescription") /* .typeName */
@@ -8922,6 +14302,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     127LU, /* .binaryEncodingId */
     EnumDescription_members /* .members */
 },
+/* UABinaryFileDataType */
+{
+    UA_TYPENAME("UABinaryFileDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15006LU}}, /* .typeId */
+    sizeof(UA_UABinaryFileDataType), /* .memSize */
+    UA_TYPES_UABINARYFILEDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    7, /* .membersSize */
+    15422LU, /* .binaryEncodingId */
+    UABinaryFileDataType_members /* .members */
+},
 /* DataSetMetaDataType */
 {
     UA_TYPENAME("DataSetMetaDataType") /* .typeName */
@@ -8934,6 +14327,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     9, /* .membersSize */
     124LU, /* .binaryEncodingId */
     DataSetMetaDataType_members /* .members */
+},
+/* PublishedDataSetDataType */
+{
+    UA_TYPENAME("PublishedDataSetDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15578LU}}, /* .typeId */
+    sizeof(UA_PublishedDataSetDataType), /* .memSize */
+    UA_TYPES_PUBLISHEDDATASETDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    5, /* .membersSize */
+    15677LU, /* .binaryEncodingId */
+    PublishedDataSetDataType_members /* .members */
 },
 /* DataSetReaderDataType */
 {
@@ -8961,6 +14367,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     15712LU, /* .binaryEncodingId */
     TargetVariablesDataType_members /* .members */
 },
+/* DataTypeSchemaHeader */
+{
+    UA_TYPENAME("DataTypeSchemaHeader") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15534LU}}, /* .typeId */
+    sizeof(UA_DataTypeSchemaHeader), /* .memSize */
+    UA_TYPES_DATATYPESCHEMAHEADER, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    4, /* .membersSize */
+    15676LU, /* .binaryEncodingId */
+    DataTypeSchemaHeader_members /* .members */
+},
 /* ReaderGroupDataType */
 {
     UA_TYPENAME("ReaderGroupDataType") /* .typeName */
@@ -8986,6 +14405,19 @@ const UA_DataType UA_TYPES[UA_TYPES_COUNT] = {
     9, /* .membersSize */
     15694LU, /* .binaryEncodingId */
     PubSubConnectionDataType_members /* .members */
+},
+/* PubSubConfigurationDataType */
+{
+    UA_TYPENAME("PubSubConfigurationDataType") /* .typeName */
+    {0, UA_NODEIDTYPE_NUMERIC, {15530LU}}, /* .typeId */
+    sizeof(UA_PubSubConfigurationDataType), /* .memSize */
+    UA_TYPES_PUBSUBCONFIGURATIONDATATYPE, /* .typeIndex */
+    UA_DATATYPEKIND_STRUCTURE, /* .typeKind */
+    false, /* .pointerFree */
+    false, /* .overlayable */
+    3, /* .membersSize */
+    21154LU, /* .binaryEncodingId */
+    PubSubConfigurationDataType_members /* .members */
 },
 };
 

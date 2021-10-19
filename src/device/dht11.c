@@ -4,7 +4,9 @@ dht11传感器添加对象类型和添加对象实例的方法
 
 
 #include "readDht11Data.h"
-#include "open62541.h"
+#include <open62541/plugin/log_stdout.h>
+#include <open62541/server.h>
+#include <open62541/server_config_default.h>
 #include "dht11.h"
 
 UA_NodeId dht11TypeId = {1, UA_NODEIDTYPE_NUMERIC, {1001}};
@@ -182,7 +184,7 @@ int getChildIdSimplified(UA_Server *server,
 }
 
 
-void createDht11ObjectInstance(UA_Server *server, struct dht11InitInfo *info){
+UA_NodeId createDht11ObjectInstance(UA_Server *server, struct dht11InitInfo *info){
     UA_ObjectAttributes oAttr = UA_ObjectAttributes_default;
     oAttr.displayName = UA_LOCALIZEDTEXT("en-US", "dht11 Instance");
 
@@ -215,6 +217,7 @@ void createDht11ObjectInstance(UA_Server *server, struct dht11InitInfo *info){
     	UA_Server_writeValue(server, itemId, value);
     }
 
+    return retId;
 }
 
 

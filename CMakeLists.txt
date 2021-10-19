@@ -22,13 +22,13 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/open62541/src/pubsub)
 find_library(OPEN62541_LIB libopen62541.a HINTS ${PROJECT_SOURCE_DIR}/open62541)
 
 add_executable(server ${PROJECT_SOURCE_DIR}/src/server.c 
-${PROJECT_SOURCE_DIR}/open62541/open62541.c 
 ${PROJECT_SOURCE_DIR}/src/database/readDht11Data.c
-${PROJECT_SOURCE_DIR}/src/device/dht11.c)
-target_link_libraries(server mariadb)
+${PROJECT_SOURCE_DIR}/src/device/dht11.c
+${PROJECT_SOURCE_DIR}/src/mqtt/mqtt_publish.c)
+target_link_libraries(server ${OPEN62541_LIB} mariadb)
 
-add_executable(mqtt_pub ${PROJECT_SOURCE_DIR}/src/mqtt/tutorial_pubsub_mqtt_publish.c)
-target_link_libraries(mqtt_pub ${OPEN62541_LIB} pthread)
+# add_executable(mqtt_pub ${PROJECT_SOURCE_DIR}/src/mqtt/tutorial_pubsub_mqtt_publish.c)
+# target_link_libraries(mqtt_pub ${OPEN62541_LIB} pthread)
 
 # add_executable(server ${PROJECT_SOURCE_DIR}/src/server.c ${PROJECT_SOURCE_DIR}/open62541/open62541.c)
 

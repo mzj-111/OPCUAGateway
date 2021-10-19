@@ -1,5 +1,5 @@
 /* Generated from Opc.Ua.Types.bsd, Custom.Opc.Ua.Transport.bsd with script /home/mi/Repository/open62541/tools/generate_datatypes.py
- * on host mi-ubuntu-OPCUA by user mi at 2021-10-12 10:14:58 */
+ * on host mi-ubuntu-OPCUA by user mi at 2021-10-19 04:22:13 */
 
 #ifndef TRANSPORT_GENERATED_ENCODING_BINARY_H_
 #define TRANSPORT_GENERATED_ENCODING_BINARY_H_

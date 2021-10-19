@@ -1,5 +1,5 @@
 /* Generated from Opc.Ua.Types.bsd with script /home/mi/Repository/open62541/tools/generate_datatypes.py
- * on host mi-ubuntu-OPCUA by user mi at 2021-10-12 10:14:58 */
+ * on host mi-ubuntu-OPCUA by user mi at 2021-10-19 04:22:13 */
 
 #ifndef TYPES_GENERATED_ENCODING_BINARY_H_
 #define TYPES_GENERATED_ENCODING_BINARY_H_
@@ -363,6 +363,104 @@ UA_DiagnosticInfo_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Diag
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DIAGNOSTICINFO], NULL);
 }
 
+/* NamingRuleType */
+static UA_INLINE size_t
+UA_NamingRuleType_calcSizeBinary(const UA_NamingRuleType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NAMINGRULETYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_NamingRuleType_encodeBinary(const UA_NamingRuleType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NAMINGRULETYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NamingRuleType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NamingRuleType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NAMINGRULETYPE], NULL);
+}
+
+/* ImageBMP */
+static UA_INLINE size_t
+UA_ImageBMP_calcSizeBinary(const UA_ImageBMP *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IMAGEBMP]);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageBMP_encodeBinary(const UA_ImageBMP *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IMAGEBMP], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageBMP_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ImageBMP *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IMAGEBMP], NULL);
+}
+
+/* ImageGIF */
+static UA_INLINE size_t
+UA_ImageGIF_calcSizeBinary(const UA_ImageGIF *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IMAGEGIF]);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageGIF_encodeBinary(const UA_ImageGIF *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IMAGEGIF], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageGIF_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ImageGIF *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IMAGEGIF], NULL);
+}
+
+/* ImageJPG */
+static UA_INLINE size_t
+UA_ImageJPG_calcSizeBinary(const UA_ImageJPG *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IMAGEJPG]);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageJPG_encodeBinary(const UA_ImageJPG *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IMAGEJPG], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ImageJPG_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ImageJPG *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IMAGEJPG], NULL);
+}
+
+/* ImagePNG */
+static UA_INLINE size_t
+UA_ImagePNG_calcSizeBinary(const UA_ImagePNG *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IMAGEPNG]);
+}
+static UA_INLINE UA_StatusCode
+UA_ImagePNG_encodeBinary(const UA_ImagePNG *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IMAGEPNG], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ImagePNG_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ImagePNG *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IMAGEPNG], NULL);
+}
+
+/* AudioDataType */
+static UA_INLINE size_t
+UA_AudioDataType_calcSizeBinary(const UA_AudioDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_AUDIODATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_AudioDataType_encodeBinary(const UA_AudioDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_AUDIODATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AudioDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AudioDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_AUDIODATATYPE], NULL);
+}
+
+/* BitFieldMaskDataType */
+static UA_INLINE size_t
+UA_BitFieldMaskDataType_calcSizeBinary(const UA_BitFieldMaskDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_BitFieldMaskDataType_encodeBinary(const UA_BitFieldMaskDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_BitFieldMaskDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_BitFieldMaskDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_BITFIELDMASKDATATYPE], NULL);
+}
+
 /* KeyValuePair */
 static UA_INLINE size_t
 UA_KeyValuePair_calcSizeBinary(const UA_KeyValuePair *src) {
@@ -375,6 +473,244 @@ UA_KeyValuePair_encodeBinary(const UA_KeyValuePair *src, UA_Byte **bufPos, const
 static UA_INLINE UA_StatusCode
 UA_KeyValuePair_decodeBinary(const UA_ByteString *src, size_t *offset, UA_KeyValuePair *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_KEYVALUEPAIR], NULL);
+}
+
+/* RationalNumber */
+static UA_INLINE size_t
+UA_RationalNumber_calcSizeBinary(const UA_RationalNumber *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_RATIONALNUMBER]);
+}
+static UA_INLINE UA_StatusCode
+UA_RationalNumber_encodeBinary(const UA_RationalNumber *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_RATIONALNUMBER], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RationalNumber_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RationalNumber *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_RATIONALNUMBER], NULL);
+}
+
+/* Vector */
+static UA_INLINE size_t
+UA_Vector_calcSizeBinary(const UA_Vector *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_VECTOR]);
+}
+static UA_INLINE UA_StatusCode
+UA_Vector_encodeBinary(const UA_Vector *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_VECTOR], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Vector_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Vector *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_VECTOR], NULL);
+}
+
+/* ThreeDVector */
+static UA_INLINE size_t
+UA_ThreeDVector_calcSizeBinary(const UA_ThreeDVector *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_THREEDVECTOR]);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDVector_encodeBinary(const UA_ThreeDVector *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_THREEDVECTOR], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDVector_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ThreeDVector *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_THREEDVECTOR], NULL);
+}
+
+/* CartesianCoordinates */
+static UA_INLINE size_t
+UA_CartesianCoordinates_calcSizeBinary(const UA_CartesianCoordinates *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES]);
+}
+static UA_INLINE UA_StatusCode
+UA_CartesianCoordinates_encodeBinary(const UA_CartesianCoordinates *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_CartesianCoordinates_decodeBinary(const UA_ByteString *src, size_t *offset, UA_CartesianCoordinates *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CARTESIANCOORDINATES], NULL);
+}
+
+/* ThreeDCartesianCoordinates */
+static UA_INLINE size_t
+UA_ThreeDCartesianCoordinates_calcSizeBinary(const UA_ThreeDCartesianCoordinates *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES]);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDCartesianCoordinates_encodeBinary(const UA_ThreeDCartesianCoordinates *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDCartesianCoordinates_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ThreeDCartesianCoordinates *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_THREEDCARTESIANCOORDINATES], NULL);
+}
+
+/* Orientation */
+static UA_INLINE size_t
+UA_Orientation_calcSizeBinary(const UA_Orientation *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ORIENTATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_Orientation_encodeBinary(const UA_Orientation *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ORIENTATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Orientation_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Orientation *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ORIENTATION], NULL);
+}
+
+/* ThreeDOrientation */
+static UA_INLINE size_t
+UA_ThreeDOrientation_calcSizeBinary(const UA_ThreeDOrientation *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_THREEDORIENTATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDOrientation_encodeBinary(const UA_ThreeDOrientation *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_THREEDORIENTATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDOrientation_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ThreeDOrientation *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_THREEDORIENTATION], NULL);
+}
+
+/* Frame */
+static UA_INLINE size_t
+UA_Frame_calcSizeBinary(const UA_Frame *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_FRAME]);
+}
+static UA_INLINE UA_StatusCode
+UA_Frame_encodeBinary(const UA_Frame *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_FRAME], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Frame_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Frame *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FRAME], NULL);
+}
+
+/* ThreeDFrame */
+static UA_INLINE size_t
+UA_ThreeDFrame_calcSizeBinary(const UA_ThreeDFrame *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_THREEDFRAME]);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDFrame_encodeBinary(const UA_ThreeDFrame *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_THREEDFRAME], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ThreeDFrame_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ThreeDFrame *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_THREEDFRAME], NULL);
+}
+
+/* OpenFileMode */
+static UA_INLINE size_t
+UA_OpenFileMode_calcSizeBinary(const UA_OpenFileMode *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_OPENFILEMODE]);
+}
+static UA_INLINE UA_StatusCode
+UA_OpenFileMode_encodeBinary(const UA_OpenFileMode *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_OPENFILEMODE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_OpenFileMode_decodeBinary(const UA_ByteString *src, size_t *offset, UA_OpenFileMode *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_OPENFILEMODE], NULL);
+}
+
+/* IdentityCriteriaType */
+static UA_INLINE size_t
+UA_IdentityCriteriaType_calcSizeBinary(const UA_IdentityCriteriaType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_IdentityCriteriaType_encodeBinary(const UA_IdentityCriteriaType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_IdentityCriteriaType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_IdentityCriteriaType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IDENTITYCRITERIATYPE], NULL);
+}
+
+/* IdentityMappingRuleType */
+static UA_INLINE size_t
+UA_IdentityMappingRuleType_calcSizeBinary(const UA_IdentityMappingRuleType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_IdentityMappingRuleType_encodeBinary(const UA_IdentityMappingRuleType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_IdentityMappingRuleType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_IdentityMappingRuleType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IDENTITYMAPPINGRULETYPE], NULL);
+}
+
+/* CurrencyUnitType */
+static UA_INLINE size_t
+UA_CurrencyUnitType_calcSizeBinary(const UA_CurrencyUnitType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_CurrencyUnitType_encodeBinary(const UA_CurrencyUnitType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_CurrencyUnitType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_CurrencyUnitType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CURRENCYUNITTYPE], NULL);
+}
+
+/* TrustListMasks */
+static UA_INLINE size_t
+UA_TrustListMasks_calcSizeBinary(const UA_TrustListMasks *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS]);
+}
+static UA_INLINE UA_StatusCode
+UA_TrustListMasks_encodeBinary(const UA_TrustListMasks *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TrustListMasks_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TrustListMasks *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TRUSTLISTMASKS], NULL);
+}
+
+/* TrustListDataType */
+static UA_INLINE size_t
+UA_TrustListDataType_calcSizeBinary(const UA_TrustListDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_TrustListDataType_encodeBinary(const UA_TrustListDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TrustListDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TrustListDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TRUSTLISTDATATYPE], NULL);
+}
+
+/* DecimalDataType */
+static UA_INLINE size_t
+UA_DecimalDataType_calcSizeBinary(const UA_DecimalDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DECIMALDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DecimalDataType_encodeBinary(const UA_DecimalDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DECIMALDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DecimalDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DecimalDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DECIMALDATATYPE], NULL);
+}
+
+/* DataTypeDescription */
+static UA_INLINE size_t
+UA_DataTypeDescription_calcSizeBinary(const UA_DataTypeDescription *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataTypeDescription_encodeBinary(const UA_DataTypeDescription *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataTypeDescription_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataTypeDescription *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATATYPEDESCRIPTION], NULL);
 }
 
 /* SimpleTypeDescription */
@@ -433,6 +769,20 @@ UA_ConfigurationVersionDataType_decodeBinary(const UA_ByteString *src, size_t *o
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CONFIGURATIONVERSIONDATATYPE], NULL);
 }
 
+/* PublishedDataSetSourceDataType */
+static UA_INLINE size_t
+UA_PublishedDataSetSourceDataType_calcSizeBinary(const UA_PublishedDataSetSourceDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetSourceDataType_encodeBinary(const UA_PublishedDataSetSourceDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetSourceDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PublishedDataSetSourceDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETSOURCEDATATYPE], NULL);
+}
+
 /* PublishedVariableDataType */
 static UA_INLINE size_t
 UA_PublishedVariableDataType_calcSizeBinary(const UA_PublishedVariableDataType *src) {
@@ -445,6 +795,20 @@ UA_PublishedVariableDataType_encodeBinary(const UA_PublishedVariableDataType *sr
 static UA_INLINE UA_StatusCode
 UA_PublishedVariableDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PublishedVariableDataType *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBLISHEDVARIABLEDATATYPE], NULL);
+}
+
+/* PublishedDataItemsDataType */
+static UA_INLINE size_t
+UA_PublishedDataItemsDataType_calcSizeBinary(const UA_PublishedDataItemsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataItemsDataType_encodeBinary(const UA_PublishedDataItemsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataItemsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PublishedDataItemsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATAITEMSDATATYPE], NULL);
 }
 
 /* DataSetFieldContentMask */
@@ -475,6 +839,90 @@ UA_DataSetWriterDataType_decodeBinary(const UA_ByteString *src, size_t *offset, 
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETWRITERDATATYPE], NULL);
 }
 
+/* DataSetWriterTransportDataType */
+static UA_INLINE size_t
+UA_DataSetWriterTransportDataType_calcSizeBinary(const UA_DataSetWriterTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterTransportDataType_encodeBinary(const UA_DataSetWriterTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataSetWriterTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETWRITERTRANSPORTDATATYPE], NULL);
+}
+
+/* DataSetWriterMessageDataType */
+static UA_INLINE size_t
+UA_DataSetWriterMessageDataType_calcSizeBinary(const UA_DataSetWriterMessageDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterMessageDataType_encodeBinary(const UA_DataSetWriterMessageDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetWriterMessageDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataSetWriterMessageDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETWRITERMESSAGEDATATYPE], NULL);
+}
+
+/* WriterGroupTransportDataType */
+static UA_INLINE size_t
+UA_WriterGroupTransportDataType_calcSizeBinary(const UA_WriterGroupTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_WriterGroupTransportDataType_encodeBinary(const UA_WriterGroupTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_WriterGroupTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_WriterGroupTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_WRITERGROUPTRANSPORTDATATYPE], NULL);
+}
+
+/* WriterGroupMessageDataType */
+static UA_INLINE size_t
+UA_WriterGroupMessageDataType_calcSizeBinary(const UA_WriterGroupMessageDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_WriterGroupMessageDataType_encodeBinary(const UA_WriterGroupMessageDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_WriterGroupMessageDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_WriterGroupMessageDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_WRITERGROUPMESSAGEDATATYPE], NULL);
+}
+
+/* ConnectionTransportDataType */
+static UA_INLINE size_t
+UA_ConnectionTransportDataType_calcSizeBinary(const UA_ConnectionTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ConnectionTransportDataType_encodeBinary(const UA_ConnectionTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ConnectionTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ConnectionTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CONNECTIONTRANSPORTDATATYPE], NULL);
+}
+
+/* NetworkAddressDataType */
+static UA_INLINE size_t
+UA_NetworkAddressDataType_calcSizeBinary(const UA_NetworkAddressDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_NetworkAddressDataType_encodeBinary(const UA_NetworkAddressDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NetworkAddressDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NetworkAddressDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NETWORKADDRESSDATATYPE], NULL);
+}
+
 /* NetworkAddressUrlDataType */
 static UA_INLINE size_t
 UA_NetworkAddressUrlDataType_calcSizeBinary(const UA_NetworkAddressUrlDataType *src) {
@@ -487,6 +935,76 @@ UA_NetworkAddressUrlDataType_encodeBinary(const UA_NetworkAddressUrlDataType *sr
 static UA_INLINE UA_StatusCode
 UA_NetworkAddressUrlDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NetworkAddressUrlDataType *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NETWORKADDRESSURLDATATYPE], NULL);
+}
+
+/* ReaderGroupTransportDataType */
+static UA_INLINE size_t
+UA_ReaderGroupTransportDataType_calcSizeBinary(const UA_ReaderGroupTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupTransportDataType_encodeBinary(const UA_ReaderGroupTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReaderGroupTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READERGROUPTRANSPORTDATATYPE], NULL);
+}
+
+/* ReaderGroupMessageDataType */
+static UA_INLINE size_t
+UA_ReaderGroupMessageDataType_calcSizeBinary(const UA_ReaderGroupMessageDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupMessageDataType_encodeBinary(const UA_ReaderGroupMessageDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReaderGroupMessageDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReaderGroupMessageDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READERGROUPMESSAGEDATATYPE], NULL);
+}
+
+/* DataSetReaderTransportDataType */
+static UA_INLINE size_t
+UA_DataSetReaderTransportDataType_calcSizeBinary(const UA_DataSetReaderTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderTransportDataType_encodeBinary(const UA_DataSetReaderTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataSetReaderTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETREADERTRANSPORTDATATYPE], NULL);
+}
+
+/* DataSetReaderMessageDataType */
+static UA_INLINE size_t
+UA_DataSetReaderMessageDataType_calcSizeBinary(const UA_DataSetReaderMessageDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderMessageDataType_encodeBinary(const UA_DataSetReaderMessageDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataSetReaderMessageDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataSetReaderMessageDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETREADERMESSAGEDATATYPE], NULL);
+}
+
+/* SubscribedDataSetDataType */
+static UA_INLINE size_t
+UA_SubscribedDataSetDataType_calcSizeBinary(const UA_SubscribedDataSetDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetDataType_encodeBinary(const UA_SubscribedDataSetDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SubscribedDataSetDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETDATATYPE], NULL);
 }
 
 /* OverrideValueHandling */
@@ -657,6 +1175,34 @@ UA_JsonDataSetReaderMessageDataType_decodeBinary(const UA_ByteString *src, size_
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_JSONDATASETREADERMESSAGEDATATYPE], NULL);
 }
 
+/* DatagramConnectionTransportDataType */
+static UA_INLINE size_t
+UA_DatagramConnectionTransportDataType_calcSizeBinary(const UA_DatagramConnectionTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DatagramConnectionTransportDataType_encodeBinary(const UA_DatagramConnectionTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DatagramConnectionTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DatagramConnectionTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATAGRAMCONNECTIONTRANSPORTDATATYPE], NULL);
+}
+
+/* DatagramWriterGroupTransportDataType */
+static UA_INLINE size_t
+UA_DatagramWriterGroupTransportDataType_calcSizeBinary(const UA_DatagramWriterGroupTransportDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_DatagramWriterGroupTransportDataType_encodeBinary(const UA_DatagramWriterGroupTransportDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DatagramWriterGroupTransportDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DatagramWriterGroupTransportDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATAGRAMWRITERGROUPTRANSPORTDATATYPE], NULL);
+}
+
 /* BrokerConnectionTransportDataType */
 static UA_INLINE size_t
 UA_BrokerConnectionTransportDataType_calcSizeBinary(const UA_BrokerConnectionTransportDataType *src) {
@@ -727,6 +1273,48 @@ UA_BrokerDataSetReaderTransportDataType_decodeBinary(const UA_ByteString *src, s
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_BROKERDATASETREADERTRANSPORTDATATYPE], NULL);
 }
 
+/* DiagnosticsLevel */
+static UA_INLINE size_t
+UA_DiagnosticsLevel_calcSizeBinary(const UA_DiagnosticsLevel *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL]);
+}
+static UA_INLINE UA_StatusCode
+UA_DiagnosticsLevel_encodeBinary(const UA_DiagnosticsLevel *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DiagnosticsLevel_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DiagnosticsLevel *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DIAGNOSTICSLEVEL], NULL);
+}
+
+/* PubSubDiagnosticsCounterClassification */
+static UA_INLINE size_t
+UA_PubSubDiagnosticsCounterClassification_calcSizeBinary(const UA_PubSubDiagnosticsCounterClassification *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubDiagnosticsCounterClassification_encodeBinary(const UA_PubSubDiagnosticsCounterClassification *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubDiagnosticsCounterClassification_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PubSubDiagnosticsCounterClassification *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBSUBDIAGNOSTICSCOUNTERCLASSIFICATION], NULL);
+}
+
+/* IdType */
+static UA_INLINE size_t
+UA_IdType_calcSizeBinary(const UA_IdType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_IDTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_IdType_encodeBinary(const UA_IdType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_IDTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_IdType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_IdType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_IDTYPE], NULL);
+}
+
 /* NodeClass */
 static UA_INLINE size_t
 UA_NodeClass_calcSizeBinary(const UA_NodeClass *src) {
@@ -739,6 +1327,90 @@ UA_NodeClass_encodeBinary(const UA_NodeClass *src, UA_Byte **bufPos, const UA_By
 static UA_INLINE UA_StatusCode
 UA_NodeClass_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NodeClass *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NODECLASS], NULL);
+}
+
+/* PermissionType */
+static UA_INLINE size_t
+UA_PermissionType_calcSizeBinary(const UA_PermissionType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PERMISSIONTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PermissionType_encodeBinary(const UA_PermissionType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PERMISSIONTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PermissionType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PermissionType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PERMISSIONTYPE], NULL);
+}
+
+/* AccessLevelType */
+static UA_INLINE size_t
+UA_AccessLevelType_calcSizeBinary(const UA_AccessLevelType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessLevelType_encodeBinary(const UA_AccessLevelType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessLevelType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AccessLevelType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ACCESSLEVELTYPE], NULL);
+}
+
+/* AccessLevelExType */
+static UA_INLINE size_t
+UA_AccessLevelExType_calcSizeBinary(const UA_AccessLevelExType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessLevelExType_encodeBinary(const UA_AccessLevelExType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessLevelExType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AccessLevelExType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ACCESSLEVELEXTYPE], NULL);
+}
+
+/* EventNotifierType */
+static UA_INLINE size_t
+UA_EventNotifierType_calcSizeBinary(const UA_EventNotifierType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_EventNotifierType_encodeBinary(const UA_EventNotifierType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_EventNotifierType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EventNotifierType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_EVENTNOTIFIERTYPE], NULL);
+}
+
+/* AccessRestrictionType */
+static UA_INLINE size_t
+UA_AccessRestrictionType_calcSizeBinary(const UA_AccessRestrictionType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessRestrictionType_encodeBinary(const UA_AccessRestrictionType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AccessRestrictionType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AccessRestrictionType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ACCESSRESTRICTIONTYPE], NULL);
+}
+
+/* RolePermissionType */
+static UA_INLINE size_t
+UA_RolePermissionType_calcSizeBinary(const UA_RolePermissionType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_RolePermissionType_encodeBinary(const UA_RolePermissionType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RolePermissionType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RolePermissionType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ROLEPERMISSIONTYPE], NULL);
 }
 
 /* StructureType */
@@ -783,6 +1455,20 @@ UA_StructureDefinition_decodeBinary(const UA_ByteString *src, size_t *offset, UA
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_STRUCTUREDEFINITION], NULL);
 }
 
+/* ReferenceNode */
+static UA_INLINE size_t
+UA_ReferenceNode_calcSizeBinary(const UA_ReferenceNode *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REFERENCENODE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReferenceNode_encodeBinary(const UA_ReferenceNode *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REFERENCENODE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReferenceNode_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReferenceNode *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REFERENCENODE], NULL);
+}
+
 /* Argument */
 static UA_INLINE size_t
 UA_Argument_calcSizeBinary(const UA_Argument *src) {
@@ -825,6 +1511,104 @@ UA_EnumField_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EnumField
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENUMFIELD], NULL);
 }
 
+/* OptionSet */
+static UA_INLINE size_t
+UA_OptionSet_calcSizeBinary(const UA_OptionSet *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_OPTIONSET]);
+}
+static UA_INLINE UA_StatusCode
+UA_OptionSet_encodeBinary(const UA_OptionSet *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_OPTIONSET], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_OptionSet_decodeBinary(const UA_ByteString *src, size_t *offset, UA_OptionSet *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_OPTIONSET], NULL);
+}
+
+/* Union */
+static UA_INLINE size_t
+UA_Union_calcSizeBinary(const UA_Union *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_UNION]);
+}
+static UA_INLINE UA_StatusCode
+UA_Union_encodeBinary(const UA_Union *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_UNION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Union_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Union *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UNION], NULL);
+}
+
+/* NormalizedString */
+static UA_INLINE size_t
+UA_NormalizedString_calcSizeBinary(const UA_NormalizedString *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING]);
+}
+static UA_INLINE UA_StatusCode
+UA_NormalizedString_encodeBinary(const UA_NormalizedString *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NormalizedString_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NormalizedString *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NORMALIZEDSTRING], NULL);
+}
+
+/* DecimalString */
+static UA_INLINE size_t
+UA_DecimalString_calcSizeBinary(const UA_DecimalString *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DECIMALSTRING]);
+}
+static UA_INLINE UA_StatusCode
+UA_DecimalString_encodeBinary(const UA_DecimalString *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DECIMALSTRING], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DecimalString_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DecimalString *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DECIMALSTRING], NULL);
+}
+
+/* DurationString */
+static UA_INLINE size_t
+UA_DurationString_calcSizeBinary(const UA_DurationString *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DURATIONSTRING]);
+}
+static UA_INLINE UA_StatusCode
+UA_DurationString_encodeBinary(const UA_DurationString *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DURATIONSTRING], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DurationString_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DurationString *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DURATIONSTRING], NULL);
+}
+
+/* TimeString */
+static UA_INLINE size_t
+UA_TimeString_calcSizeBinary(const UA_TimeString *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TIMESTRING]);
+}
+static UA_INLINE UA_StatusCode
+UA_TimeString_encodeBinary(const UA_TimeString *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TIMESTRING], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TimeString_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TimeString *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TIMESTRING], NULL);
+}
+
+/* DateString */
+static UA_INLINE size_t
+UA_DateString_calcSizeBinary(const UA_DateString *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATESTRING]);
+}
+static UA_INLINE UA_StatusCode
+UA_DateString_encodeBinary(const UA_DateString *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATESTRING], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DateString_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DateString *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATESTRING], NULL);
+}
+
 /* Duration */
 static UA_INLINE size_t
 UA_Duration_calcSizeBinary(const UA_Duration *src) {
@@ -865,6 +1649,48 @@ UA_LocaleId_encodeBinary(const UA_LocaleId *src, UA_Byte **bufPos, const UA_Byte
 static UA_INLINE UA_StatusCode
 UA_LocaleId_decodeBinary(const UA_ByteString *src, size_t *offset, UA_LocaleId *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_LOCALEID], NULL);
+}
+
+/* TimeZoneDataType */
+static UA_INLINE size_t
+UA_TimeZoneDataType_calcSizeBinary(const UA_TimeZoneDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_TimeZoneDataType_encodeBinary(const UA_TimeZoneDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TimeZoneDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TimeZoneDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TIMEZONEDATATYPE], NULL);
+}
+
+/* Index */
+static UA_INLINE size_t
+UA_Index_calcSizeBinary(const UA_Index *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_INDEX]);
+}
+static UA_INLINE UA_StatusCode
+UA_Index_encodeBinary(const UA_Index *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_INDEX], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Index_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Index *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_INDEX], NULL);
+}
+
+/* IntegerId */
+static UA_INLINE size_t
+UA_IntegerId_calcSizeBinary(const UA_IntegerId *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_INTEGERID]);
+}
+static UA_INLINE UA_StatusCode
+UA_IntegerId_encodeBinary(const UA_IntegerId *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_INTEGERID], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_IntegerId_decodeBinary(const UA_ByteString *src, size_t *offset, UA_IntegerId *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_INTEGERID], NULL);
 }
 
 /* ApplicationType */
@@ -923,6 +1749,20 @@ UA_ResponseHeader_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Resp
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_RESPONSEHEADER], NULL);
 }
 
+/* VersionTime */
+static UA_INLINE size_t
+UA_VersionTime_calcSizeBinary(const UA_VersionTime *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_VERSIONTIME]);
+}
+static UA_INLINE UA_StatusCode
+UA_VersionTime_encodeBinary(const UA_VersionTime *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_VERSIONTIME], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_VersionTime_decodeBinary(const UA_ByteString *src, size_t *offset, UA_VersionTime *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_VERSIONTIME], NULL);
+}
+
 /* ServiceFault */
 static UA_INLINE size_t
 UA_ServiceFault_calcSizeBinary(const UA_ServiceFault *src) {
@@ -935,6 +1775,34 @@ UA_ServiceFault_encodeBinary(const UA_ServiceFault *src, UA_Byte **bufPos, const
 static UA_INLINE UA_StatusCode
 UA_ServiceFault_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ServiceFault *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SERVICEFAULT], NULL);
+}
+
+/* SessionlessInvokeRequestType */
+static UA_INLINE size_t
+UA_SessionlessInvokeRequestType_calcSizeBinary(const UA_SessionlessInvokeRequestType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeRequestType_encodeBinary(const UA_SessionlessInvokeRequestType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeRequestType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SessionlessInvokeRequestType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKEREQUESTTYPE], NULL);
+}
+
+/* SessionlessInvokeResponseType */
+static UA_INLINE size_t
+UA_SessionlessInvokeResponseType_calcSizeBinary(const UA_SessionlessInvokeResponseType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeResponseType_encodeBinary(const UA_SessionlessInvokeResponseType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionlessInvokeResponseType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SessionlessInvokeResponseType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SESSIONLESSINVOKERESPONSETYPE], NULL);
 }
 
 /* FindServersRequest */
@@ -963,6 +1831,62 @@ UA_FindServersResponse_encodeBinary(const UA_FindServersResponse *src, UA_Byte *
 static UA_INLINE UA_StatusCode
 UA_FindServersResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_FindServersResponse *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FINDSERVERSRESPONSE], NULL);
+}
+
+/* ServerOnNetwork */
+static UA_INLINE size_t
+UA_ServerOnNetwork_calcSizeBinary(const UA_ServerOnNetwork *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SERVERONNETWORK]);
+}
+static UA_INLINE UA_StatusCode
+UA_ServerOnNetwork_encodeBinary(const UA_ServerOnNetwork *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SERVERONNETWORK], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ServerOnNetwork_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ServerOnNetwork *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SERVERONNETWORK], NULL);
+}
+
+/* FindServersOnNetworkRequest */
+static UA_INLINE size_t
+UA_FindServersOnNetworkRequest_calcSizeBinary(const UA_FindServersOnNetworkRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkRequest_encodeBinary(const UA_FindServersOnNetworkRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_FindServersOnNetworkRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKREQUEST], NULL);
+}
+
+/* FindServersOnNetworkResponse */
+static UA_INLINE size_t
+UA_FindServersOnNetworkResponse_calcSizeBinary(const UA_FindServersOnNetworkResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkResponse_encodeBinary(const UA_FindServersOnNetworkResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_FindServersOnNetworkResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_FindServersOnNetworkResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FINDSERVERSONNETWORKRESPONSE], NULL);
+}
+
+/* ApplicationInstanceCertificate */
+static UA_INLINE size_t
+UA_ApplicationInstanceCertificate_calcSizeBinary(const UA_ApplicationInstanceCertificate *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ApplicationInstanceCertificate_encodeBinary(const UA_ApplicationInstanceCertificate *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ApplicationInstanceCertificate_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ApplicationInstanceCertificate *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_APPLICATIONINSTANCECERTIFICATE], NULL);
 }
 
 /* MessageSecurityMode */
@@ -1047,6 +1971,104 @@ UA_GetEndpointsResponse_encodeBinary(const UA_GetEndpointsResponse *src, UA_Byte
 static UA_INLINE UA_StatusCode
 UA_GetEndpointsResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_GetEndpointsResponse *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_GETENDPOINTSRESPONSE], NULL);
+}
+
+/* RegisteredServer */
+static UA_INLINE size_t
+UA_RegisteredServer_calcSizeBinary(const UA_RegisteredServer *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REGISTEREDSERVER]);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisteredServer_encodeBinary(const UA_RegisteredServer *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REGISTEREDSERVER], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisteredServer_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RegisteredServer *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REGISTEREDSERVER], NULL);
+}
+
+/* RegisterServerRequest */
+static UA_INLINE size_t
+UA_RegisterServerRequest_calcSizeBinary(const UA_RegisterServerRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServerRequest_encodeBinary(const UA_RegisterServerRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServerRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RegisterServerRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REGISTERSERVERREQUEST], NULL);
+}
+
+/* RegisterServerResponse */
+static UA_INLINE size_t
+UA_RegisterServerResponse_calcSizeBinary(const UA_RegisterServerResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServerResponse_encodeBinary(const UA_RegisterServerResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServerResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RegisterServerResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REGISTERSERVERRESPONSE], NULL);
+}
+
+/* DiscoveryConfiguration */
+static UA_INLINE size_t
+UA_DiscoveryConfiguration_calcSizeBinary(const UA_DiscoveryConfiguration *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_DiscoveryConfiguration_encodeBinary(const UA_DiscoveryConfiguration *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DiscoveryConfiguration_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DiscoveryConfiguration *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DISCOVERYCONFIGURATION], NULL);
+}
+
+/* MdnsDiscoveryConfiguration */
+static UA_INLINE size_t
+UA_MdnsDiscoveryConfiguration_calcSizeBinary(const UA_MdnsDiscoveryConfiguration *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_MdnsDiscoveryConfiguration_encodeBinary(const UA_MdnsDiscoveryConfiguration *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_MdnsDiscoveryConfiguration_decodeBinary(const UA_ByteString *src, size_t *offset, UA_MdnsDiscoveryConfiguration *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MDNSDISCOVERYCONFIGURATION], NULL);
+}
+
+/* RegisterServer2Request */
+static UA_INLINE size_t
+UA_RegisterServer2Request_calcSizeBinary(const UA_RegisterServer2Request *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Request_encodeBinary(const UA_RegisterServer2Request *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Request_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RegisterServer2Request *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REGISTERSERVER2REQUEST], NULL);
+}
+
+/* RegisterServer2Response */
+static UA_INLINE size_t
+UA_RegisterServer2Response_calcSizeBinary(const UA_RegisterServer2Response *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Response_encodeBinary(const UA_RegisterServer2Response *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RegisterServer2Response_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RegisterServer2Response *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REGISTERSERVER2RESPONSE], NULL);
 }
 
 /* SecurityTokenRequestType */
@@ -1145,6 +2167,20 @@ UA_SignedSoftwareCertificate_encodeBinary(const UA_SignedSoftwareCertificate *sr
 static UA_INLINE UA_StatusCode
 UA_SignedSoftwareCertificate_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SignedSoftwareCertificate *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SIGNEDSOFTWARECERTIFICATE], NULL);
+}
+
+/* SessionAuthenticationToken */
+static UA_INLINE size_t
+UA_SessionAuthenticationToken_calcSizeBinary(const UA_SessionAuthenticationToken *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN]);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionAuthenticationToken_encodeBinary(const UA_SessionAuthenticationToken *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionAuthenticationToken_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SessionAuthenticationToken *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SESSIONAUTHENTICATIONTOKEN], NULL);
 }
 
 /* SignatureData */
@@ -1259,6 +2295,20 @@ UA_IssuedIdentityToken_decodeBinary(const UA_ByteString *src, size_t *offset, UA
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ISSUEDIDENTITYTOKEN], NULL);
 }
 
+/* RsaEncryptedSecret */
+static UA_INLINE size_t
+UA_RsaEncryptedSecret_calcSizeBinary(const UA_RsaEncryptedSecret *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET]);
+}
+static UA_INLINE UA_StatusCode
+UA_RsaEncryptedSecret_encodeBinary(const UA_RsaEncryptedSecret *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RsaEncryptedSecret_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RsaEncryptedSecret *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_RSAENCRYPTEDSECRET], NULL);
+}
+
 /* ActivateSessionRequest */
 static UA_INLINE size_t
 UA_ActivateSessionRequest_calcSizeBinary(const UA_ActivateSessionRequest *src) {
@@ -1313,6 +2363,34 @@ UA_CloseSessionResponse_encodeBinary(const UA_CloseSessionResponse *src, UA_Byte
 static UA_INLINE UA_StatusCode
 UA_CloseSessionResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_CloseSessionResponse *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CLOSESESSIONRESPONSE], NULL);
+}
+
+/* CancelRequest */
+static UA_INLINE size_t
+UA_CancelRequest_calcSizeBinary(const UA_CancelRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CANCELREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_CancelRequest_encodeBinary(const UA_CancelRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CANCELREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_CancelRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_CancelRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CANCELREQUEST], NULL);
+}
+
+/* CancelResponse */
+static UA_INLINE size_t
+UA_CancelResponse_calcSizeBinary(const UA_CancelResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CANCELRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_CancelResponse_encodeBinary(const UA_CancelResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CANCELRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_CancelResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_CancelResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CANCELRESPONSE], NULL);
 }
 
 /* NodeAttributesMask */
@@ -1453,6 +2531,34 @@ UA_ViewAttributes_encodeBinary(const UA_ViewAttributes *src, UA_Byte **bufPos, c
 static UA_INLINE UA_StatusCode
 UA_ViewAttributes_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ViewAttributes *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_VIEWATTRIBUTES], NULL);
+}
+
+/* GenericAttributeValue */
+static UA_INLINE size_t
+UA_GenericAttributeValue_calcSizeBinary(const UA_GenericAttributeValue *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE]);
+}
+static UA_INLINE UA_StatusCode
+UA_GenericAttributeValue_encodeBinary(const UA_GenericAttributeValue *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_GenericAttributeValue_decodeBinary(const UA_ByteString *src, size_t *offset, UA_GenericAttributeValue *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_GENERICATTRIBUTEVALUE], NULL);
+}
+
+/* GenericAttributes */
+static UA_INLINE size_t
+UA_GenericAttributes_calcSizeBinary(const UA_GenericAttributes *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES]);
+}
+static UA_INLINE UA_StatusCode
+UA_GenericAttributes_encodeBinary(const UA_GenericAttributes *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_GenericAttributes_decodeBinary(const UA_ByteString *src, size_t *offset, UA_GenericAttributes *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_GENERICATTRIBUTES], NULL);
 }
 
 /* AddNodesItem */
@@ -1637,6 +2743,20 @@ UA_DeleteReferencesResponse_decodeBinary(const UA_ByteString *src, size_t *offse
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DELETEREFERENCESRESPONSE], NULL);
 }
 
+/* AttributeWriteMask */
+static UA_INLINE size_t
+UA_AttributeWriteMask_calcSizeBinary(const UA_AttributeWriteMask *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK]);
+}
+static UA_INLINE UA_StatusCode
+UA_AttributeWriteMask_encodeBinary(const UA_AttributeWriteMask *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AttributeWriteMask_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AttributeWriteMask *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ATTRIBUTEWRITEMASK], NULL);
+}
+
 /* BrowseDirection */
 static UA_INLINE size_t
 UA_BrowseDirection_calcSizeBinary(const UA_BrowseDirection *src) {
@@ -1705,6 +2825,20 @@ UA_ReferenceDescription_encodeBinary(const UA_ReferenceDescription *src, UA_Byte
 static UA_INLINE UA_StatusCode
 UA_ReferenceDescription_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReferenceDescription *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REFERENCEDESCRIPTION], NULL);
+}
+
+/* ContinuationPoint */
+static UA_INLINE size_t
+UA_ContinuationPoint_calcSizeBinary(const UA_ContinuationPoint *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT]);
+}
+static UA_INLINE UA_StatusCode
+UA_ContinuationPoint_encodeBinary(const UA_ContinuationPoint *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ContinuationPoint_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ContinuationPoint *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CONTINUATIONPOINT], NULL);
 }
 
 /* BrowseResult */
@@ -1931,6 +3065,90 @@ UA_UnregisterNodesResponse_decodeBinary(const UA_ByteString *src, size_t *offset
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UNREGISTERNODESRESPONSE], NULL);
 }
 
+/* Counter */
+static UA_INLINE size_t
+UA_Counter_calcSizeBinary(const UA_Counter *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_COUNTER]);
+}
+static UA_INLINE UA_StatusCode
+UA_Counter_encodeBinary(const UA_Counter *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_COUNTER], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Counter_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Counter *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_COUNTER], NULL);
+}
+
+/* Time */
+static UA_INLINE size_t
+UA_Time_calcSizeBinary(const UA_Time *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TIME]);
+}
+static UA_INLINE UA_StatusCode
+UA_Time_encodeBinary(const UA_Time *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TIME], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Time_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Time *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TIME], NULL);
+}
+
+/* Date */
+static UA_INLINE size_t
+UA_Date_calcSizeBinary(const UA_Date *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATE]);
+}
+static UA_INLINE UA_StatusCode
+UA_Date_encodeBinary(const UA_Date *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Date_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Date *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATE], NULL);
+}
+
+/* EndpointConfiguration */
+static UA_INLINE size_t
+UA_EndpointConfiguration_calcSizeBinary(const UA_EndpointConfiguration *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointConfiguration_encodeBinary(const UA_EndpointConfiguration *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointConfiguration_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EndpointConfiguration *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENDPOINTCONFIGURATION], NULL);
+}
+
+/* QueryDataDescription */
+static UA_INLINE size_t
+UA_QueryDataDescription_calcSizeBinary(const UA_QueryDataDescription *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryDataDescription_encodeBinary(const UA_QueryDataDescription *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryDataDescription_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryDataDescription *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYDATADESCRIPTION], NULL);
+}
+
+/* NodeTypeDescription */
+static UA_INLINE size_t
+UA_NodeTypeDescription_calcSizeBinary(const UA_NodeTypeDescription *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION]);
+}
+static UA_INLINE UA_StatusCode
+UA_NodeTypeDescription_encodeBinary(const UA_NodeTypeDescription *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NodeTypeDescription_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NodeTypeDescription *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NODETYPEDESCRIPTION], NULL);
+}
+
 /* FilterOperator */
 static UA_INLINE size_t
 UA_FilterOperator_calcSizeBinary(const UA_FilterOperator *src) {
@@ -1943,6 +3161,34 @@ UA_FilterOperator_encodeBinary(const UA_FilterOperator *src, UA_Byte **bufPos, c
 static UA_INLINE UA_StatusCode
 UA_FilterOperator_decodeBinary(const UA_ByteString *src, size_t *offset, UA_FilterOperator *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FILTEROPERATOR], NULL);
+}
+
+/* QueryDataSet */
+static UA_INLINE size_t
+UA_QueryDataSet_calcSizeBinary(const UA_QueryDataSet *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYDATASET]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryDataSet_encodeBinary(const UA_QueryDataSet *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYDATASET], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryDataSet_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryDataSet *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYDATASET], NULL);
+}
+
+/* NodeReference */
+static UA_INLINE size_t
+UA_NodeReference_calcSizeBinary(const UA_NodeReference *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NODEREFERENCE]);
+}
+static UA_INLINE UA_StatusCode
+UA_NodeReference_encodeBinary(const UA_NodeReference *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NODEREFERENCE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NodeReference_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NodeReference *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NODEREFERENCE], NULL);
 }
 
 /* ContentFilterElement */
@@ -2071,6 +3317,76 @@ UA_ContentFilterResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_CONTENTFILTERRESULT], NULL);
 }
 
+/* ParsingResult */
+static UA_INLINE size_t
+UA_ParsingResult_calcSizeBinary(const UA_ParsingResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PARSINGRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_ParsingResult_encodeBinary(const UA_ParsingResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PARSINGRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ParsingResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ParsingResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PARSINGRESULT], NULL);
+}
+
+/* QueryFirstRequest */
+static UA_INLINE size_t
+UA_QueryFirstRequest_calcSizeBinary(const UA_QueryFirstRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryFirstRequest_encodeBinary(const UA_QueryFirstRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryFirstRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryFirstRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST], NULL);
+}
+
+/* QueryFirstResponse */
+static UA_INLINE size_t
+UA_QueryFirstResponse_calcSizeBinary(const UA_QueryFirstResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryFirstResponse_encodeBinary(const UA_QueryFirstResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryFirstResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryFirstResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE], NULL);
+}
+
+/* QueryNextRequest */
+static UA_INLINE size_t
+UA_QueryNextRequest_calcSizeBinary(const UA_QueryNextRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryNextRequest_encodeBinary(const UA_QueryNextRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryNextRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryNextRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYNEXTREQUEST], NULL);
+}
+
+/* QueryNextResponse */
+static UA_INLINE size_t
+UA_QueryNextResponse_calcSizeBinary(const UA_QueryNextResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryNextResponse_encodeBinary(const UA_QueryNextResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_QueryNextResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_QueryNextResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_QUERYNEXTRESPONSE], NULL);
+}
+
 /* TimestampsToReturn */
 static UA_INLINE size_t
 UA_TimestampsToReturn_calcSizeBinary(const UA_TimestampsToReturn *src) {
@@ -2127,6 +3443,132 @@ UA_ReadResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadRe
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READRESPONSE], NULL);
 }
 
+/* HistoryReadValueId */
+static UA_INLINE size_t
+UA_HistoryReadValueId_calcSizeBinary(const UA_HistoryReadValueId *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadValueId_encodeBinary(const UA_HistoryReadValueId *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadValueId_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryReadValueId *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYREADVALUEID], NULL);
+}
+
+/* HistoryReadResult */
+static UA_INLINE size_t
+UA_HistoryReadResult_calcSizeBinary(const UA_HistoryReadResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResult_encodeBinary(const UA_HistoryReadResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryReadResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYREADRESULT], NULL);
+}
+
+/* HistoryReadDetails */
+static UA_INLINE size_t
+UA_HistoryReadDetails_calcSizeBinary(const UA_HistoryReadDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadDetails_encodeBinary(const UA_HistoryReadDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryReadDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYREADDETAILS], NULL);
+}
+
+/* ReadRawModifiedDetails */
+static UA_INLINE size_t
+UA_ReadRawModifiedDetails_calcSizeBinary(const UA_ReadRawModifiedDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadRawModifiedDetails_encodeBinary(const UA_ReadRawModifiedDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadRawModifiedDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadRawModifiedDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READRAWMODIFIEDDETAILS], NULL);
+}
+
+/* ReadAtTimeDetails */
+static UA_INLINE size_t
+UA_ReadAtTimeDetails_calcSizeBinary(const UA_ReadAtTimeDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READATTIMEDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadAtTimeDetails_encodeBinary(const UA_ReadAtTimeDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READATTIMEDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadAtTimeDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadAtTimeDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READATTIMEDETAILS], NULL);
+}
+
+/* ReadAnnotationDataDetails */
+static UA_INLINE size_t
+UA_ReadAnnotationDataDetails_calcSizeBinary(const UA_ReadAnnotationDataDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadAnnotationDataDetails_encodeBinary(const UA_ReadAnnotationDataDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadAnnotationDataDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadAnnotationDataDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READANNOTATIONDATADETAILS], NULL);
+}
+
+/* HistoryData */
+static UA_INLINE size_t
+UA_HistoryData_calcSizeBinary(const UA_HistoryData *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYDATA]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryData_encodeBinary(const UA_HistoryData *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYDATA], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryData_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryData *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYDATA], NULL);
+}
+
+/* HistoryReadRequest */
+static UA_INLINE size_t
+UA_HistoryReadRequest_calcSizeBinary(const UA_HistoryReadRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadRequest_encodeBinary(const UA_HistoryReadRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryReadRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYREADREQUEST], NULL);
+}
+
+/* HistoryReadResponse */
+static UA_INLINE size_t
+UA_HistoryReadResponse_calcSizeBinary(const UA_HistoryReadResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResponse_encodeBinary(const UA_HistoryReadResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryReadResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryReadResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYREADRESPONSE], NULL);
+}
+
 /* WriteValue */
 static UA_INLINE size_t
 UA_WriteValue_calcSizeBinary(const UA_WriteValue *src) {
@@ -2167,6 +3609,160 @@ UA_WriteResponse_encodeBinary(const UA_WriteResponse *src, UA_Byte **bufPos, con
 static UA_INLINE UA_StatusCode
 UA_WriteResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_WriteResponse *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_WRITERESPONSE], NULL);
+}
+
+/* HistoryUpdateDetails */
+static UA_INLINE size_t
+UA_HistoryUpdateDetails_calcSizeBinary(const UA_HistoryUpdateDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateDetails_encodeBinary(const UA_HistoryUpdateDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryUpdateDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATEDETAILS], NULL);
+}
+
+/* HistoryUpdateType */
+static UA_INLINE size_t
+UA_HistoryUpdateType_calcSizeBinary(const UA_HistoryUpdateType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateType_encodeBinary(const UA_HistoryUpdateType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryUpdateType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATETYPE], NULL);
+}
+
+/* PerformUpdateType */
+static UA_INLINE size_t
+UA_PerformUpdateType_calcSizeBinary(const UA_PerformUpdateType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PerformUpdateType_encodeBinary(const UA_PerformUpdateType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PerformUpdateType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PerformUpdateType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PERFORMUPDATETYPE], NULL);
+}
+
+/* UpdateDataDetails */
+static UA_INLINE size_t
+UA_UpdateDataDetails_calcSizeBinary(const UA_UpdateDataDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateDataDetails_encodeBinary(const UA_UpdateDataDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateDataDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_UpdateDataDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UPDATEDATADETAILS], NULL);
+}
+
+/* UpdateStructureDataDetails */
+static UA_INLINE size_t
+UA_UpdateStructureDataDetails_calcSizeBinary(const UA_UpdateStructureDataDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateStructureDataDetails_encodeBinary(const UA_UpdateStructureDataDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateStructureDataDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_UpdateStructureDataDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UPDATESTRUCTUREDATADETAILS], NULL);
+}
+
+/* DeleteRawModifiedDetails */
+static UA_INLINE size_t
+UA_DeleteRawModifiedDetails_calcSizeBinary(const UA_DeleteRawModifiedDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteRawModifiedDetails_encodeBinary(const UA_DeleteRawModifiedDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteRawModifiedDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DeleteRawModifiedDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DELETERAWMODIFIEDDETAILS], NULL);
+}
+
+/* DeleteAtTimeDetails */
+static UA_INLINE size_t
+UA_DeleteAtTimeDetails_calcSizeBinary(const UA_DeleteAtTimeDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteAtTimeDetails_encodeBinary(const UA_DeleteAtTimeDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteAtTimeDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DeleteAtTimeDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DELETEATTIMEDETAILS], NULL);
+}
+
+/* DeleteEventDetails */
+static UA_INLINE size_t
+UA_DeleteEventDetails_calcSizeBinary(const UA_DeleteEventDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteEventDetails_encodeBinary(const UA_DeleteEventDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DeleteEventDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DeleteEventDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DELETEEVENTDETAILS], NULL);
+}
+
+/* HistoryUpdateResult */
+static UA_INLINE size_t
+UA_HistoryUpdateResult_calcSizeBinary(const UA_HistoryUpdateResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResult_encodeBinary(const UA_HistoryUpdateResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryUpdateResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT], NULL);
+}
+
+/* HistoryUpdateRequest */
+static UA_INLINE size_t
+UA_HistoryUpdateRequest_calcSizeBinary(const UA_HistoryUpdateRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateRequest_encodeBinary(const UA_HistoryUpdateRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryUpdateRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATEREQUEST], NULL);
+}
+
+/* HistoryUpdateResponse */
+static UA_INLINE size_t
+UA_HistoryUpdateResponse_calcSizeBinary(const UA_HistoryUpdateResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResponse_encodeBinary(const UA_HistoryUpdateResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryUpdateResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryUpdateResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYUPDATERESPONSE], NULL);
 }
 
 /* CallMethodRequest */
@@ -2267,6 +3863,20 @@ UA_DeadbandType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Deadba
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DEADBANDTYPE], NULL);
 }
 
+/* MonitoringFilter */
+static UA_INLINE size_t
+UA_MonitoringFilter_calcSizeBinary(const UA_MonitoringFilter *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MONITORINGFILTER]);
+}
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilter_encodeBinary(const UA_MonitoringFilter *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MONITORINGFILTER], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilter_decodeBinary(const UA_ByteString *src, size_t *offset, UA_MonitoringFilter *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MONITORINGFILTER], NULL);
+}
+
 /* DataChangeFilter */
 static UA_INLINE size_t
 UA_DataChangeFilter_calcSizeBinary(const UA_DataChangeFilter *src) {
@@ -2323,6 +3933,20 @@ UA_AggregateFilter_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Agg
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_AGGREGATEFILTER], NULL);
 }
 
+/* MonitoringFilterResult */
+static UA_INLINE size_t
+UA_MonitoringFilterResult_calcSizeBinary(const UA_MonitoringFilterResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilterResult_encodeBinary(const UA_MonitoringFilterResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_MonitoringFilterResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_MonitoringFilterResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MONITORINGFILTERRESULT], NULL);
+}
+
 /* EventFilterResult */
 static UA_INLINE size_t
 UA_EventFilterResult_calcSizeBinary(const UA_EventFilterResult *src) {
@@ -2335,6 +3959,20 @@ UA_EventFilterResult_encodeBinary(const UA_EventFilterResult *src, UA_Byte **buf
 static UA_INLINE UA_StatusCode
 UA_EventFilterResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EventFilterResult *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_EVENTFILTERRESULT], NULL);
+}
+
+/* AggregateFilterResult */
+static UA_INLINE size_t
+UA_AggregateFilterResult_calcSizeBinary(const UA_AggregateFilterResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_AggregateFilterResult_encodeBinary(const UA_AggregateFilterResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_AggregateFilterResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_AggregateFilterResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_AGGREGATEFILTERRESULT], NULL);
 }
 
 /* MonitoringParameters */
@@ -2645,6 +4283,20 @@ UA_NotificationMessage_decodeBinary(const UA_ByteString *src, size_t *offset, UA
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NOTIFICATIONMESSAGE], NULL);
 }
 
+/* NotificationData */
+static UA_INLINE size_t
+UA_NotificationData_calcSizeBinary(const UA_NotificationData *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA]);
+}
+static UA_INLINE UA_StatusCode
+UA_NotificationData_encodeBinary(const UA_NotificationData *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NotificationData_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NotificationData *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NOTIFICATIONDATA], NULL);
+}
+
 /* MonitoredItemNotification */
 static UA_INLINE size_t
 UA_MonitoredItemNotification_calcSizeBinary(const UA_MonitoredItemNotification *src) {
@@ -2671,6 +4323,20 @@ UA_EventFieldList_encodeBinary(const UA_EventFieldList *src, UA_Byte **bufPos, c
 static UA_INLINE UA_StatusCode
 UA_EventFieldList_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EventFieldList *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_EVENTFIELDLIST], NULL);
+}
+
+/* HistoryEventFieldList */
+static UA_INLINE size_t
+UA_HistoryEventFieldList_calcSizeBinary(const UA_HistoryEventFieldList *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryEventFieldList_encodeBinary(const UA_HistoryEventFieldList *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryEventFieldList_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryEventFieldList *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYEVENTFIELDLIST], NULL);
 }
 
 /* StatusChangeNotification */
@@ -2757,6 +4423,48 @@ UA_RepublishResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_R
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REPUBLISHRESPONSE], NULL);
 }
 
+/* TransferResult */
+static UA_INLINE size_t
+UA_TransferResult_calcSizeBinary(const UA_TransferResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferResult_encodeBinary(const UA_TransferResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TransferResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TRANSFERRESULT], NULL);
+}
+
+/* TransferSubscriptionsRequest */
+static UA_INLINE size_t
+UA_TransferSubscriptionsRequest_calcSizeBinary(const UA_TransferSubscriptionsRequest *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST]);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsRequest_encodeBinary(const UA_TransferSubscriptionsRequest *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsRequest_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TransferSubscriptionsRequest *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSREQUEST], NULL);
+}
+
+/* TransferSubscriptionsResponse */
+static UA_INLINE size_t
+UA_TransferSubscriptionsResponse_calcSizeBinary(const UA_TransferSubscriptionsResponse *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE]);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsResponse_encodeBinary(const UA_TransferSubscriptionsResponse *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_TransferSubscriptionsResponse_decodeBinary(const UA_ByteString *src, size_t *offset, UA_TransferSubscriptionsResponse *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TRANSFERSUBSCRIPTIONSRESPONSE], NULL);
+}
+
 /* DeleteSubscriptionsRequest */
 static UA_INLINE size_t
 UA_DeleteSubscriptionsRequest_calcSizeBinary(const UA_DeleteSubscriptionsRequest *src) {
@@ -2827,6 +4535,62 @@ UA_ServerState_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ServerS
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SERVERSTATE], NULL);
 }
 
+/* RedundantServerDataType */
+static UA_INLINE size_t
+UA_RedundantServerDataType_calcSizeBinary(const UA_RedundantServerDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_RedundantServerDataType_encodeBinary(const UA_RedundantServerDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_RedundantServerDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_RedundantServerDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_REDUNDANTSERVERDATATYPE], NULL);
+}
+
+/* EndpointUrlListDataType */
+static UA_INLINE size_t
+UA_EndpointUrlListDataType_calcSizeBinary(const UA_EndpointUrlListDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointUrlListDataType_encodeBinary(const UA_EndpointUrlListDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointUrlListDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EndpointUrlListDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENDPOINTURLLISTDATATYPE], NULL);
+}
+
+/* NetworkGroupDataType */
+static UA_INLINE size_t
+UA_NetworkGroupDataType_calcSizeBinary(const UA_NetworkGroupDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_NetworkGroupDataType_encodeBinary(const UA_NetworkGroupDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_NetworkGroupDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_NetworkGroupDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_NETWORKGROUPDATATYPE], NULL);
+}
+
+/* SamplingIntervalDiagnosticsDataType */
+static UA_INLINE size_t
+UA_SamplingIntervalDiagnosticsDataType_calcSizeBinary(const UA_SamplingIntervalDiagnosticsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SamplingIntervalDiagnosticsDataType_encodeBinary(const UA_SamplingIntervalDiagnosticsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SamplingIntervalDiagnosticsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SamplingIntervalDiagnosticsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SAMPLINGINTERVALDIAGNOSTICSDATATYPE], NULL);
+}
+
 /* ServerDiagnosticsSummaryDataType */
 static UA_INLINE size_t
 UA_ServerDiagnosticsSummaryDataType_calcSizeBinary(const UA_ServerDiagnosticsSummaryDataType *src) {
@@ -2853,6 +4617,104 @@ UA_ServerStatusDataType_encodeBinary(const UA_ServerStatusDataType *src, UA_Byte
 static UA_INLINE UA_StatusCode
 UA_ServerStatusDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ServerStatusDataType *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SERVERSTATUSDATATYPE], NULL);
+}
+
+/* SessionSecurityDiagnosticsDataType */
+static UA_INLINE size_t
+UA_SessionSecurityDiagnosticsDataType_calcSizeBinary(const UA_SessionSecurityDiagnosticsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionSecurityDiagnosticsDataType_encodeBinary(const UA_SessionSecurityDiagnosticsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionSecurityDiagnosticsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SessionSecurityDiagnosticsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SESSIONSECURITYDIAGNOSTICSDATATYPE], NULL);
+}
+
+/* ServiceCounterDataType */
+static UA_INLINE size_t
+UA_ServiceCounterDataType_calcSizeBinary(const UA_ServiceCounterDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ServiceCounterDataType_encodeBinary(const UA_ServiceCounterDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ServiceCounterDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ServiceCounterDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SERVICECOUNTERDATATYPE], NULL);
+}
+
+/* StatusResult */
+static UA_INLINE size_t
+UA_StatusResult_calcSizeBinary(const UA_StatusResult *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_STATUSRESULT]);
+}
+static UA_INLINE UA_StatusCode
+UA_StatusResult_encodeBinary(const UA_StatusResult *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_STATUSRESULT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_StatusResult_decodeBinary(const UA_ByteString *src, size_t *offset, UA_StatusResult *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_STATUSRESULT], NULL);
+}
+
+/* SubscriptionDiagnosticsDataType */
+static UA_INLINE size_t
+UA_SubscriptionDiagnosticsDataType_calcSizeBinary(const UA_SubscriptionDiagnosticsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscriptionDiagnosticsDataType_encodeBinary(const UA_SubscriptionDiagnosticsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscriptionDiagnosticsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SubscriptionDiagnosticsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SUBSCRIPTIONDIAGNOSTICSDATATYPE], NULL);
+}
+
+/* ModelChangeStructureVerbMask */
+static UA_INLINE size_t
+UA_ModelChangeStructureVerbMask_calcSizeBinary(const UA_ModelChangeStructureVerbMask *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK]);
+}
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureVerbMask_encodeBinary(const UA_ModelChangeStructureVerbMask *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureVerbMask_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ModelChangeStructureVerbMask *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREVERBMASK], NULL);
+}
+
+/* ModelChangeStructureDataType */
+static UA_INLINE size_t
+UA_ModelChangeStructureDataType_calcSizeBinary(const UA_ModelChangeStructureDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureDataType_encodeBinary(const UA_ModelChangeStructureDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ModelChangeStructureDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ModelChangeStructureDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MODELCHANGESTRUCTUREDATATYPE], NULL);
+}
+
+/* SemanticChangeStructureDataType */
+static UA_INLINE size_t
+UA_SemanticChangeStructureDataType_calcSizeBinary(const UA_SemanticChangeStructureDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SemanticChangeStructureDataType_encodeBinary(const UA_SemanticChangeStructureDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SemanticChangeStructureDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SemanticChangeStructureDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SEMANTICCHANGESTRUCTUREDATATYPE], NULL);
 }
 
 /* Range */
@@ -2953,6 +4815,76 @@ UA_XVType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_XVType *dst)
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_XVTYPE], NULL);
 }
 
+/* ProgramDiagnosticDataType */
+static UA_INLINE size_t
+UA_ProgramDiagnosticDataType_calcSizeBinary(const UA_ProgramDiagnosticDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnosticDataType_encodeBinary(const UA_ProgramDiagnosticDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnosticDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ProgramDiagnosticDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTICDATATYPE], NULL);
+}
+
+/* ProgramDiagnostic2DataType */
+static UA_INLINE size_t
+UA_ProgramDiagnostic2DataType_calcSizeBinary(const UA_ProgramDiagnostic2DataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnostic2DataType_encodeBinary(const UA_ProgramDiagnostic2DataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ProgramDiagnostic2DataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ProgramDiagnostic2DataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PROGRAMDIAGNOSTIC2DATATYPE], NULL);
+}
+
+/* Annotation */
+static UA_INLINE size_t
+UA_Annotation_calcSizeBinary(const UA_Annotation *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ANNOTATION]);
+}
+static UA_INLINE UA_StatusCode
+UA_Annotation_encodeBinary(const UA_Annotation *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ANNOTATION], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_Annotation_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Annotation *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ANNOTATION], NULL);
+}
+
+/* ExceptionDeviationFormat */
+static UA_INLINE size_t
+UA_ExceptionDeviationFormat_calcSizeBinary(const UA_ExceptionDeviationFormat *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT]);
+}
+static UA_INLINE UA_StatusCode
+UA_ExceptionDeviationFormat_encodeBinary(const UA_ExceptionDeviationFormat *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ExceptionDeviationFormat_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ExceptionDeviationFormat *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_EXCEPTIONDEVIATIONFORMAT], NULL);
+}
+
+/* EndpointType */
+static UA_INLINE size_t
+UA_EndpointType_calcSizeBinary(const UA_EndpointType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTTYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointType_encodeBinary(const UA_EndpointType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_ENDPOINTTYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_EndpointType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EndpointType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENDPOINTTYPE], NULL);
+}
+
 /* StructureDescription */
 static UA_INLINE size_t
 UA_StructureDescription_calcSizeBinary(const UA_StructureDescription *src) {
@@ -2979,6 +4911,34 @@ UA_FieldMetaData_encodeBinary(const UA_FieldMetaData *src, UA_Byte **bufPos, con
 static UA_INLINE UA_StatusCode
 UA_FieldMetaData_decodeBinary(const UA_ByteString *src, size_t *offset, UA_FieldMetaData *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FIELDMETADATA], NULL);
+}
+
+/* PublishedEventsDataType */
+static UA_INLINE size_t
+UA_PublishedEventsDataType_calcSizeBinary(const UA_PublishedEventsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedEventsDataType_encodeBinary(const UA_PublishedEventsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedEventsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PublishedEventsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBLISHEDEVENTSDATATYPE], NULL);
+}
+
+/* PubSubGroupDataType */
+static UA_INLINE size_t
+UA_PubSubGroupDataType_calcSizeBinary(const UA_PubSubGroupDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubGroupDataType_encodeBinary(const UA_PubSubGroupDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubGroupDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PubSubGroupDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBSUBGROUPDATATYPE], NULL);
 }
 
 /* WriterGroupDataType */
@@ -3009,6 +4969,20 @@ UA_FieldTargetDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_FIELDTARGETDATATYPE], NULL);
 }
 
+/* SubscribedDataSetMirrorDataType */
+static UA_INLINE size_t
+UA_SubscribedDataSetMirrorDataType_calcSizeBinary(const UA_SubscribedDataSetMirrorDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetMirrorDataType_encodeBinary(const UA_SubscribedDataSetMirrorDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SubscribedDataSetMirrorDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SubscribedDataSetMirrorDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SUBSCRIBEDDATASETMIRRORDATATYPE], NULL);
+}
+
 /* EnumDefinition */
 static UA_INLINE size_t
 UA_EnumDefinition_calcSizeBinary(const UA_EnumDefinition *src) {
@@ -3021,6 +4995,90 @@ UA_EnumDefinition_encodeBinary(const UA_EnumDefinition *src, UA_Byte **bufPos, c
 static UA_INLINE UA_StatusCode
 UA_EnumDefinition_decodeBinary(const UA_ByteString *src, size_t *offset, UA_EnumDefinition *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENUMDEFINITION], NULL);
+}
+
+/* ReadEventDetails */
+static UA_INLINE size_t
+UA_ReadEventDetails_calcSizeBinary(const UA_ReadEventDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READEVENTDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadEventDetails_encodeBinary(const UA_ReadEventDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READEVENTDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadEventDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadEventDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READEVENTDETAILS], NULL);
+}
+
+/* ReadProcessedDetails */
+static UA_INLINE size_t
+UA_ReadProcessedDetails_calcSizeBinary(const UA_ReadProcessedDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadProcessedDetails_encodeBinary(const UA_ReadProcessedDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ReadProcessedDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ReadProcessedDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_READPROCESSEDDETAILS], NULL);
+}
+
+/* ModificationInfo */
+static UA_INLINE size_t
+UA_ModificationInfo_calcSizeBinary(const UA_ModificationInfo *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_MODIFICATIONINFO]);
+}
+static UA_INLINE UA_StatusCode
+UA_ModificationInfo_encodeBinary(const UA_ModificationInfo *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_MODIFICATIONINFO], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_ModificationInfo_decodeBinary(const UA_ByteString *src, size_t *offset, UA_ModificationInfo *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_MODIFICATIONINFO], NULL);
+}
+
+/* HistoryModifiedData */
+static UA_INLINE size_t
+UA_HistoryModifiedData_calcSizeBinary(const UA_HistoryModifiedData *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryModifiedData_encodeBinary(const UA_HistoryModifiedData *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryModifiedData_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryModifiedData *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYMODIFIEDDATA], NULL);
+}
+
+/* HistoryEvent */
+static UA_INLINE size_t
+UA_HistoryEvent_calcSizeBinary(const UA_HistoryEvent *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_HISTORYEVENT]);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryEvent_encodeBinary(const UA_HistoryEvent *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_HISTORYEVENT], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_HistoryEvent_decodeBinary(const UA_ByteString *src, size_t *offset, UA_HistoryEvent *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_HISTORYEVENT], NULL);
+}
+
+/* UpdateEventDetails */
+static UA_INLINE size_t
+UA_UpdateEventDetails_calcSizeBinary(const UA_UpdateEventDetails *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS]);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateEventDetails_encodeBinary(const UA_UpdateEventDetails *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_UpdateEventDetails_decodeBinary(const UA_ByteString *src, size_t *offset, UA_UpdateEventDetails *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UPDATEEVENTDETAILS], NULL);
 }
 
 /* DataChangeNotification */
@@ -3051,6 +5109,20 @@ UA_EventNotificationList_decodeBinary(const UA_ByteString *src, size_t *offset, 
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_EVENTNOTIFICATIONLIST], NULL);
 }
 
+/* SessionDiagnosticsDataType */
+static UA_INLINE size_t
+UA_SessionDiagnosticsDataType_calcSizeBinary(const UA_SessionDiagnosticsDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionDiagnosticsDataType_encodeBinary(const UA_SessionDiagnosticsDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_SessionDiagnosticsDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_SessionDiagnosticsDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_SESSIONDIAGNOSTICSDATATYPE], NULL);
+}
+
 /* EnumDescription */
 static UA_INLINE size_t
 UA_EnumDescription_calcSizeBinary(const UA_EnumDescription *src) {
@@ -3065,6 +5137,20 @@ UA_EnumDescription_decodeBinary(const UA_ByteString *src, size_t *offset, UA_Enu
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_ENUMDESCRIPTION], NULL);
 }
 
+/* UABinaryFileDataType */
+static UA_INLINE size_t
+UA_UABinaryFileDataType_calcSizeBinary(const UA_UABinaryFileDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_UABinaryFileDataType_encodeBinary(const UA_UABinaryFileDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_UABinaryFileDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_UABinaryFileDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_UABINARYFILEDATATYPE], NULL);
+}
+
 /* DataSetMetaDataType */
 static UA_INLINE size_t
 UA_DataSetMetaDataType_calcSizeBinary(const UA_DataSetMetaDataType *src) {
@@ -3077,6 +5163,20 @@ UA_DataSetMetaDataType_encodeBinary(const UA_DataSetMetaDataType *src, UA_Byte *
 static UA_INLINE UA_StatusCode
 UA_DataSetMetaDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataSetMetaDataType *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATASETMETADATATYPE], NULL);
+}
+
+/* PublishedDataSetDataType */
+static UA_INLINE size_t
+UA_PublishedDataSetDataType_calcSizeBinary(const UA_PublishedDataSetDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetDataType_encodeBinary(const UA_PublishedDataSetDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PublishedDataSetDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PublishedDataSetDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBLISHEDDATASETDATATYPE], NULL);
 }
 
 /* DataSetReaderDataType */
@@ -3107,6 +5207,20 @@ UA_TargetVariablesDataType_decodeBinary(const UA_ByteString *src, size_t *offset
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_TARGETVARIABLESDATATYPE], NULL);
 }
 
+/* DataTypeSchemaHeader */
+static UA_INLINE size_t
+UA_DataTypeSchemaHeader_calcSizeBinary(const UA_DataTypeSchemaHeader *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER]);
+}
+static UA_INLINE UA_StatusCode
+UA_DataTypeSchemaHeader_encodeBinary(const UA_DataTypeSchemaHeader *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_DataTypeSchemaHeader_decodeBinary(const UA_ByteString *src, size_t *offset, UA_DataTypeSchemaHeader *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_DATATYPESCHEMAHEADER], NULL);
+}
+
 /* ReaderGroupDataType */
 static UA_INLINE size_t
 UA_ReaderGroupDataType_calcSizeBinary(const UA_ReaderGroupDataType *src) {
@@ -3133,6 +5247,20 @@ UA_PubSubConnectionDataType_encodeBinary(const UA_PubSubConnectionDataType *src,
 static UA_INLINE UA_StatusCode
 UA_PubSubConnectionDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PubSubConnectionDataType *dst) {
     return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBSUBCONNECTIONDATATYPE], NULL);
+}
+
+/* PubSubConfigurationDataType */
+static UA_INLINE size_t
+UA_PubSubConfigurationDataType_calcSizeBinary(const UA_PubSubConfigurationDataType *src) {
+    return UA_calcSizeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE]);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubConfigurationDataType_encodeBinary(const UA_PubSubConfigurationDataType *src, UA_Byte **bufPos, const UA_Byte *bufEnd) {
+    return UA_encodeBinary(src, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE], bufPos, &bufEnd, NULL, NULL);
+}
+static UA_INLINE UA_StatusCode
+UA_PubSubConfigurationDataType_decodeBinary(const UA_ByteString *src, size_t *offset, UA_PubSubConfigurationDataType *dst) {
+    return UA_decodeBinary(src, offset, dst, &UA_TYPES[UA_TYPES_PUBSUBCONFIGURATIONDATATYPE], NULL);
 }
 
 #endif /* TYPES_GENERATED_ENCODING_BINARY_H_ */

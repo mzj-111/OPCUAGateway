@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "../bin/server"
   "../bin/server.pdb"
-  "CMakeFiles/server.dir/open62541/open62541.c.o"
   "CMakeFiles/server.dir/src/database/readDht11Data.c.o"
   "CMakeFiles/server.dir/src/device/dht11.c.o"
+  "CMakeFiles/server.dir/src/mqtt/mqtt_publish.c.o"
   "CMakeFiles/server.dir/src/server.c.o"
 )
 
