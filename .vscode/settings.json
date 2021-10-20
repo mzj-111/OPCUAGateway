@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "stdlib.h": "c",
+        "mysql.h": "c",
+        "dht11.h": "c",
+        "open62541.h": "c",
+        "ua_pubsub.h": "c",
+        "log_stdout.h": "c",
+        "server.h": "c",
+        "server_config_default.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}

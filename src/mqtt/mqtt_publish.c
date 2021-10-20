@@ -36,7 +36,7 @@
 
 #define CONNECTION_NAME              "MQTT Publisher Connection"
 #define TRANSPORT_PROFILE_URI        "http://opcfoundation.org/UA-Profile/Transport/pubsub-mqtt"
-#define MQTT_CLIENT_ID               "TempSensorMqttClient"
+#define MQTT_CLIENT_ID               "TempAndRHSensorMqttClient"
 #define CONNECTIONOPTION_NAME        "mqttClientId"
 // #define PUBLISHER_TOPIC              "tempSensorDataTopic"
 #define PUBLISHER_METADATAQUEUENAME  "MetaDataTopic"
@@ -339,7 +339,7 @@ int getChildId(UA_Server *server, UA_NodeId parentNode, const int relativePathCn
 
     return ret;
 }
-int publishTempSensorData(int argc, char **argv, UA_Server *server, char* topic, UA_NodeId *publishedNodeId[]){
+int publishTempSensorData(int argc, char **argv, UA_Server *server, char* topic, UA_NodeId *publishedNodeId){
     /* TODO: Change to secure mqtt port:8883 */
     // 代理地址
     char *addressUrl = BROKER_ADDRESS_URL;
@@ -432,29 +432,19 @@ int publishTempSensorData(int argc, char **argv, UA_Server *server, char* topic,
     // 添加了要公布的nodeid
     addPublishedDataSet(server);
     UA_QualifiedName targetNameArr[1];
-    for(int i = 0; i < 5; ++i){
-        // UA_NodeId parentId = *publishedNodeId[i];
-        UA_NodeId tempNodeId;
-        targetNameArr[0] = UA_QUALIFIEDNAME(2, "Temperature");            
-        if(getChildId(server, *publishedNodeId[i], 1, targetNameArr, &tempNodeId) == 0){
-            UA_Double temp = 23.2;
-            UA_Variant value;
-            UA_Variant_setScalar(&value, &temp, &UA_TYPES[UA_TYPES_DOUBLE]);
-            UA_Server_writeValue(server, tempNodeId, value);
-        }
-
-        // 获取id
-        UA_NodeId sensorId;
-        targetNameArr[0] = UA_QUALIFIEDNAME(2, "SensorId");
-        if(getChildId(server, *publishedNodeId[i], 1, targetNameArr, &sensorId) == 0){
-            UA_Int32 temp = i;
-            UA_Variant value;
-            UA_Variant_setScalar(&value, &temp, &UA_TYPES[UA_TYPES_INT32]);
-            UA_Server_writeValue(server, sensorId, value);
-        }
-        addDataSetField(server, &sensorId);
+    UA_NodeId tempNodeId;
+    targetNameArr[0] = UA_QUALIFIEDNAME(1, "tmp-datasource");            
+    if(getChildId(server, *publishedNodeId, 1, targetNameArr, &tempNodeId) == 0){
         addDataSetField(server, &tempNodeId);
-    } 
+    }   
+
+    // 获取id
+    UA_NodeId humidityNodeId;
+    targetNameArr[0] = UA_QUALIFIEDNAME(1, "rh-datasource");
+    if(getChildId(server, *publishedNodeId, 1, targetNameArr, &humidityNodeId) == 0){
+        addDataSetField(server, &humidityNodeId);
+    }
+    
     retval = addWriterGroup(server, topic, interval);
     if (UA_STATUSCODE_GOOD != retval)
     {

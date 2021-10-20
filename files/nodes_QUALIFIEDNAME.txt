@@ -1,0 +1,3 @@
+温湿度传感器 温度节点 —— UA_QUALIFIEDNAME(1, "tmp-datasource");
+温湿度传感器 湿度节点 —— UA_QUALIFIEDNAME(1, "rh-datasource");
+温湿度传感器 —— UA_QUALIFIEDNAME(1, "dht11 Instance");
